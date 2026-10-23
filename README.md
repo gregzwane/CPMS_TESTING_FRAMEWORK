@@ -67,12 +67,12 @@ mvn test -Dheadless=true
 
 ## 🧪 Test Coverage
 
-### 🔐 Authentication Tests
+### 🔐 Authentication Tests (Cycle 2 - All Passing)
 - ✅ Director, PM, QS, Client login validation
 - ✅ Invalid credential rejection
 - ✅ Required field validation
 - ✅ Session management & logout
-- ✅ Role-based access control
+- ✅ Role-based access control (updated for actual UI tabs)
 
 ### 📋 Project Management Tests
 - ✅ Project pack import (Scenario A1)
@@ -81,13 +81,13 @@ mvn test -Dheadless=true
 - ✅ Document classification routing (Scenario E)
 - ✅ Client access restrictions (RBAC)
 
-### 🔌 API Tests (Inbound/Outbound)
-- ✅ JWT authentication & token validation
-- ✅ CRUD operations for projects
-- ✅ BOQ CSV import processing
-- ✅ Security: SQL injection prevention
-- ✅ Error handling & validation
-- ✅ Concurrent request handling
+### 🔌 API Tests (Updated for Supabase Auth + Render Backend)
+- ✅ Supabase JWT authentication & token validation
+- ✅ Projects API (Render backend with Bearer token)
+- 🔄 BOQ CSV import processing (endpoint needs verification)
+- 🔄 Security: SQL injection prevention
+- 🔄 Error handling & validation
+- 🔄 Concurrent request handling
 
 ### 📱 Mobile Tests (Framework Ready)
 - 📋 Mobile login for all roles
