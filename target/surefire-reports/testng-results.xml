@@ -1,61 +1,619 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="29" passed="27" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-25T20:33:42 SAST" name="Surefire suite" finished-at="2026-10-25T20:34:16 SAST" duration-ms="34744">
+  <suite started-at="2026-10-25T20:36:21 SAST" name="Surefire suite" finished-at="2026-10-25T20:59:31 SAST" duration-ms="1389662">
     <groups>
     </groups>
-    <test started-at="2026-10-25T20:33:42 SAST" name="Surefire test" finished-at="2026-10-25T20:34:16 SAST" duration-ms="34744">
+    <test started-at="2026-10-25T20:36:21 SAST" name="Surefire test" finished-at="2026-10-25T20:59:31 SAST" duration-ms="1389662">
+      <class name="com.cpms.tests.AuthenticationTests">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:36:20 SAST" name="suiteSetup" finished-at="2026-10-25T20:36:21 SAST" duration-ms="1198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:36:47 SAST" name="classSetup" finished-at="2026-10-25T20:36:47 SAST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:36:47 SAST" name="testSetup" finished-at="2026-10-25T20:37:03 SAST" duration-ms="15397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testDirectorLoginSuccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testDirectorLoginSuccess()[pri:1, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:37:03 SAST" name="testDirectorLoginSuccess" description="Director login succeeds with valid credentials" finished-at="2026-10-25T20:37:40 SAST" duration-ms="37241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDirectorLoginSuccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:37:40 SAST" name="testTeardown" finished-at="2026-10-25T20:37:42 SAST" duration-ms="1737" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDirectorLoginSuccess status=SUCCESS method=AuthenticationTests.testDirectorLoginSuccess()[pri:1, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:37:42 SAST" name="testSetup" finished-at="2026-10-25T20:37:50 SAST" duration-ms="7717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testProjectManagerLoginSuccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testProjectManagerLoginSuccess()[pri:2, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:37:50 SAST" name="testProjectManagerLoginSuccess" description="Project Manager login succeeds with valid credentials" finished-at="2026-10-25T20:38:49 SAST" duration-ms="59827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProjectManagerLoginSuccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:38:49 SAST" name="testTeardown" finished-at="2026-10-25T20:38:56 SAST" duration-ms="6376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testProjectManagerLoginSuccess status=SUCCESS method=AuthenticationTests.testProjectManagerLoginSuccess()[pri:2, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:38:56 SAST" name="testSetup" finished-at="2026-10-25T20:39:02 SAST" duration-ms="5909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testQuantitySurveyorLoginSuccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testQuantitySurveyorLoginSuccess()[pri:3, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:39:02 SAST" name="testQuantitySurveyorLoginSuccess" description="Quantity Surveyor login succeeds with valid credentials" finished-at="2026-10-25T20:39:48 SAST" duration-ms="46244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuantitySurveyorLoginSuccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:39:48 SAST" name="testTeardown" finished-at="2026-10-25T20:39:49 SAST" duration-ms="611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testQuantitySurveyorLoginSuccess status=SUCCESS method=AuthenticationTests.testQuantitySurveyorLoginSuccess()[pri:3, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:39:49 SAST" name="testSetup" finished-at="2026-10-25T20:39:55 SAST" duration-ms="5939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testClientLoginSuccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testClientLoginSuccess()[pri:4, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:39:55 SAST" name="testClientLoginSuccess" description="Client login succeeds with valid credentials" finished-at="2026-10-25T20:41:05 SAST" duration-ms="70538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClientLoginSuccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:05 SAST" name="testTeardown" finished-at="2026-10-25T20:41:07 SAST" duration-ms="1454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClientLoginSuccess status=SUCCESS method=AuthenticationTests.testClientLoginSuccess()[pri:4, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:07 SAST" name="testSetup" finished-at="2026-10-25T20:41:14 SAST" duration-ms="7332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testInvalidPasswordRejected()[pri:5, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:14 SAST" name="testInvalidPasswordRejected" description="Invalid password is rejected with error message" finished-at="2026-10-25T20:41:33 SAST" duration-ms="18929" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Should remain on login page after failed login expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Should remain on login page after failed login expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected(AuthenticationTests.java:142)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPasswordRejected -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:33 SAST" name="testTeardown" finished-at="2026-10-25T20:41:33 SAST" duration-ms="185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidPasswordRejected status=FAILURE method=AuthenticationTests.testInvalidPasswordRejected()[pri:5, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:33 SAST" name="testSetup" finished-at="2026-10-25T20:41:40 SAST" duration-ms="6640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testRequiredFieldValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testRequiredFieldValidation()[pri:6, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:40 SAST" name="testRequiredFieldValidation" description="Required field validation prevents empty login" finished-at="2026-10-25T20:41:54 SAST" duration-ms="14635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequiredFieldValidation -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:54 SAST" name="testTeardown" finished-at="2026-10-25T20:41:57 SAST" duration-ms="2182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRequiredFieldValidation status=SUCCESS method=AuthenticationTests.testRequiredFieldValidation()[pri:6, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:41:57 SAST" name="testSetup" finished-at="2026-10-25T20:42:02 SAST" duration-ms="5836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testLoginPageUIElements()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testLoginPageUIElements()[pri:7, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:42:02 SAST" name="testLoginPageUIElements" description="Login page displays all required elements" finished-at="2026-10-25T20:42:06 SAST" duration-ms="3888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageUIElements -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:42:06 SAST" name="testTeardown" finished-at="2026-10-25T20:42:08 SAST" duration-ms="1422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginPageUIElements status=SUCCESS method=AuthenticationTests.testLoginPageUIElements()[pri:7, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:42:08 SAST" name="testSetup" finished-at="2026-10-25T20:42:13 SAST" duration-ms="4833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testLogoutFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testLogoutFunctionality()[pri:8, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:42:13 SAST" name="testLogoutFunctionality" description="Logout functionality ends session properly" finished-at="2026-10-25T20:43:09 SAST" duration-ms="56226" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Should return to login page after logout expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Should return to login page after logout expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.cpms.tests.AuthenticationTests.testLogoutFunctionality(AuthenticationTests.java:221)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFunctionality -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:43:09 SAST" name="testTeardown" finished-at="2026-10-25T20:43:09 SAST" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogoutFunctionality status=FAILURE method=AuthenticationTests.testLogoutFunctionality()[pri:8, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:43:09 SAST" name="testSetup" finished-at="2026-10-25T20:43:15 SAST" duration-ms="6409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testApiWakeUpSequence()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testApiWakeUpSequence()[pri:9, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:43:15 SAST" name="testApiWakeUpSequence" description="API wake-up sequence works after idle period" finished-at="2026-10-25T20:43:42 SAST" duration-ms="27064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiWakeUpSequence -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:43:42 SAST" name="testTeardown" finished-at="2026-10-25T20:43:48 SAST" duration-ms="5508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testApiWakeUpSequence status=SUCCESS method=AuthenticationTests.testApiWakeUpSequence()[pri:9, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:43:48 SAST" name="testSetup" finished-at="2026-10-25T20:43:53 SAST" duration-ms="4995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testRoleBasedAccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testRoleBasedAccess()[pri:10, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:43:53 SAST" name="testRoleBasedAccess" description="Multiple role access patterns are correctly enforced" finished-at="2026-10-25T20:46:24 SAST" duration-ms="151521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRoleBasedAccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:46:24 SAST" name="testTeardown" finished-at="2026-10-25T20:46:28 SAST" duration-ms="3220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRoleBasedAccess status=SUCCESS method=AuthenticationTests.testRoleBasedAccess()[pri:10, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:46:28 SAST" name="testSetup" finished-at="2026-10-25T20:46:36 SAST" duration-ms="7952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.AuthenticationTests.testRoleTabAccessVerification()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testRoleTabAccessVerification()[pri:11, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:46:36 SAST" name="testRoleTabAccessVerification" description="Each role can click and verify access to their tabs" finished-at="2026-10-25T20:50:43 SAST" duration-ms="247022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRoleTabAccessVerification -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:50:43 SAST" name="testTeardown" finished-at="2026-10-25T20:51:08 SAST" duration-ms="25683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRoleTabAccessVerification status=SUCCESS method=AuthenticationTests.testRoleTabAccessVerification()[pri:11, instance:com.cpms.tests.AuthenticationTests@3bb9ca38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:51:09 SAST" name="classTeardown" finished-at="2026-10-25T20:51:09 SAST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTeardown -->
+        <test-method is-config="true" signature="suiteTeardown()[pri:0, instance:com.cpms.tests.AuthenticationTests@3bb9ca38]" started-at="2026-10-25T20:59:32 SAST" name="suiteTeardown" finished-at="2026-10-25T20:59:36 SAST" duration-ms="3546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTeardown -->
+      </class> <!-- com.cpms.tests.AuthenticationTests -->
+      <class name="com.cpms.tests.Cycle3FeatureTests">
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:51:09 SAST" name="classSetup" finished-at="2026-10-25T20:51:09 SAST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:51:09 SAST" name="testSetup" finished-at="2026-10-25T20:51:19 SAST" duration-ms="9752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.Cycle3FeatureTests.testBiWorkspaceAccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testBiWorkspaceAccess()[pri:1, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:51:19 SAST" name="testBiWorkspaceAccess" description="Director can access BI &amp; Root Cause workspace" finished-at="2026-10-25T20:51:38 SAST" duration-ms="19064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBiWorkspaceAccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:51:38 SAST" name="testTeardown" finished-at="2026-10-25T20:52:04 SAST" duration-ms="26088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testBiWorkspaceAccess status=SUCCESS method=Cycle3FeatureTests.testBiWorkspaceAccess()[pri:1, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:52:04 SAST" name="testSetup" finished-at="2026-10-25T20:52:15 SAST" duration-ms="10856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.Cycle3FeatureTests.testTigerTeamWorkspaceAccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testTigerTeamWorkspaceAccess()[pri:2, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:52:15 SAST" name="testTigerTeamWorkspaceAccess" description="Director can access Tiger Team workspace" finished-at="2026-10-25T20:53:15 SAST" duration-ms="60149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTigerTeamWorkspaceAccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:53:15 SAST" name="testTeardown" finished-at="2026-10-25T20:53:37 SAST" duration-ms="22104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTigerTeamWorkspaceAccess status=SUCCESS method=Cycle3FeatureTests.testTigerTeamWorkspaceAccess()[pri:2, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:53:37 SAST" name="testSetup" finished-at="2026-10-25T20:53:50 SAST" duration-ms="13446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.Cycle3FeatureTests.testSettingsWorkspaceAccess()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testSettingsWorkspaceAccess()[pri:3, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:53:50 SAST" name="testSettingsWorkspaceAccess" description="Director can access Settings workspace" finished-at="2026-10-25T20:54:30 SAST" duration-ms="39115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSettingsWorkspaceAccess -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:54:30 SAST" name="testTeardown" finished-at="2026-10-25T20:54:53 SAST" duration-ms="23605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSettingsWorkspaceAccess status=SUCCESS method=Cycle3FeatureTests.testSettingsWorkspaceAccess()[pri:3, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:54:53 SAST" name="testSetup" finished-at="2026-10-25T20:55:00 SAST" duration-ms="6590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.Cycle3FeatureTests.testPmWorkspaceBoundaries()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testPmWorkspaceBoundaries()[pri:4, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:55:00 SAST" name="testPmWorkspaceBoundaries" description="PM has access to operational workspaces but not Client Portal" finished-at="2026-10-25T20:56:12 SAST" duration-ms="72433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPmWorkspaceBoundaries -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:56:12 SAST" name="testTeardown" finished-at="2026-10-25T20:56:39 SAST" duration-ms="26660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPmWorkspaceBoundaries status=SUCCESS method=Cycle3FeatureTests.testPmWorkspaceBoundaries()[pri:4, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:56:39 SAST" name="testSetup" finished-at="2026-10-25T20:56:45 SAST" duration-ms="6352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.Cycle3FeatureTests.testQsWorkspaceBoundaries()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testQsWorkspaceBoundaries()[pri:5, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:56:45 SAST" name="testQsWorkspaceBoundaries" description="QS has access to commercial workspaces but not Site tab" finished-at="2026-10-25T20:57:21 SAST" duration-ms="35819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQsWorkspaceBoundaries -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:57:21 SAST" name="testTeardown" finished-at="2026-10-25T20:57:48 SAST" duration-ms="26773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testQsWorkspaceBoundaries status=SUCCESS method=Cycle3FeatureTests.testQsWorkspaceBoundaries()[pri:5, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:57:48 SAST" name="testSetup" finished-at="2026-10-25T20:58:02 SAST" duration-ms="13514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.Cycle3FeatureTests.testClientPortalRoleRestrictions()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testClientPortalRoleRestrictions()[pri:6, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:58:02 SAST" name="testClientPortalRoleRestrictions" description="Client Portal shows restricted view with Client role" finished-at="2026-10-25T20:59:02 SAST" duration-ms="60287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClientPortalRoleRestrictions -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:59:04 SAST" name="testTeardown" finished-at="2026-10-25T20:59:31 SAST" duration-ms="26500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClientPortalRoleRestrictions status=SUCCESS method=Cycle3FeatureTests.testClientPortalRoleRestrictions()[pri:6, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:com.cpms.tests.Cycle3FeatureTests@160e99e0]" started-at="2026-10-25T20:59:31 SAST" name="classTeardown" finished-at="2026-10-25T20:59:31 SAST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTeardown -->
+      </class> <!-- com.cpms.tests.Cycle3FeatureTests -->
       <class name="com.cpms.api.CpmsApiTests">
-        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:33:42 SAST" name="setupApi" finished-at="2026-10-25T20:33:42 SAST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:21 SAST" name="setupApi" finished-at="2026-10-25T20:36:21 SAST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApi -->
-        <test-method signature="testAuthenticationSuccess()[pri:1, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:33:42 SAST" name="testAuthenticationSuccess" description="POST /auth/v1/token validates credentials successfully" finished-at="2026-10-25T20:34:00 SAST" duration-ms="18284" status="PASS">
+        <test-method signature="testAuthenticationSuccess()[pri:1, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:21 SAST" name="testAuthenticationSuccess" description="POST /auth/v1/token validates credentials successfully" finished-at="2026-10-25T20:36:34 SAST" duration-ms="12162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthenticationSuccess -->
-        <test-method signature="testAuthenticationFailure()[pri:2, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:01 SAST" name="testAuthenticationFailure" description="POST /auth/v1/token rejects invalid credentials" finished-at="2026-10-25T20:34:02 SAST" duration-ms="1042" status="PASS">
+        <test-method signature="testAuthenticationFailure()[pri:2, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:34 SAST" name="testAuthenticationFailure" description="POST /auth/v1/token rejects invalid credentials" finished-at="2026-10-25T20:36:34 SAST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthenticationFailure -->
-        <test-method signature="testGetProjects()[pri:3, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:02 SAST" name="testGetProjects" description="GET /api/v1/projects returns project list for authenticated user" finished-at="2026-10-25T20:34:05 SAST" duration-ms="3457" status="PASS">
+        <test-method signature="testGetProjects()[pri:3, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:34 SAST" name="testGetProjects" description="GET /api/v1/projects returns project list for authenticated user" finished-at="2026-10-25T20:36:38 SAST" duration-ms="3438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetProjects -->
-        <test-method signature="testCreateProject()[pri:4, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:05 SAST" name="testCreateProject" description="POST /api/v1/projects creates new project" finished-at="2026-10-25T20:34:07 SAST" duration-ms="1876" status="PASS">
+        <test-method signature="testCreateProject()[pri:4, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:38 SAST" name="testCreateProject" description="POST /api/v1/projects creates new project" finished-at="2026-10-25T20:36:40 SAST" duration-ms="1795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProject -->
-        <test-method signature="testCreateProjectValidation()[pri:5, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:07 SAST" name="testCreateProjectValidation" description="POST /api/v1/projects validates required fields" finished-at="2026-10-25T20:34:08 SAST" duration-ms="657" status="PASS">
+        <test-method signature="testCreateProjectValidation()[pri:5, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:40 SAST" name="testCreateProjectValidation" description="POST /api/v1/projects validates required fields" finished-at="2026-10-25T20:36:40 SAST" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProjectValidation -->
-        <test-method signature="testBoqImport()[pri:6, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:08 SAST" name="testBoqImport" description="POST /api/v1/boq/import processes CSV data" finished-at="2026-10-25T20:34:09 SAST" duration-ms="1090" status="PASS">
+        <test-method signature="testBoqImport()[pri:6, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:40 SAST" name="testBoqImport" description="POST /api/v1/boq/import processes CSV data" finished-at="2026-10-25T20:36:41 SAST" duration-ms="1286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBoqImport -->
-        <test-method signature="testApiSecurityUnauthenticated()[pri:7, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:09 SAST" name="testApiSecurityUnauthenticated" description="API requires authentication for protected endpoints" finished-at="2026-10-25T20:34:10 SAST" duration-ms="1000" status="PASS">
+        <test-method signature="testApiSecurityUnauthenticated()[pri:7, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:41 SAST" name="testApiSecurityUnauthenticated" description="API requires authentication for protected endpoints" finished-at="2026-10-25T20:36:42 SAST" duration-ms="868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApiSecurityUnauthenticated -->
-        <test-method signature="testSqlInjectionPrevention()[pri:8, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:10 SAST" name="testSqlInjectionPrevention" description="API prevents SQL injection in filters" finished-at="2026-10-25T20:34:10 SAST" duration-ms="168" status="PASS">
+        <test-method signature="testSqlInjectionPrevention()[pri:8, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:42 SAST" name="testSqlInjectionPrevention" description="API prevents SQL injection in filters" finished-at="2026-10-25T20:36:43 SAST" duration-ms="1216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSqlInjectionPrevention -->
-        <test-method signature="testMalformedJsonHandling()[pri:9, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:10 SAST" name="testMalformedJsonHandling" description="API handles malformed JSON requests" finished-at="2026-10-25T20:34:12 SAST" duration-ms="2164" status="PASS">
+        <test-method signature="testMalformedJsonHandling()[pri:9, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:43 SAST" name="testMalformedJsonHandling" description="API handles malformed JSON requests" finished-at="2026-10-25T20:36:44 SAST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMalformedJsonHandling -->
-        <test-method signature="testConsistentErrorFormat()[pri:10, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:12 SAST" name="testConsistentErrorFormat" description="API returns consistent error format" finished-at="2026-10-25T20:34:13 SAST" duration-ms="764" status="PASS">
+        <test-method signature="testConsistentErrorFormat()[pri:10, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:44 SAST" name="testConsistentErrorFormat" description="API returns consistent error format" finished-at="2026-10-25T20:36:45 SAST" duration-ms="781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConsistentErrorFormat -->
-        <test-method signature="testConcurrentRequests()[pri:11, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:13 SAST" name="testConcurrentRequests" description="API handles concurrent requests properly" finished-at="2026-10-25T20:34:15 SAST" duration-ms="1683" status="PASS">
+        <test-method signature="testConcurrentRequests()[pri:11, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:45 SAST" name="testConcurrentRequests" description="API handles concurrent requests properly" finished-at="2026-10-25T20:36:46 SAST" duration-ms="1325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConcurrentRequests -->
-        <test-method signature="testJwtTokenExpiry()[pri:12, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:15 SAST" name="testJwtTokenExpiry" description="JWT token expiry is handled correctly" finished-at="2026-10-25T20:34:16 SAST" duration-ms="1559" status="PASS">
+        <test-method signature="testJwtTokenExpiry()[pri:12, instance:com.cpms.api.CpmsApiTests@27dc627a]" started-at="2026-10-25T20:36:46 SAST" name="testJwtTokenExpiry" description="JWT token expiry is handled correctly" finished-at="2026-10-25T20:36:47 SAST" duration-ms="1328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJwtTokenExpiry -->
