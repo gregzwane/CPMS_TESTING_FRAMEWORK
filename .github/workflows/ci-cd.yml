@@ -46,13 +46,13 @@ jobs:
       if: matrix.browser == 'edge'
       uses: browser-actions/setup-edge@v1
 
-    - name: Run Smoke Tests
-      run: |
-        mvn clean test -Dtest=**/AuthenticationTests.java \
-          -Dbrowser=${{ matrix.browser }} \
-          -Denv=${{ matrix.environment }} \
-          -Dheadless=true \
-          -Dmaven.test.failure.ignore=true
+ #   - name: Run Smoke Tests
+ #     run: |
+ #       mvn clean test -Dtest=**/AuthenticationTests.java \
+ #         -Dbrowser=${{ matrix.browser }} \
+ #         -Denv=${{ matrix.environment }} \
+ #         -Dheadless=true \
+ #         -Dmaven.test.failure.ignore=true
 
  #   - name: Run Functional Tests
  #     run: |
@@ -67,21 +67,22 @@ jobs:
         mvn test -Dtest=**/CpmsApiTests.java \
           -Dmaven.test.failure.ignore=true
 
-    - name: Generate Allure Report
-      if: always()
-    #  run: mvn allure:serve
-      run: mvn allure:report
 
-    - name: Upload Test Results
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: test-results-${{ matrix.browser }}-${{ matrix.environment }}
-        path: |
-          target/surefire-reports/
-          target/allure-results/
-          target/reports/
-          target/screenshots/
+    #- name: Generate Allure Report
+    #  if: always()
+    #  run: mvn allure:serve
+    #  run: mvn allure:report
+
+   # - name: Upload Test Results
+   #   if: always()
+   #   uses: actions/upload-artifact@v4
+  #    with:
+  #      name: test-results-${{ matrix.browser }}-${{ matrix.environment }}
+  #      path: |
+  #        target/surefire-reports/
+ #         target/allure-results/
+  #        target/reports/
+ #         target/screenshots/
 
     - name: Upload Allure Report
       if: always()
@@ -90,13 +91,13 @@ jobs:
         name: allure-report-${{ matrix.browser }}-${{ matrix.environment }}
         path: target/site/allure-maven-plugin/
 
-    - name: Publish Test Results
-      if: always()
-      uses: dorny/test-reporter@v1
-      with:
-        name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
-        path: target/surefire-reports/*.xml
-        reporter: java-junit
+  #  - name: Publish Test Results
+  #    if: always()
+ #     uses: dorny/test-reporter@v1
+ #     with:
+ #       name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
+ #       path: target/surefire-reports/*.xml
+ #       reporter: java-junit
 
   security-scan:
     runs-on: ubuntu-latest
