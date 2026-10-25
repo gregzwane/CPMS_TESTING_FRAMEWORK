@@ -79,7 +79,7 @@ public class CpmsApiTests {
         logger.info("Authentication successful, token acquired");
     }
 
-    @Test(description = "POST /auth/v1/token rejects invalid credentials", priority = 2, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "POST /auth/v1/token rejects invalid credentials", priority = 2)
     @Description("Verify Supabase authentication endpoint rejects wrong password")
     @Story("Authentication API - Invalid Credentials")
     @Severity(SeverityLevel.BLOCKER)
@@ -113,12 +113,16 @@ public class CpmsApiTests {
         logger.info("Authentication failure test completed - status: {}", response.getStatusCode());
     }
 
-    @Test(description = "GET /api/v1/projects returns project list for authenticated user", priority = 3, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "GET /api/v1/projects returns project list for authenticated user", priority = 3)
     @Description("Verify projects API returns JSON array of projects")
     @Story("Projects API - List Projects")
     @Severity(SeverityLevel.BLOCKER)
     public void testGetProjects() {
         logger.info("Testing GET projects API");
+
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
 
         Response response = getAuthenticatedRequest()
                 .when()
@@ -146,12 +150,16 @@ public class CpmsApiTests {
         logger.info("Projects list API test completed");
     }
 
-    @Test(description = "POST /api/v1/projects creates new project", priority = 4, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "POST /api/v1/projects creates new project", priority = 4)
     @Description("Verify project creation API with valid payload")
     @Story("Projects API - Create Project")
     @Severity(SeverityLevel.BLOCKER)
     public void testCreateProject() {
         logger.info("Testing POST create project API");
+
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
 
         Map<String, Object> projectRequest = new HashMap<>();
         projectRequest.put("code", "API-TEST-" + System.currentTimeMillis());
@@ -171,11 +179,11 @@ public class CpmsApiTests {
 
         if (status == 201 || status == 200) {
             if (response.jsonPath().get("code") != null) {
-                Assert.assertTrue(response.jsonPath().getString("code").startsWith("API-TEST-"));
-                Assert.assertTrue(response.jsonPath().getString("name").startsWith("API Test Project"));
+                Assert.assertEquals(response.jsonPath().getString("code"), projectRequest.get("code"));
+                Assert.assertEquals(response.jsonPath().getString("name"), projectRequest.get("name"));
             }
-        } else if (status == 404 || status == 403 || status == 405 || status == 409) {
-            logger.warn("Create project endpoint returned {} (may not be implemented, restricted, or conflict)", status);
+        } else if (status == 404 || status == 403 || status == 405) {
+            logger.warn("Create project endpoint returned {} (may not be implemented or restricted)", status);
         } else {
             Assert.fail("Unexpected response code: " + status);
         }
@@ -183,12 +191,16 @@ public class CpmsApiTests {
         logger.info("Project creation API test completed");
     }
 
-    @Test(description = "POST /api/v1/projects validates required fields", priority = 5, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "POST /api/v1/projects validates required fields", priority = 5)
     @Description("Verify project creation API validates missing required fields")
     @Story("Projects API - Validation")
     @Severity(SeverityLevel.BLOCKER)
     public void testCreateProjectValidation() {
         logger.info("Testing project creation validation");
+
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
 
         Map<String, Object> incompleteRequest = new HashMap<>();
         incompleteRequest.put("code", "INVALID-001");
@@ -205,14 +217,9 @@ public class CpmsApiTests {
         logger.info("Project validation API response status: {}", status);
 
         if (status == 400) {
-            // Check for validation errors - handle both List and Map formats
-            Object errors = response.jsonPath().get("errors");
-            if (errors != null) {
-                if (errors instanceof List) {
-                    Assert.assertTrue(((List<?>) errors).size() > 0, "Response should contain validation errors");
-                } else if (errors instanceof Map) {
-                    Assert.assertTrue(((Map<?, ?>) errors).size() > 0, "Response should contain validation errors");
-                }
+            if (response.jsonPath().get("errors") != null) {
+                Assert.assertTrue(response.jsonPath().getList("errors").size() > 0,
+                        "Response should contain validation errors");
             }
         } else if (status == 404 || status == 403 || status == 405) {
             logger.warn("Project validation endpoint returned {} (may not be implemented)", status);
@@ -223,12 +230,16 @@ public class CpmsApiTests {
         logger.info("Project validation API test completed");
     }
 
-    @Test(description = "POST /api/v1/boq/import processes CSV data", priority = 6, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "POST /api/v1/boq/import processes CSV data", priority = 6)
     @Description("Verify BOQ import API handles CSV file upload")
     @Story("BOQ Import API - CSV Processing")
     @Severity(SeverityLevel.BLOCKER)
     public void testBoqImport() {
         logger.info("Testing BOQ import API");
+
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
 
         // Create temporary CSV content
         String csvContent = "item code,description,unit,quantity,unit rate\n" +
@@ -276,28 +287,27 @@ public class CpmsApiTests {
         int status = response.getStatusCode();
         logger.info("Unauthenticated API response status: {}", status);
 
-        // Note: Current backend allows unauthenticated access (returns 200)
-        // This test documents the current behavior
+        // Should return 401, 403, or 404 (not 200)
+        Assert.assertTrue(status == 401 || status == 403 || status == 404,
+                "Unauthenticated request should return 401/403/404, got: " + status);
+
         if (status == 200) {
-            logger.warn("Backend currently allows unauthenticated access to /projects - security gap noted");
-            // Test passes but documents the gap
-            Assert.assertTrue(response.jsonPath().getList("$").size() >= 0, "Response should be JSON array");
-        } else if (status == 401 || status == 403 || status == 404) {
-            // Expected behavior when auth is enforced
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail("Unexpected response code: " + status);
+            Assert.fail("Unauthenticated request should not return 200 OK");
         }
 
-        logger.info("API security test completed - current behavior: {}", status == 200 ? "UNAUTHENTICATED_ALLOWED" : "AUTH_REQUIRED");
+        logger.info("API security test completed");
     }
 
-    @Test(description = "API prevents SQL injection in filters", priority = 8, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "API prevents SQL injection in filters", priority = 8)
     @Description("Verify API sanitizes malicious SQL input in query parameters")
     @Story("API Security - SQL Injection Prevention")
     @Severity(SeverityLevel.BLOCKER)
     public void testSqlInjectionPrevention() {
         logger.info("Testing SQL injection prevention");
+
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
 
         String maliciousSql = "1' OR 1=1--";
 
@@ -324,12 +334,16 @@ public class CpmsApiTests {
         logger.info("SQL injection prevention test completed");
     }
 
-    @Test(description = "API handles malformed JSON requests", priority = 9, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "API handles malformed JSON requests", priority = 9)
     @Description("Verify API returns appropriate error for malformed request bodies")
     @Story("API Error Handling - Malformed Requests")
     @Severity(SeverityLevel.CRITICAL)
     public void testMalformedJsonHandling() {
         logger.info("Testing malformed JSON handling");
+
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
 
         String malformedJson = "{ invalid json structure";
 
@@ -356,12 +370,16 @@ public class CpmsApiTests {
         logger.info("Malformed JSON handling test completed");
     }
 
-    @Test(description = "API returns consistent error format", priority = 10, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "API returns consistent error format", priority = 10)
     @Description("Verify all API errors follow consistent response structure")
     @Story("API Error Handling - Consistent Format")
     @Severity(SeverityLevel.CRITICAL)
     public void testConsistentErrorFormat() {
         logger.info("Testing consistent error format");
+
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
 
         // Test various error scenarios
         Response validationError = getAuthenticatedRequest()
@@ -392,11 +410,16 @@ public class CpmsApiTests {
         logger.info("Consistent error format test completed");
     }
 
-    @Test(description = "API handles concurrent requests properly", priority = 11, dependsOnMethods = "testAuthenticationSuccess")
+    @Test(description = "API handles concurrent requests properly", priority = 11)
     @Description("Verify API can handle multiple simultaneous requests")
     @Story("API Performance - Concurrent Requests")
     @Severity(SeverityLevel.CRITICAL)
     public void testConcurrentRequests() {
+        // Get fresh token for this test
+        if (authToken == null || authToken.isEmpty()) {
+            testAuthenticationSuccess();
+        }
+
         logger.info("Testing concurrent API requests");
 
         long startTime = System.currentTimeMillis();
@@ -473,6 +496,6 @@ public class CpmsApiTests {
             Assert.fail("Unexpected response code: " + status);
         }
 
-        logger.info("JWT token expiry test completed - current behavior: {}", status == 200 ? "EXPIRY_NOT_VALIDATED" : "EXPIRY_VALIDATED");
+        logger.info("JWT token expiry test completed");
     }
 }

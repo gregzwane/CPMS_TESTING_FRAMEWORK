@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,71 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
+                    <div class="method-list-content failed suite-Surefire_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testApiWakeUpSequence">testApiWakeUpSequence</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.api.CpmsApiTests" class="method navigator-link" hash-for-method="testCreateProjectValidation">testCreateProjectValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testClientLoginSuccess">testClientLoginSuccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testDirectorLoginSuccess">testDirectorLoginSuccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testInvalidPasswordRejected">testInvalidPasswordRejected</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testLoginPageUIElements">testLoginPageUIElements</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testLogoutFunctionality">testLogoutFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testProjectManagerLoginSuccess">testProjectManagerLoginSuccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testQuantitySurveyorLoginSuccess">testQuantitySurveyorLoginSuccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testRequiredFieldValidation">testRequiredFieldValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testRoleBasedAccess">testRoleBasedAccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testRoleTabAccessVerification">testRoleTabAccessVerification</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -168,113 +118,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.cpms.tests.AuthenticationTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.cpms.api.CpmsApiTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testApiWakeUpSequence">
-                  </a> <!-- testApiWakeUpSequence -->
-                  <span class="method-name">testApiWakeUpSequence</span>
+                  <a name="testCreateProjectValidation">
+                  </a> <!-- testCreateProjectValidation -->
+                  <span class="method-name">testCreateProjectValidation</span>
+                  <div class="stack-trace">java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader &apos;bootstrap&apos;)
+	at io.restassured.path.json.JsonPath.getList(JsonPath.java:375)
+	at com.cpms.api.CpmsApiTests.testCreateProjectValidation(CpmsApiTests.java:221)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(API wake-up sequence works after idle period)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClientLoginSuccess">
-                  </a> <!-- testClientLoginSuccess -->
-                  <span class="method-name">testClientLoginSuccess</span>
-                  <em>
-(Client login succeeds with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDirectorLoginSuccess">
-                  </a> <!-- testDirectorLoginSuccess -->
-                  <span class="method-name">testDirectorLoginSuccess</span>
-                  <em>
-(Director login succeeds with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidPasswordRejected">
-                  </a> <!-- testInvalidPasswordRejected -->
-                  <span class="method-name">testInvalidPasswordRejected</span>
-                  <em>
-(Invalid password is rejected with error message)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginPageUIElements">
-                  </a> <!-- testLoginPageUIElements -->
-                  <span class="method-name">testLoginPageUIElements</span>
-                  <em>
-(Login page displays all required elements)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogoutFunctionality">
-                  </a> <!-- testLogoutFunctionality -->
-                  <span class="method-name">testLogoutFunctionality</span>
-                  <em>
-(Logout functionality ends session properly)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProjectManagerLoginSuccess">
-                  </a> <!-- testProjectManagerLoginSuccess -->
-                  <span class="method-name">testProjectManagerLoginSuccess</span>
-                  <em>
-(Project Manager login succeeds with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testQuantitySurveyorLoginSuccess">
-                  </a> <!-- testQuantitySurveyorLoginSuccess -->
-                  <span class="method-name">testQuantitySurveyorLoginSuccess</span>
-                  <em>
-(Quantity Surveyor login succeeds with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testRequiredFieldValidation">
-                  </a> <!-- testRequiredFieldValidation -->
-                  <span class="method-name">testRequiredFieldValidation</span>
-                  <em>
-(Required field validation prevents empty login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testRoleBasedAccess">
-                  </a> <!-- testRoleBasedAccess -->
-                  <span class="method-name">testRoleBasedAccess</span>
-                  <em>
-(Multiple role access patterns are correctly enforced)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testRoleTabAccessVerification">
-                  </a> <!-- testRoleTabAccessVerification -->
-                  <span class="method-name">testRoleTabAccessVerification</span>
-                  <em>
-(Each role can click and verify access to their tabs)                  </em>
+(POST /api/v1/projects validates required fields)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -285,8 +151,13 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;method-selectors&gt;
+      &lt;method-selector&gt;
+        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
+      &lt;/method-selector&gt;
+    &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.cpms.tests.AuthenticationTests&quot;/&gt;
+      &lt;class name=&quot;com.cpms.api.CpmsApiTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -326,56 +197,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testRoleTabAccessVerification')
-data.setCell(0, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(0, 3, 193433);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testRoleBasedAccess')
-data.setCell(1, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(1, 3, 135553);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLogoutFunctionality')
-data.setCell(2, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(2, 3, 70318);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testClientLoginSuccess')
-data.setCell(3, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(3, 3, 55844);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testQuantitySurveyorLoginSuccess')
-data.setCell(4, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(4, 3, 52499);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testProjectManagerLoginSuccess')
-data.setCell(5, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(5, 3, 45063);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testDirectorLoginSuccess')
-data.setCell(6, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(6, 3, 35177);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testInvalidPasswordRejected')
-data.setCell(7, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(7, 3, 33951);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testApiWakeUpSequence')
-data.setCell(8, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(8, 3, 26195);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testRequiredFieldValidation')
-data.setCell(9, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(9, 3, 14208);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testLoginPageUIElements')
-data.setCell(10, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(10, 3, 3497);
+data.setCell(0, 1, 'testCreateProjectValidation')
+data.setCell(0, 2, 'com.cpms.api.CpmsApiTests')
+data.setCell(0, 3, 18053);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -390,9 +221,36 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cpms.api.CpmsApiTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testBoqImport</span>
+                <br/>
+                <span class="ignored-method-name">testAuthenticationFailure</span>
+                <br/>
+                <span class="ignored-method-name">testAuthenticationSuccess</span>
+                <br/>
+                <span class="ignored-method-name">testConcurrentRequests</span>
+                <br/>
+                <span class="ignored-method-name">testApiSecurityUnauthenticated</span>
+                <br/>
+                <span class="ignored-method-name">testSqlInjectionPrevention</span>
+                <br/>
+                <span class="ignored-method-name">testMalformedJsonHandling</span>
+                <br/>
+                <span class="ignored-method-name">testConsistentErrorFormat</span>
+                <br/>
+                <span class="ignored-method-name">testGetProjects</span>
+                <br/>
+                <span class="ignored-method-name">testJwtTokenExpiry</span>
+                <br/>
+                <span class="ignored-method-name">testCreateProject</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -401,155 +259,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.cpms.tests.AuthenticationTests</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">suiteSetup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
+              <div class="chronological-class-name">com.cpms.api.CpmsApiTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">classSetup</span>
-                <span class="method-start">1752 ms</span>
+                <span class="method-name">setupApi</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testDirectorLoginSuccess())</span>
-                <span class="method-start">1806 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testDirectorLoginSuccess</span>
-                <span class="method-start">12968 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCreateProjectValidation</span>
+                <span class="method-start">141 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testDirectorLoginSuccess status=SUCCESS method=AuthenticationTests.testDirectorLogi...)</span>
-                <span class="method-start">48196 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testProjectManagerLoginSuccess())</span>
-                <span class="method-start">48880 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testProjectManagerLoginSuccess</span>
-                <span class="method-start">55469 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testProjectManagerLoginSuccess status=SUCCESS method=AuthenticationTests.testProjec...)</span>
-                <span class="method-start">100542 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testQuantitySurveyorLoginSuccess())</span>
-                <span class="method-start">100915 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testQuantitySurveyorLoginSuccess</span>
-                <span class="method-start">107676 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testQuantitySurveyorLoginSuccess status=SUCCESS method=AuthenticationTests.testQuan...)</span>
-                <span class="method-start">160204 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testClientLoginSuccess())</span>
-                <span class="method-start">160673 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testClientLoginSuccess</span>
-                <span class="method-start">167818 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testClientLoginSuccess status=SUCCESS method=AuthenticationTests.testClientLoginSuc...)</span>
-                <span class="method-start">223666 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected())</span>
-                <span class="method-start">224181 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testInvalidPasswordRejected</span>
-                <span class="method-start">230461 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testInvalidPasswordRejected status=SUCCESS method=AuthenticationTests.testInvalidPa...)</span>
-                <span class="method-start">264412 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testRequiredFieldValidation())</span>
-                <span class="method-start">264769 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testRequiredFieldValidation</span>
-                <span class="method-start">273067 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testRequiredFieldValidation status=SUCCESS method=AuthenticationTests.testRequiredF...)</span>
-                <span class="method-start">287279 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testLoginPageUIElements())</span>
-                <span class="method-start">287732 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testLoginPageUIElements</span>
-                <span class="method-start">293239 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testLoginPageUIElements status=SUCCESS method=AuthenticationTests.testLoginPageUIEl...)</span>
-                <span class="method-start">296738 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testLogoutFunctionality())</span>
-                <span class="method-start">297123 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testLogoutFunctionality</span>
-                <span class="method-start">302868 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testLogoutFunctionality status=SUCCESS method=AuthenticationTests.testLogoutFunctio...)</span>
-                <span class="method-start">373191 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testApiWakeUpSequence())</span>
-                <span class="method-start">373574 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testApiWakeUpSequence</span>
-                <span class="method-start">378305 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testApiWakeUpSequence status=SUCCESS method=AuthenticationTests.testApiWakeUpSequen...)</span>
-                <span class="method-start">404509 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testRoleBasedAccess())</span>
-                <span class="method-start">405772 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testRoleBasedAccess</span>
-                <span class="method-start">409313 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testRoleBasedAccess status=SUCCESS method=AuthenticationTests.testRoleBasedAccess()...)</span>
-                <span class="method-start">544894 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testRoleTabAccessVerification())</span>
-                <span class="method-start">545428 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testRoleTabAccessVerification</span>
-                <span class="method-start">551278 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testRoleTabAccessVerification status=SUCCESS method=AuthenticationTests.testRoleTab...)</span>
-                <span class="method-start">744748 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">classTeardown</span>
-                <span class="method-start">770891 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-suite after">
-                <span class="method-name">suiteTeardown</span>
-                <span class="method-start">771204 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
