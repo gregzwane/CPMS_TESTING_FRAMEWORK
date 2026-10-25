@@ -92,7 +92,8 @@ jobs:
         name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
        # path: target/surefire-reports/CPMS Test Suite/*.xml
         path: target/surefire-reports/*.xml
-        reporter: java-junit
+        #reporter: java-junit
+        reporter: testng
 
 
   security-scan:
