@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chrome]
-        environment: [local, staging]
+        browser: [chrome,edge]
+        environment: [staging]
 
     steps:
     - name: Checkout code

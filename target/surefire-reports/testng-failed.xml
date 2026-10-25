@@ -5,8 +5,8 @@
     <classes>
       <class name="com.cpms.api.CpmsApiTests">
         <methods>
+          <include name="testApiSecurityUnauthenticated"/>
           <include name="setupApi"/>
-          <include name="testCreateProjectValidation"/>
         </methods>
       </class> <!-- com.cpms.api.CpmsApiTests -->
     </classes>

@@ -1,62 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-25T20:29:16 SAST" name="Surefire suite" finished-at="2026-10-25T20:29:36 SAST" duration-ms="20029">
+  <suite started-at="2026-10-25T20:33:42 SAST" name="Surefire suite" finished-at="2026-10-25T20:34:16 SAST" duration-ms="34744">
     <groups>
     </groups>
-    <test started-at="2026-10-25T20:29:16 SAST" name="Surefire test" finished-at="2026-10-25T20:29:36 SAST" duration-ms="20029">
+    <test started-at="2026-10-25T20:33:42 SAST" name="Surefire test" finished-at="2026-10-25T20:34:16 SAST" duration-ms="34744">
       <class name="com.cpms.api.CpmsApiTests">
-        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.cpms.api.CpmsApiTests@27e2287c]" started-at="2026-10-25T20:29:16 SAST" name="setupApi" finished-at="2026-10-25T20:29:16 SAST" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:33:42 SAST" name="setupApi" finished-at="2026-10-25T20:33:42 SAST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApi -->
-        <test-method signature="testCreateProjectValidation()[pri:5, instance:com.cpms.api.CpmsApiTests@27e2287c]" started-at="2026-10-25T20:29:16 SAST" name="testCreateProjectValidation" description="POST /api/v1/projects validates required fields" finished-at="2026-10-25T20:29:34 SAST" duration-ms="18053" status="FAIL">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')
-at io.restassured.path.json.JsonPath.getList(JsonPath.java:375)
-at com.cpms.api.CpmsApiTests.testCreateProjectValidation(CpmsApiTests.java:221)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+        <test-method signature="testAuthenticationSuccess()[pri:1, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:33:42 SAST" name="testAuthenticationSuccess" description="POST /auth/v1/token validates credentials successfully" finished-at="2026-10-25T20:34:00 SAST" duration-ms="18284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticationSuccess -->
+        <test-method signature="testAuthenticationFailure()[pri:2, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:01 SAST" name="testAuthenticationFailure" description="POST /auth/v1/token rejects invalid credentials" finished-at="2026-10-25T20:34:02 SAST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticationFailure -->
+        <test-method signature="testGetProjects()[pri:3, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:02 SAST" name="testGetProjects" description="GET /api/v1/projects returns project list for authenticated user" finished-at="2026-10-25T20:34:05 SAST" duration-ms="3457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetProjects -->
+        <test-method signature="testCreateProject()[pri:4, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:05 SAST" name="testCreateProject" description="POST /api/v1/projects creates new project" finished-at="2026-10-25T20:34:07 SAST" duration-ms="1876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateProject -->
+        <test-method signature="testCreateProjectValidation()[pri:5, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:07 SAST" name="testCreateProjectValidation" description="POST /api/v1/projects validates required fields" finished-at="2026-10-25T20:34:08 SAST" duration-ms="657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProjectValidation -->
+        <test-method signature="testBoqImport()[pri:6, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:08 SAST" name="testBoqImport" description="POST /api/v1/boq/import processes CSV data" finished-at="2026-10-25T20:34:09 SAST" duration-ms="1090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoqImport -->
+        <test-method signature="testApiSecurityUnauthenticated()[pri:7, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:09 SAST" name="testApiSecurityUnauthenticated" description="API requires authentication for protected endpoints" finished-at="2026-10-25T20:34:10 SAST" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiSecurityUnauthenticated -->
+        <test-method signature="testSqlInjectionPrevention()[pri:8, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:10 SAST" name="testSqlInjectionPrevention" description="API prevents SQL injection in filters" finished-at="2026-10-25T20:34:10 SAST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSqlInjectionPrevention -->
+        <test-method signature="testMalformedJsonHandling()[pri:9, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:10 SAST" name="testMalformedJsonHandling" description="API handles malformed JSON requests" finished-at="2026-10-25T20:34:12 SAST" duration-ms="2164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMalformedJsonHandling -->
+        <test-method signature="testConsistentErrorFormat()[pri:10, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:12 SAST" name="testConsistentErrorFormat" description="API returns consistent error format" finished-at="2026-10-25T20:34:13 SAST" duration-ms="764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConsistentErrorFormat -->
+        <test-method signature="testConcurrentRequests()[pri:11, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:13 SAST" name="testConcurrentRequests" description="API handles concurrent requests properly" finished-at="2026-10-25T20:34:15 SAST" duration-ms="1683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConcurrentRequests -->
+        <test-method signature="testJwtTokenExpiry()[pri:12, instance:com.cpms.api.CpmsApiTests@1cf336fd]" started-at="2026-10-25T20:34:15 SAST" name="testJwtTokenExpiry" description="JWT token expiry is handled correctly" finished-at="2026-10-25T20:34:16 SAST" duration-ms="1559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJwtTokenExpiry -->
       </class> <!-- com.cpms.api.CpmsApiTests -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
