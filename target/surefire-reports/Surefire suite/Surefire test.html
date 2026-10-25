@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 25 15:56:53 SAST 2026</td>
+<td>Started on:</td><td>Sun Oct 25 16:11:54 SAST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>83 seconds (83701 ms)</td>
+<tr><td>Total time:</td><td>264 seconds (264843 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.cpms.api.CpmsApiTests.testConcurrentRequests()'><b>testConcurrentRequests</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API handles concurrent requests properly</td>
+<td></td>
+<td>1</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testGetProjects()'><b>testGetProjects</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: GET /api/v1/projects returns project list for authenticated user</td>
+<td></td>
+<td>2</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testBoqImport()'><b>testBoqImport</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/boq/import processes CSV data</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testCreateProjectValidation()'><b>testCreateProjectValidation</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/projects validates required fields</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testSqlInjectionPrevention()'><b>testSqlInjectionPrevention</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API prevents SQL injection in filters</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.tests.Cycle3FeatureTests.testBiWorkspaceAccess()'><b>testBiWorkspaceAccess</b><br>Test class: com.cpms.tests.Cycle3FeatureTests<br>Test method: Director can access BI & Root Cause workspace</td>
+<td></td>
+<td>17</td>
+<td>com.cpms.tests.Cycle3FeatureTests@388c519</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testCreateProject()'><b>testCreateProject</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/projects creates new project</td>
+<td></td>
+<td>1</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testMalformedJsonHandling()'><b>testMalformedJsonHandling</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API handles malformed JSON requests</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testAuthenticationFailure()'><b>testAuthenticationFailure</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /auth/v1/token rejects invalid credentials</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testAuthenticationSuccess()'><b>testAuthenticationSuccess</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /auth/v1/token validates credentials successfully</td>
+<td></td>
+<td>42</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.tests.AuthenticationTests.testDirectorLoginSuccess()'><b>testDirectorLoginSuccess</b><br>Test class: com.cpms.tests.AuthenticationTests<br>Test method: Director login succeeds with valid credentials</td>
+<td></td>
+<td>39</td>
+<td>com.cpms.tests.AuthenticationTests@3cc053</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testConsistentErrorFormat()'><b>testConsistentErrorFormat</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API returns consistent error format</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected()'><b>testInvalidPasswordRejected</b><br>Test class: com.cpms.tests.AuthenticationTests<br>Test method: Invalid password is rejected with error message</td>
+<td></td>
+<td>37</td>
+<td>com.cpms.tests.AuthenticationTests@3cc053</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testApiSecurityUnauthenticated()'><b>testApiSecurityUnauthenticated</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API requires authentication for protected endpoints</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testJwtTokenExpiry()'><b>testJwtTokenExpiry</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: JWT token expiry is handled correctly</td>
+<td></td>
+<td>2</td>
+<td>com.cpms.api.CpmsApiTests@733fb462</td></tr>
+<tr>
 <td title='com.cpms.tests.AuthenticationTests.testLogoutFunctionality()'><b>testLogoutFunctionality</b><br>Test class: com.cpms.tests.AuthenticationTests<br>Test method: Logout functionality ends session properly</td>
 <td></td>
-<td>72</td>
-<td>com.cpms.tests.AuthenticationTests@61191222</td></tr>
+<td>74</td>
+<td>com.cpms.tests.AuthenticationTests@3cc053</td></tr>
 </table><p>
 </body>
 </html>
