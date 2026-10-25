@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cpms.tests.AuthenticationTests" time="785.578" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cpms.tests.AuthenticationTests" time="89.404" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe"/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ZA"/>
     <property name="sun.boot.library.path" value="C:\Java\jdk-21.0.12.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire5027903411269398543\surefirebooter-20261025161740254_3.jar C:\Users\Gregory Zwane\AppData\Local\Temp\surefire5027903411269398543 2026-10-25T16-17-37_743-jvmRun1 surefire-20261025161740254_1tmp surefire_0-20261025161740254_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire3970931065281881992\surefirebooter-20261025211612449_3.jar C:\Users\Gregory Zwane\AppData\Local\Temp\surefire3970931065281881992 2026-10-25T21-16-07_059-jvmRun1 surefire-20261025211612449_1tmp surefire_0-20261025211612449_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="**/AuthenticationTests.java"/>
+    <property name="test" value="**/AuthenticationTests.java#testDirectorLoginSuccess"/>
     <property name="surefire.test.class.path" value="C:\Development\Selenium\CPMS_Testing_Framework\target\test-classes;C:\Development\Selenium\CPMS_Testing_Framework\target\classes;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gregory Zwane\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gregory Zwane\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Gregory Zwane\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Gregory Zwane\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gregory Zwane\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Gregory Zwane\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;"/>
     <property name="allure.results.directory" value="C:\Development\Selenium\CPMS_Testing_Framework\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire5027903411269398543\surefirebooter-20261025161740254_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire3970931065281881992\surefirebooter-20261025211612449_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-LTS-4"/>
@@ -63,7 +63,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testDirectorLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="35.219">
+  <testcase name="testDirectorLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="55.087">
     <system-out><![CDATA[ERROR StatusConsoleListener Could not create plugin of type class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile
  org.apache.logging.log4j.core.config.ConfigurationException: Configuration has multiple incompatible Appenders pointing to the same resource 'target/logs/cpms-tests.log'
 	at org.apache.logging.log4j.core.appender.AbstractManager.narrow(AbstractManager.java:200)
@@ -132,36 +132,36 @@ ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger c
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "io.restassured"
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "org.apache.http"
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "com.cpms"
-16:17:56.450 [main] INFO  com.cpms.base.BaseTest - Starting CPMS Test Suite
-16:17:56.460 [main] INFO  com.cpms.config.ConfigManager - Configuration properties loaded successfully
-16:17:58.020 [main] INFO  com.cpms.utils.ExtentManager - ExtentReports initialized. Report will be saved to: target/reports/CPMS_Test_Report_2026-10-25_16-17-56.html
-16:17:58.124 [main] INFO  com.cpms.base.BaseTest - Setting up test class: AuthenticationTests
-16:17:58.190 [main] INFO  com.cpms.base.BaseTest - Starting test: testDirectorLoginSuccess
-16:18:07.441 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:18:08.842 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:18:09.409 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Director login test
-16:18:09.492 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:18:09.508 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:18:13.171 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing Director login
-16:18:13.173 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-16:18:13.173 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-16:18:13.173 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-16:18:13.487 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:18:13.706 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:18:29.185 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:18:29.207 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
-16:18:29.218 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:18:42.665 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
-16:18:42.812 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-16:18:42.812 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying Director role access
-16:18:42.833 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:18:42.860 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:18:43.186 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+21:16:25.526 [main] INFO  com.cpms.base.BaseTest - Starting CPMS Test Suite
+21:16:25.549 [main] INFO  com.cpms.config.ConfigManager - Configuration properties loaded successfully
+21:16:26.621 [main] INFO  com.cpms.utils.ExtentManager - ExtentReports initialized. Report will be saved to: target/reports/CPMS_Test_Report_2026-10-25_21-16-25.html
+21:16:26.743 [main] INFO  com.cpms.base.BaseTest - Setting up test class: AuthenticationTests
+21:16:26.802 [main] INFO  com.cpms.base.BaseTest - Starting test: testDirectorLoginSuccess
+21:16:37.510 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+21:16:40.006 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+21:16:40.383 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Director login test
+21:16:40.500 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+21:16:40.559 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+21:16:44.337 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing Director login
+21:16:44.338 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+21:16:44.338 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+21:16:44.338 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+21:16:44.720 [main] INFO  com.cpms.pages.LoginPage - Entering password
+21:16:45.076 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+21:17:01.090 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+21:17:01.140 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
+21:17:01.160 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+21:17:16.684 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
+21:17:18.892 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
+21:17:18.893 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying Director role access
+21:17:19.421 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:17:20.849 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:17:22.916 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-16:18:42
+21:17:21
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -170,15 +170,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:18:43.306 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
-16:18:43.330 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:18:43.370 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:18:43.613 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+21:17:24.421 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
+21:17:24.809 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:17:25.305 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:17:26.509 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-16:18:42
+21:17:25
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -187,15 +187,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:18:43.777 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
-16:18:43.803 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:18:43.822 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:18:44.034 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+21:17:26.930 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
+21:17:27.103 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:17:27.327 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:17:28.842 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-16:18:43
+21:17:27
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -204,15 +204,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:18:44.080 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=true
-16:18:44.092 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:18:44.103 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:18:44.251 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+21:17:30.126 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=true
+21:17:30.754 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:17:31.380 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:17:33.020 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-16:18:43
+21:17:31
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -221,15 +221,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:18:44.298 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-16:18:44.312 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:18:44.322 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:18:44.477 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+21:17:33.706 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
+21:17:33.956 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:17:34.221 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:17:34.683 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-16:18:43
+21:17:33
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -238,993 +238,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:18:44.513 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-16:18:44.513 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=true, bi=true, tiger=true, projects=true, commercial=true
-16:18:44.513 [main] INFO  com.cpms.base.BaseTest - Test Step: Director login test completed successfully
+21:17:34.935 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
+21:17:34.935 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=true, bi=true, tiger=true, projects=true, commercial=true
+21:17:34.935 [main] INFO  com.cpms.base.BaseTest - Test Step: Director login test completed successfully
 ]]></system-out>
     <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:18:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Oct 25, 2026 9:16:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:18:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testProjectManagerLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="45.069">
-    <system-out><![CDATA[16:18:44.568 [main] INFO  com.cpms.base.BaseTest - Test passed: testDirectorLoginSuccess
-16:18:45.236 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:18:45.248 [main] INFO  com.cpms.base.BaseTest - Starting test: testProjectManagerLoginSuccess
-16:18:50.192 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:18:51.830 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:18:51.869 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Project Manager login test
-16:18:51.869 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:18:51.965 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:18:55.294 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing PM login
-16:18:55.297 [main] INFO  com.cpms.pages.LoginPage - Logging in as Project Manager: pm@cpms.demo
-16:18:55.297 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: pm@cpms.demo
-16:18:55.297 [main] INFO  com.cpms.pages.LoginPage - Entering email: pm@cpms.demo
-16:18:55.511 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:18:55.690 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:19:11.163 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:19:11.189 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
-16:19:11.201 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:19:24.760 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
-16:19:24.806 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-16:19:24.811 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying PM role access
-16:19:24.832 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:19:24.862 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:19:25.063 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Project Manager
-Sign out
-Connected
-16:19:24
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no map 
-16:19:25.110 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-16:19:25.124 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:19:25.134 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:19:25.273 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Project Manager
-Sign out
-Connected
-16:19:24
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no map 
-16:19:25.365 [main] INFO  com.cpms.pages.DashboardPage - Tab 'programme' specific element: found=true, visible=true
-16:19:25.380 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:19:25.380 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:19:25.522 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Project Manager
-Sign out
-Connected
-16:19:24
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no map 
-16:19:25.558 [main] INFO  com.cpms.pages.DashboardPage - Tab 'site' specific element: found=true, visible=true
-16:19:25.570 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:19:25.595 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:19:25.742 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Project Manager
-Sign out
-Connected
-16:19:25
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no map 
-16:19:25.783 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
-16:19:25.795 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:19:25.828 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:19:26.017 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Project Manager
-Sign out
-Connected
-16:19:25
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no map 
-16:19:36.046 [main] INFO  com.cpms.pages.DashboardPage - Tab 'client' specific element: found=true, visible=false
-16:19:36.890 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Settings]
-16:19:36.890 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Settings]
-16:19:36.900 [main] INFO  com.cpms.base.BaseTest - Test Step: Project Manager login test completed successfully
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:18:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:18:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testQuantitySurveyorLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="52.508">
-    <system-out><![CDATA[16:19:36.910 [main] INFO  com.cpms.base.BaseTest - Test passed: testProjectManagerLoginSuccess
-16:19:37.279 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:19:37.283 [main] INFO  com.cpms.base.BaseTest - Starting test: testQuantitySurveyorLoginSuccess
-16:19:42.714 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:19:44.033 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:19:44.097 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Quantity Surveyor login test
-16:19:44.097 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:19:44.139 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:19:47.507 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing QS login
-16:19:47.508 [main] INFO  com.cpms.pages.LoginPage - Logging in as Quantity Surveyor: qs@cpms.demo
-16:19:47.508 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: qs@cpms.demo
-16:19:47.508 [main] INFO  com.cpms.pages.LoginPage - Entering email: qs@cpms.demo
-16:19:47.795 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:19:48.102 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:20:03.381 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:20:03.405 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
-16:20:03.423 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:20:24.515 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
-16:20:24.602 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-16:20:24.604 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying QS role access
-16:20:24.628 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:20:24.644 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:20:24.824 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Quantity Surveyor
-Sign out
-Connected
-16:20:24
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no ma
-16:20:24.870 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-16:20:24.874 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:20:24.887 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:20:25.073 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Quantity Surveyor
-Sign out
-Connected
-16:20:24
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no ma
-16:20:25.160 [main] INFO  com.cpms.pages.DashboardPage - Tab 'programme' specific element: found=true, visible=true
-16:20:25.172 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:20:25.183 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:20:25.378 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Quantity Surveyor
-Sign out
-Connected
-16:20:24
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no ma
-16:20:25.401 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
-16:20:25.422 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:20:25.438 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:20:25.566 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Quantity Surveyor
-Sign out
-Connected
-16:20:25
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no ma
-16:20:25.601 [main] INFO  com.cpms.pages.DashboardPage - Tab 'reports' specific element: found=true, visible=true
-16:20:25.616 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:20:25.623 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:20:25.779 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Quantity Surveyor
-Sign out
-Connected
-16:20:25
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no ma
-16:20:25.843 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
-16:20:25.855 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:20:25.864 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:20:26.026 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Quantity Surveyor
-Sign out
-Connected
-16:20:25
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no ma
-16:20:36.067 [main] INFO  com.cpms.pages.DashboardPage - Tab 'client' specific element: found=true, visible=false
-16:20:36.542 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Comms Hub, Reports, Settings]
-16:20:36.542 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Comms Hub, Reports, Settings]
-16:20:36.542 [main] INFO  com.cpms.pages.DashboardPage - QS access check: commercial=true, programme=true, bi=true, reports=true, settings=true, noClient=true
-16:20:36.542 [main] INFO  com.cpms.base.BaseTest - Test Step: Quantity Surveyor login test completed successfully
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:19:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:19:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testClientLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="55.843">
-    <system-out><![CDATA[16:20:36.573 [main] INFO  com.cpms.base.BaseTest - Test passed: testQuantitySurveyorLoginSuccess
-16:20:37.039 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:20:37.041 [main] INFO  com.cpms.base.BaseTest - Starting test: testClientLoginSuccess
-16:20:42.889 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:20:44.166 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:20:44.201 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Client login test
-16:20:44.202 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:20:44.229 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:20:47.703 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing Client login
-16:20:47.703 [main] INFO  com.cpms.pages.LoginPage - Logging in as Client: client@cpms.demo
-16:20:47.703 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: client@cpms.demo
-16:20:47.703 [main] INFO  com.cpms.pages.LoginPage - Entering email: client@cpms.demo
-16:20:47.961 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:20:48.251 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:21:03.657 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:21:03.764 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
-16:21:03.784 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:21:17.424 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
-16:21:17.472 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-16:21:17.472 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying Client role access (restricted)
-16:21:17.489 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:21:17.495 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:21:17.658 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:21:17
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:21:17.731 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-16:21:17.748 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:21:17.765 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:21:17.974 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:21:17
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:21:18.095 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-16:21:18.115 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:21:18.131 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:21:18.301 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:21:17
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:21:18.364 [main] INFO  com.cpms.pages.DashboardPage - Tab 'reports' specific element: found=true, visible=true
-16:21:18.411 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:21:18.431 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:21:18.582 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:21:18
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:21:18.625 [main] INFO  com.cpms.pages.DashboardPage - Tab 'client' specific element: found=true, visible=true
-16:21:18.634 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:21:18.641 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:21:18.803 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:21:18
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:21:28.841 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=false
-16:21:29.174 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:21:29.174 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:21:29.199 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:21:29.208 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:21:29.346 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:21:28
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:21:39.376 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=false
-16:21:40.028 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:21:40.030 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:21:40.030 [main] INFO  com.cpms.base.BaseTest - Test Step: Client login test completed successfully
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:20:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:20:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testInvalidPasswordRejected" classname="com.cpms.tests.AuthenticationTests" time="33.951">
-    <system-out><![CDATA[16:21:40.038 [main] INFO  com.cpms.base.BaseTest - Test passed: testClientLoginSuccess
-16:21:40.549 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:21:40.549 [main] INFO  com.cpms.base.BaseTest - Starting test: testInvalidPasswordRejected
-16:21:45.553 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:21:46.827 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:21:46.892 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting invalid password test
-16:21:46.898 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:21:46.928 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:21:50.203 [main] INFO  com.cpms.base.BaseTest - Test Step: Attempting login with invalid password
-16:21:50.203 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-16:21:50.459 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:21:50.637 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:21:50.837 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login failure
-16:21:50.851 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:21:54.257 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=true, result=false
-16:22:07.306 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:22:10.722 [main] INFO  com.cpms.base.BaseTest - Test Step: Error displayed: false, Still on login: true
-16:22:20.780 [main] INFO  com.cpms.base.BaseTest - Test Step: Error message: ''
-16:22:20.780 [main] INFO  com.cpms.base.BaseTest - Test Step: Invalid password test completed - error properly shown
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:21:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:21:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testRequiredFieldValidation" classname="com.cpms.tests.AuthenticationTests" time="14.211">
-    <system-out><![CDATA[16:22:20.793 [main] INFO  com.cpms.base.BaseTest - Test passed: testInvalidPasswordRejected
-16:22:21.137 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:22:21.137 [main] INFO  com.cpms.base.BaseTest - Starting test: testRequiredFieldValidation
-16:22:28.172 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:22:29.432 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:22:29.444 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting required field validation test
-16:22:29.456 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:22:29.502 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:22:32.856 [main] INFO  com.cpms.base.BaseTest - Test Step: Attempting login with empty fields
-16:22:32.858 [main] INFO  com.cpms.pages.LoginPage - Clearing login fields
-16:22:33.045 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:22:33.254 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying validation prevents submission
-16:22:43.637 [main] INFO  com.cpms.base.BaseTest - Test Step: Required field validation test completed
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:22:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:22:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testLoginPageUIElements" classname="com.cpms.tests.AuthenticationTests" time="3.488">
-    <system-out><![CDATA[16:22:43.651 [main] INFO  com.cpms.base.BaseTest - Test passed: testRequiredFieldValidation
-16:22:44.097 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:22:44.100 [main] INFO  com.cpms.base.BaseTest - Starting test: testLoginPageUIElements
-16:22:48.291 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:22:49.604 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:22:49.653 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting login page UI elements test
-16:22:49.656 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:22:49.656 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login page elements are present
-16:22:49.709 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:22:53.083 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying page title
-16:22:53.104 [main] INFO  com.cpms.base.BaseTest - Test Step: Login page UI elements test completed
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:22:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:22:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testLogoutFunctionality" classname="com.cpms.tests.AuthenticationTests" time="70.323">
-    <system-out><![CDATA[16:22:53.109 [main] INFO  com.cpms.base.BaseTest - Test passed: testLoginPageUIElements
-16:22:53.485 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:22:53.491 [main] INFO  com.cpms.base.BaseTest - Starting test: testLogoutFunctionality
-16:22:58.244 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:22:59.227 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:22:59.257 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting logout functionality test
-16:22:59.258 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:22:59.258 [main] INFO  com.cpms.base.BaseTest - Test Step: Logging in as Director
-16:22:59.259 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-16:22:59.259 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-16:22:59.259 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-16:22:59.902 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:23:00.099 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:23:15.370 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:23:15.432 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-16:23:15.432 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing logout
-16:23:15.432 [main] INFO  com.cpms.pages.DashboardPage - Logging out
-16:23:56.090 [main] ERROR com.cpms.pages.DashboardPage - Error during logout: Expected condition failed: waiting for url to contain "sign". Current url: "https://leaverageconstructionhub.vercel.app/" (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56975}, goog:processID: 21820, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56975/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2e1b463bda63b3cde259c773780c4cdd
-16:23:56.090 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:23:56.090 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying logout success
-16:23:56.104 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:23:59.555 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying session is ended
-16:23:59.568 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:24:02.895 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying session cannot access root after logout
-16:24:06.255 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:24:09.554 [main] INFO  com.cpms.base.BaseTest - Test Step: Logout functionality test completed
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:22:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:22:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testApiWakeUpSequence" classname="com.cpms.tests.AuthenticationTests" time="26.202">
-    <system-out><![CDATA[16:24:09.559 [main] INFO  com.cpms.base.BaseTest - Test passed: testLogoutFunctionality
-16:24:09.934 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:24:09.942 [main] INFO  com.cpms.base.BaseTest - Starting test: testApiWakeUpSequence
-16:24:13.609 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:24:14.670 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:24:14.729 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting API wake-up sequence test
-16:24:14.741 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:24:14.741 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-16:24:14.750 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-16:24:14.750 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-16:24:15.367 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:24:15.539 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:24:30.778 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:24:30.790 [main] INFO  com.cpms.base.BaseTest - Test Step: Waiting for API to be ready
-16:24:30.790 [main] INFO  com.cpms.pages.DashboardPage - Waiting for API to be ready
-16:24:40.851 [main] INFO  com.cpms.pages.DashboardPage - API is now live
-16:24:40.851 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying API live status
-16:24:40.868 [main] INFO  com.cpms.base.BaseTest - Test Step: API wake-up sequence test completed
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:24:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:24:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testRoleBasedAccess" classname="com.cpms.tests.AuthenticationTests" time="135.58">
-    <system-out><![CDATA[16:24:40.877 [main] INFO  com.cpms.base.BaseTest - Test passed: testApiWakeUpSequence
-16:24:42.140 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:24:42.140 [main] INFO  com.cpms.base.BaseTest - Starting test: testRoleBasedAccess
-16:24:44.617 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:24:45.678 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:24:45.686 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting role-based access control test
-16:24:45.687 [main] INFO  com.cpms.base.BaseTest - Test Step: Testing Director access level
-16:24:45.687 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:24:45.687 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-16:24:45.688 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-16:24:45.688 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-16:24:46.601 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:24:46.801 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:25:02.205 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:25:02.251 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:25:02.269 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:25:02.506 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Director / Executive
-Sign out
-Connected
-16:25:01
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:25:02.579 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
-16:25:02.602 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:25:02.614 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:25:02.820 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Director / Executive
-Sign out
-Connected
-16:25:01
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:25:02.875 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
-16:25:02.894 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:25:02.911 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:25:03.159 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Director / Executive
-Sign out
-Connected
-16:25:02
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:25:03.240 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=true
-16:25:03.290 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:25:03.308 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:25:03.530 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Director / Executive
-Sign out
-Connected
-16:25:02
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:25:03.577 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-16:25:03.587 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:25:03.596 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:25:03.765 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Director / Executive
-Sign out
-Connected
-16:25:02
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-16:25:03.802 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-16:25:03.804 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=true, bi=true, tiger=true, projects=true, commercial=true
-16:25:03.804 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing logout
-16:25:03.804 [main] INFO  com.cpms.pages.DashboardPage - Logging out
-16:25:44.491 [main] ERROR com.cpms.pages.DashboardPage - Error during logout: Expected condition failed: waiting for url to contain "sign". Current url: "https://leaverageconstructionhub.vercel.app/" (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55542}, goog:processID: 17504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55542/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17287f62b574c6f19dbd9731bcd7a282
-16:25:44.491 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:25:44.500 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-16:25:47.940 [main] INFO  com.cpms.base.BaseTest - Test Step: Testing Client access level (restricted)
-16:25:47.940 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:25:47.940 [main] INFO  com.cpms.pages.LoginPage - Logging in as Client: client@cpms.demo
-16:25:47.940 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: client@cpms.demo
-16:25:47.940 [main] INFO  com.cpms.pages.LoginPage - Entering email: client@cpms.demo
-16:25:48.131 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:25:48.308 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:26:03.548 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:26:03.568 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:03.582 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:03.738 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:02
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:03.787 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-16:26:03.795 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:03.803 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:04.028 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:03
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:04.099 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-16:26:04.110 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:04.121 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:04.279 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:03
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:04.338 [main] INFO  com.cpms.pages.DashboardPage - Tab 'reports' specific element: found=true, visible=true
-16:26:04.351 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:04.361 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:04.508 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:03
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:04.601 [main] INFO  com.cpms.pages.DashboardPage - Tab 'client' specific element: found=true, visible=true
-16:26:04.632 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:04.701 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:04.863 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:03
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:14.943 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=false
-16:26:15.685 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:26:15.685 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:26:15.720 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:15.744 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:16.137 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:14
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:26.170 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=false
-16:26:27.535 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:26:27.536 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:26:27.554 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:27.569 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:27.768 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:26
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:38.603 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=false
-16:26:39.909 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:26:39.910 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:26:39.930 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:39.945 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:40.125 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:39
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:26:50.204 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=false
-16:26:50.206 [main] INFO  com.cpms.pages.DashboardPage - Found 'bi' in body text!
-16:26:50.226 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:26:50.240 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:26:50.427 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:26:49
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:27:00.439 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=false
-16:27:00.803 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:27:00.803 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:27:00.813 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:27:00.821 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:27:01.000 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:27:00
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:27:01.038 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-16:27:01.046 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-16:27:01.053 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-16:27:01.190 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
-PTA-A · Riverside Bulk Earthworks
-Client / Employer's Agent
-Sign out
-Connected
-16:27:00
-ACTIVE PROJECT
-001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 179286420167
-16:27:01.232 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-16:27:01.232 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=false, bi=true, tiger=false, projects=true, commercial=true
-16:27:01.232 [main] INFO  com.cpms.base.BaseTest - Test Step: Role-based access control test completed
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:24:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:24:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testRoleTabAccessVerification" classname="com.cpms.tests.AuthenticationTests" time="193.463">
-    <system-out><![CDATA[16:27:01.266 [main] INFO  com.cpms.base.BaseTest - Test passed: testRoleBasedAccess
-16:27:01.792 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-16:27:01.797 [main] INFO  com.cpms.base.BaseTest - Starting test: testRoleTabAccessVerification
-16:27:06.603 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-16:27:07.642 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-16:27:07.665 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting role tab access verification test
-16:27:07.666 [main] INFO  com.cpms.base.BaseTest - Test Step: Testing Director tab access
-16:27:07.667 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:27:07.667 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-16:27:07.668 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-16:27:07.668 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-16:27:09.160 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:27:09.376 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:27:25.330 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:27:27.114 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Client Portal, Settings]
-16:27:27.119 [main] INFO  com.cpms.base.BaseTest - Test Step: Director available tabs: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Client Portal, Settings]
-16:27:27.123 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Projects
-16:27:27.123 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: BOQ & Budget
-16:27:27.123 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Programme
-16:27:27.123 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: BI & Root Cause
-16:27:27.124 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Site
-16:27:27.124 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Quality & H&S
-16:27:27.124 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Documents
-16:27:27.124 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Comms Hub
-16:27:27.124 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Tiger Team
-16:27:27.124 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Reports
-16:27:27.125 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Client Portal
-16:27:27.125 [main] INFO  com.cpms.base.BaseTest - Test Step: Director CAN access: Settings
-16:27:27.125 [main] INFO  com.cpms.pages.DashboardPage - Logging out
-16:28:07.534 [main] ERROR com.cpms.pages.DashboardPage - Error during logout: Expected condition failed: waiting for url to contain "sign". Current url: "https://leaverageconstructionhub.vercel.app/" (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55575}, goog:processID: 13332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55575/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3612f909f03c6124b2ad5d1fc309ec12
-16:28:07.546 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:28:07.547 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:28:07.547 [main] INFO  com.cpms.base.BaseTest - Test Step: Testing PM tab access
-16:28:07.553 [main] INFO  com.cpms.pages.LoginPage - Logging in as Project Manager: pm@cpms.demo
-16:28:07.553 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: pm@cpms.demo
-16:28:07.553 [main] INFO  com.cpms.pages.LoginPage - Entering email: pm@cpms.demo
-16:28:07.781 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:28:08.100 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:28:23.653 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:28:25.781 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Settings]
-16:28:25.782 [main] INFO  com.cpms.base.BaseTest - Test Step: PM available tabs: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Settings]
-16:28:25.782 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Dashboard
-16:28:25.782 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Projects
-16:28:25.783 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: BOQ & Budget
-16:28:25.783 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Programme
-16:28:25.783 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: BI & Root Cause
-16:28:25.783 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Site
-16:28:25.783 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Quality & H&S
-16:28:25.784 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Documents
-16:28:25.784 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Comms Hub
-16:28:25.784 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Tiger Team
-16:28:25.784 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Reports
-16:28:25.785 [main] INFO  com.cpms.base.BaseTest - Test Step: PM CAN access: Settings
-16:28:25.785 [main] INFO  com.cpms.pages.DashboardPage - Logging out
-16:29:06.149 [main] ERROR com.cpms.pages.DashboardPage - Error during logout: Expected condition failed: waiting for url to contain "sign". Current url: "https://leaverageconstructionhub.vercel.app/" (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55575}, goog:processID: 13332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55575/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3612f909f03c6124b2ad5d1fc309ec12
-16:29:06.149 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:29:06.149 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:29:06.150 [main] INFO  com.cpms.base.BaseTest - Test Step: Testing QS tab access
-16:29:06.150 [main] INFO  com.cpms.pages.LoginPage - Logging in as Quantity Surveyor: qs@cpms.demo
-16:29:06.150 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: qs@cpms.demo
-16:29:06.150 [main] INFO  com.cpms.pages.LoginPage - Entering email: qs@cpms.demo
-16:29:06.368 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:29:06.560 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:29:21.786 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:29:22.241 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Comms Hub, Reports, Settings]
-16:29:22.241 [main] INFO  com.cpms.base.BaseTest - Test Step: QS available tabs: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Comms Hub, Reports, Settings]
-16:29:22.241 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: Dashboard
-16:29:22.241 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: Projects
-16:29:22.241 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: BOQ & Budget
-16:29:22.242 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: Programme
-16:29:22.242 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: BI & Root Cause
-16:29:22.242 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: Comms Hub
-16:29:22.243 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: Reports
-16:29:22.243 [main] INFO  com.cpms.base.BaseTest - Test Step: QS CAN access: Settings
-16:29:22.243 [main] INFO  com.cpms.pages.DashboardPage - Logging out
-16:30:02.871 [main] ERROR com.cpms.pages.DashboardPage - Error during logout: Expected condition failed: waiting for url to contain "sign". Current url: "https://leaverageconstructionhub.vercel.app/" (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55575}, goog:processID: 13332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55575/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3612f909f03c6124b2ad5d1fc309ec12
-16:30:02.873 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:30:02.873 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-16:30:02.873 [main] INFO  com.cpms.base.BaseTest - Test Step: Testing Client tab access
-16:30:02.873 [main] INFO  com.cpms.pages.LoginPage - Logging in as Client: client@cpms.demo
-16:30:02.873 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: client@cpms.demo
-16:30:02.873 [main] INFO  com.cpms.pages.LoginPage - Entering email: client@cpms.demo
-16:30:03.359 [main] INFO  com.cpms.pages.LoginPage - Entering password
-16:30:03.747 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-16:30:19.247 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-16:30:21.077 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:30:21.077 [main] INFO  com.cpms.base.BaseTest - Test Step: Client available tabs: [Dashboard, Projects, BOQ & Budget, Programme, Reports, Client Portal]
-16:30:21.077 [main] INFO  com.cpms.base.BaseTest - Test Step: Client CAN access: Dashboard
-16:30:21.077 [main] INFO  com.cpms.base.BaseTest - Test Step: Client CAN access: Projects
-16:30:21.077 [main] INFO  com.cpms.base.BaseTest - Test Step: Client CAN access: BOQ & Budget
-16:30:21.078 [main] INFO  com.cpms.base.BaseTest - Test Step: Client CAN access: Programme
-16:30:21.078 [main] INFO  com.cpms.base.BaseTest - Test Step: Client CAN access: Reports
-16:30:21.078 [main] INFO  com.cpms.base.BaseTest - Test Step: Client CAN access: Client Portal
-16:30:21.079 [main] INFO  com.cpms.base.BaseTest - Test Step: Role tab access verification test completed
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 4:27:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 4:27:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Oct 25, 2026 9:16:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

@@ -8,10 +8,9 @@
           <include name="classTeardown"/>
           <include name="suiteTeardown"/>
           <include name="suiteSetup"/>
-          <include name="testLogoutFunctionality"/>
           <include name="testTeardown"/>
-          <include name="testInvalidPasswordRejected"/>
           <include name="testSetup"/>
+          <include name="testRoleTabAccessVerification"/>
           <include name="classSetup"/>
         </methods>
       </class> <!-- com.cpms.tests.AuthenticationTests -->
