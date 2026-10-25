@@ -1,0 +1,4 @@
+com\cpms\api\CpmsApiTests.class
+com\cpms\tests\ProjectManagementTests.class
+com\cpms\tests\Cycle3FeatureTests.class
+com\cpms\tests\AuthenticationTests.class

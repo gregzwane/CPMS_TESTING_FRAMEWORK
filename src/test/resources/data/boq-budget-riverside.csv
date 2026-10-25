@@ -1,0 +1,7 @@
+item code,description,unit,quantity,unit rate
+E01.001,Site establishment and hoarding,item,1,185000
+E02.010,Bulk excavation to spoil,m3,12500,42.50
+E02.020,Import G6 fill and compact,m3,8200,78.00
+E03.015,100mm sub-base and primer,t,420,950.00
+E04.001,Asphalt base course 40mm,t,380,2100.00
+V01.001,Variation — rock excavation allowance,m3,450,125.00

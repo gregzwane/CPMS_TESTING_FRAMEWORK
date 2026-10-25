@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Cycle 1: Build Verification Smoke Tests -->
+<suite name="CPMS Cycle 1 - Smoke Tests" verbose="1">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="environment" value="local"/>
+
+    <listeners>
+        <listener class-name="com.cpms.utils.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Cycle 1 - Build Verification Smoke Tests">
+        <parameter name="testCycle" value="Cycle 1"/>
+        <parameter name="testType" value="smoke"/>
+
+        <classes>
+            <!-- Authentication Smoke Tests -->
+            <class name="com.cpms.tests.AuthenticationTests">
+                <methods>
+                    <include name="testDirectorLoginSuccess"/>
+                    <include name="testProjectManagerLoginSuccess"/>
+                    <include name="testQuantitySurveyorLoginSuccess"/>
+                    <include name="testClientLoginSuccess"/>
+                    <include name="testApiWakeUpSequence"/>
+                    <include name="testLogoutFunctionality"/>
+                </methods>
+            </class>
+
+            <!-- Project Management Smoke Tests -->
+            <class name="com.cpms.tests.ProjectManagementTests">
+                <methods>
+                    <include name="testRoleBasedProjectDashboard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CPMS Test Suite" verbose="1" parallel="tests" thread-count="3">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="environment" value="local"/>
+
+    <listeners>
+        <listener class-name="com.cpms.utils.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- Smoke Test Suite - Quick validation -->
+    <test name="Smoke Tests" priority="1">
+        <parameter name="testType" value="smoke"/>
+        <classes>
+            <class name="com.cpms.tests.AuthenticationTests">
+                <methods>
+                    <include name="testDirectorLoginSuccess"/>
+                    <include name="testProjectManagerLoginSuccess"/>
+                    <include name="testQuantitySurveyorLoginSuccess"/>
+                    <include name="testClientLoginSuccess"/>
+                    <include name="testApiWakeUpSequence"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Functional Test Suite - Core functionality -->
+    <test name="Functional Tests" priority="2">
+        <parameter name="testType" value="functional"/>
+        <classes>
+            <class name="com.cpms.tests.AuthenticationTests">
+                <methods>
+                    <include name="testInvalidPasswordRejected"/>
+                    <include name="testRequiredFieldValidation"/>
+                    <include name="testLoginPageUIElements"/>
+                    <include name="testLogoutFunctionality"/>
+                    <include name="testRoleBasedAccess"/>
+                </methods>
+            </class>
+            <class name="com.cpms.tests.ProjectManagementTests">
+                <methods>
+                    <include name="testProjectPackImport"/>
+                    <include name="testManualProjectCreation"/>
+                    <include name="testProjectFiltering"/>
+                    <include name="testProjectCreationValidation"/>
+                    <include name="testClientProjectAccessRestriction"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- API Test Suite - Backend services -->
+    <test name="API Tests" priority="3">
+        <parameter name="testType" value="api"/>
+        <classes>
+            <class name="com.cpms.api.CpmsApiTests">
+                <methods>
+                    <include name="testAuthenticationSuccess"/>
+                    <include name="testAuthenticationFailure"/>
+                    <include name="testGetProjects"/>
+                    <include name="testCreateProject"/>
+                    <include name="testCreateProjectValidation"/>
+                    <include name="testBoqImport"/>
+                    <include name="testApiSecurityUnauthenticated"/>
+                    <include name="testSqlInjectionPrevention"/>
+                    <include name="testMalformedJsonHandling"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Integration Test Suite - End-to-end flows -->
+    <test name="Integration Tests" priority="4">
+        <parameter name="testType" value="integration"/>
+        <classes>
+            <class name="com.cpms.tests.ProjectManagementTests">
+                <methods>
+                    <include name="testProjectGeolocationMapping"/>
+                    <include name="testProjectLocationUpdate"/>
+                    <include name="testProjectImportDocumentClassification"/>
+                    <include name="testRoleBasedProjectDashboard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Cycle 3 - Advanced Feature Workspaces -->
+    <test name="Cycle 3 Feature Tests" priority="5">
+        <parameter name="testType" value="cycle3"/>
+        <classes>
+            <class name="com.cpms.tests.Cycle3FeatureTests">
+                <methods>
+                    <include name="testBiWorkspaceAccess"/>
+                    <include name="testTigerTeamWorkspaceAccess"/>
+                    <include name="testSettingsWorkspaceAccess"/>
+                    <include name="testPmWorkspaceBoundaries"/>
+                    <include name="testQsWorkspaceBoundaries"/>
+                    <include name="testClientPortalRoleRestrictions"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Regression Test Suite - All tests -->
+    <test name="Regression Tests" priority="6" enabled="false">
+        <parameter name="testType" value="regression"/>
+        <packages>
+            <package name="com.cpms.tests"/>
+            <package name="com.cpms.api"/>
+        </packages>
+    </test>
+
+</suite>

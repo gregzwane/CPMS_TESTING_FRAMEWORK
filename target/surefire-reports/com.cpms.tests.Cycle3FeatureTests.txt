@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cpms.tests.Cycle3FeatureTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.88 s -- in com.cpms.tests.Cycle3FeatureTests

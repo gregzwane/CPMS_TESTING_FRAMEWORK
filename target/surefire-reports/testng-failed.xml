@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.cpms.tests.AuthenticationTests">
+        <methods>
+          <include name="classTeardown"/>
+          <include name="suiteTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="testLogoutFunctionality"/>
+          <include name="testTeardown"/>
+          <include name="testSetup"/>
+          <include name="classSetup"/>
+        </methods>
+      </class> <!-- com.cpms.tests.AuthenticationTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

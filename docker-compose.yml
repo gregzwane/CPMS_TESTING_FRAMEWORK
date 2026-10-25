@@ -1,0 +1,136 @@
+version: '3.8'
+
+services:
+  # Xvfb virtual display for headless testing (shared)
+  xvfb:
+    image: alpine:latest
+    container_name: cpms-xvfb
+    command: >
+      sh -c "apk add --no-cache xvfb && Xvfb :99 -screen 0 1920x1080x24 -ac +extension GLX +render -noreset"
+    tmpfs:
+      - /tmp/.X11-unix
+    networks:
+      - cpms-network
+
+  # Main test runner service
+  cpms-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-test-runner
+    depends_on:
+      - xvfb
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/AuthenticationTests.java"]
+
+  # Smoke tests runner (quick validation)
+  cpms-smoke:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-smoke-tests
+    depends_on:
+      - xvfb
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/AuthenticationTests.java"]
+
+  # Full functional test suite
+  cpms-functional:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-functional-tests
+    depends_on:
+      - xvfb
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-DsuiteXmlFile=src/test/resources/testng.xml"]
+
+  # API tests only
+  cpms-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-api-tests
+    environment:
+      - MAVEN_OPTS=-Xmx2g
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/surefire-reports:/app/target/surefire-reports
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/CpmsApiTests.java"]
+
+  # Allure report server
+  allure:
+    image: frankescobar/allure-docker-service:2.24.0
+    container_name: cpms-allure
+    environment:
+      - CHECK_RESULTS_EVERY_SECONDS=5
+      - KEEP_HISTORY=10
+      - PORT=5050
+    volumes:
+      - ./target/allure-results:/app/allure-results
+      - ./target/allure-report:/app/allure-report
+    ports:
+      - "5050:5050"
+    networks:
+      - cpms-network
+
+networks:
+  cpms-network:
+    driver: bridge
+    name: cpms-test-network
