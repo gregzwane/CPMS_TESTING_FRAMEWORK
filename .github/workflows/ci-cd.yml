@@ -150,8 +150,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: artifacts/allure-report-chrome-local/
-        publish_dir_edge: artifacts/allure-report-edge-local/
-        publish_dir_firefox: artifacts/allure-report-chrome-local/
+
 
   notify:
     runs-on: ubuntu-latest
