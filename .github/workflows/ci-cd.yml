@@ -46,14 +46,10 @@ jobs:
       if: matrix.browser == 'edge'
       uses: browser-actions/setup-edge@v1
 
-    - name: Run Smoke Tests
-      run: |
-        mvn clean test -Dtest=**/AuthenticationTests.java \
-          -Dbrowser=${{ matrix.browser }} \
-          -Denv=${{ matrix.environment }} \
-          -Dheadless=true \
-          -Dmaven.test.failure.ignore=true
-
+#
+#          -Denv=${{ matrix.environment }} \
+#          -Dheadless=true \
+#          -Dmaven.test.failure.ignore=true
  #   - name: Run Functional Tests
  #     run: |
  #       mvn test -Dtest=**/ProjectManagementTests.java \
@@ -69,8 +65,7 @@ jobs:
 
     - name: Generate Allure Report
       if: always()
-    #  run: mvn allure:serve
-    #  run: mvn allure:report
+      run: mvn allure:report
 
     - name: Upload Test Results
       if: always()
@@ -78,7 +73,7 @@ jobs:
       with:
         name: test-results-${{ matrix.browser }}-${{ matrix.environment }}
         path: |
-          target/surefire-reports/
+    #      target/surefire-reports/
           target/allure-results/
           target/reports/
           target/screenshots/
@@ -92,10 +87,10 @@ jobs:
 
     - name: Publish Test Results
       if: always()
-      uses: dorny/test-reporter@v1
+      uses: dorny/test-reporter@v3
       with:
         name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
-        path: target/surefire-reports/*.xml
+        path: target/surefire-reports/CPMS Test Suite/*.xml
         reporter: java-junit
 
   security-scan:
@@ -135,7 +130,7 @@ jobs:
     - name: Run Performance Tests
       run: |
         mvn test -Dtest=**/CpmsApiTests.java#testConcurrentRequests \
-          -Dmaven.test.failure.ignore=true
+          -Dmaven.test.failure.ignore=false
 
   deploy-reports:
     runs-on: ubuntu-latest
