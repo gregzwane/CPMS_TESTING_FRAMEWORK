@@ -70,7 +70,7 @@ jobs:
     - name: Generate Allure Report
       if: always()
     #  run: mvn allure:serve
-    #  run: mvn allure:report
+      run: mvn allure:report
 
     - name: Upload Test Results
       if: always()
