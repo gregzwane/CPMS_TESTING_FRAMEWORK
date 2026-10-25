@@ -73,7 +73,7 @@ jobs:
       with:
         name: test-results-${{ matrix.browser }}-${{ matrix.environment }}
         path: |
-    #      target/surefire-reports/
+          target/surefire-reports/
           target/allure-results/
           target/reports/
           target/screenshots/
@@ -87,7 +87,7 @@ jobs:
 
     - name: Publish Test Results
       if: always()
-      uses: dorny/test-reporter@v3
+      uses: dorny/test-reporter@v1
       with:
         name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
         path: target/surefire-reports/CPMS Test Suite/*.xml
