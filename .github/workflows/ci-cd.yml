@@ -93,7 +93,7 @@ jobs:
        # path: target/surefire-reports/CPMS Test Suite/*.xml
         path: target/surefire-reports/*.xml
         #reporter: java-junit
-        reporter: testng
+        reporter: testNG
 
 
   security-scan:
