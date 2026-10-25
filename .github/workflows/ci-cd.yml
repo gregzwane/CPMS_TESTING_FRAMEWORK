@@ -90,7 +90,8 @@ jobs:
       uses: dorny/test-reporter@v1
       with:
         name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
-        path: target/surefire-reports/CPMS Test Suite/*.xml
+       # path: target/surefire-reports/CPMS Test Suite/*.xml
+        path: target/surefire-reports/*.xml
         reporter: java-junit
 
 
