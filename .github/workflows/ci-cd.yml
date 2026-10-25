@@ -93,6 +93,7 @@ jobs:
         path: target/surefire-reports/CPMS Test Suite/*.xml
         reporter: java-junit
 
+
   security-scan:
     runs-on: ubuntu-latest
     steps:
