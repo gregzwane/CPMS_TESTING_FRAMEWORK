@@ -46,13 +46,13 @@ jobs:
       if: matrix.browser == 'edge'
       uses: browser-actions/setup-edge@v1
 
- #   - name: Run Smoke Tests
- #     run: |
- #       mvn clean test -Dtest=**/AuthenticationTests.java \
- #         -Dbrowser=${{ matrix.browser }} \
- #         -Denv=${{ matrix.environment }} \
- #         -Dheadless=true \
- #         -Dmaven.test.failure.ignore=true
+    - name: Run Smoke Tests
+      run: |
+        mvn clean test -Dtest=**/AuthenticationTests.java \
+          -Dbrowser=${{ matrix.browser }} \
+          -Denv=${{ matrix.environment }} \
+          -Dheadless=true \
+          -Dmaven.test.failure.ignore=true
 
  #   - name: Run Functional Tests
  #     run: |
@@ -69,7 +69,8 @@ jobs:
 
     - name: Generate Allure Report
       if: always()
-      run: mvn allure:report
+      run: mvn allure:serve
+    #  run: mvn allure:report
 
     - name: Upload Test Results
       if: always()

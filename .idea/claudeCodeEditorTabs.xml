@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClaudeCodeEditorTabs">
+    <option name="activeSessionId" value="84f14cd2-05b6-4039-902f-65f23d45df88" />
+    <option name="openSessionIds">
+      <list>
+        <option value="84f14cd2-05b6-4039-902f-65f23d45df88" />
+        <option value="fbe03d90-cdb8-4b6d-b67d-a8b7b69bff2d" />
+      </list>
+    </option>
+    <option name="sessionPaths">
+      <map>
+        <entry key="84f14cd2-05b6-4039-902f-65f23d45df88" value="/sessions/7447c503-df1a-4b37-8ad5-a5963756b1d0" />
+        <entry key="fbe03d90-cdb8-4b6d-b67d-a8b7b69bff2d" value="/sessions/new" />
+      </map>
+    </option>
+    <option name="sessionTitles">
+      <map>
+        <entry key="84f14cd2-05b6-4039-902f-65f23d45df88" value="Set up Docker CI/CD pipeline" />
+        <entry key="fbe03d90-cdb8-4b6d-b67d-a8b7b69bff2d" value="Claude Code" />
+      </map>
+    </option>
+  </component>
+</project>

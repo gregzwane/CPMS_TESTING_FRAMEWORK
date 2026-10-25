@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="188.536" tests="15" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="290.275" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe"/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ZA"/>
     <property name="sun.boot.library.path" value="C:\Java\jdk-21.0.12.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire15118227733673450211\surefirebooter-20261025154920263_3.jar C:\Users\Gregory Zwane\AppData\Local\Temp\surefire15118227733673450211 2026-10-25T15-49-15_177-jvmRun1 surefire-20261025154920263_1tmp surefire_0-20261025154920263_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire1668634342505908641\surefirebooter-20261025161121562_3.jar C:\Users\Gregory Zwane\AppData\Local\Temp\surefire1668634342505908641 2026-10-25T16-11-17_582-jvmRun1 surefire-20261025161121562_1tmp surefire_0-20261025161121562_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="**/AuthenticationTests.java#testDirectorLoginSuccess,**/AuthenticationTests.java#testInvalidPasswordRejected,**/AuthenticationTests.java#testLogoutFunctionality,**/CpmsApiTests.java"/>
+    <property name="test" value="**/AuthenticationTests.java#testDirectorLoginSuccess,**/AuthenticationTests.java#testInvalidPasswordRejected,**/AuthenticationTests.java#testLogoutFunctionality,**/CpmsApiTests.java,**/Cycle3FeatureTests.java#testBiWorkspaceAccess"/>
     <property name="surefire.test.class.path" value="C:\Development\Selenium\CPMS_Testing_Framework\target\test-classes;C:\Development\Selenium\CPMS_Testing_Framework\target\classes;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gregory Zwane\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gregory Zwane\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Gregory Zwane\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Gregory Zwane\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gregory Zwane\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Gregory Zwane\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;"/>
     <property name="allure.results.directory" value="C:\Development\Selenium\CPMS_Testing_Framework\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire15118227733673450211\surefirebooter-20261025154920263_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire1668634342505908641\surefirebooter-20261025161121562_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-LTS-4"/>
@@ -63,7 +63,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAuthenticationSuccess" classname="com.cpms.api.CpmsApiTests" time="9.631">
+  <testcase name="testAuthenticationSuccess" classname="com.cpms.api.CpmsApiTests" time="42.451">
     <system-out><![CDATA[ERROR StatusConsoleListener Could not create plugin of type class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile
  org.apache.logging.log4j.core.config.ConfigurationException: Configuration has multiple incompatible Appenders pointing to the same resource 'target/logs/cpms-tests.log'
 	at org.apache.logging.log4j.core.appender.AbstractManager.narrow(AbstractManager.java:200)
@@ -132,112 +132,112 @@ ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger c
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "io.restassured"
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "org.apache.http"
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "com.cpms"
-15:49:33.047 [main] INFO  com.cpms.base.BaseTest - Starting CPMS Test Suite
-15:49:33.065 [main] INFO  com.cpms.config.ConfigManager - Configuration properties loaded successfully
-15:49:34.057 [main] INFO  com.cpms.utils.ExtentManager - ExtentReports initialized. Report will be saved to: target/reports/CPMS_Test_Report_2026-10-25_15-49-33.html
-15:49:34.737 [main] INFO  com.cpms.api.CpmsApiTests - API tests setup completed
-15:49:34.869 [main] INFO  com.cpms.api.CpmsApiTests - Testing API authentication with valid credentials
-15:49:42.186 [main] INFO  com.cpms.api.CpmsApiTests - Login response status: 200
-15:49:44.189 [main] INFO  com.cpms.api.CpmsApiTests - Authentication successful, token acquired
+16:11:51.269 [main] INFO  com.cpms.base.BaseTest - Starting CPMS Test Suite
+16:11:51.279 [main] INFO  com.cpms.config.ConfigManager - Configuration properties loaded successfully
+16:11:54.275 [main] INFO  com.cpms.utils.ExtentManager - ExtentReports initialized. Report will be saved to: target/reports/CPMS_Test_Report_2026-10-25_16-11-51.html
+16:11:54.570 [main] INFO  com.cpms.api.CpmsApiTests - API tests setup completed
+16:11:55.011 [main] INFO  com.cpms.api.CpmsApiTests - Testing API authentication with valid credentials
+16:12:34.240 [main] INFO  com.cpms.api.CpmsApiTests - Login response status: 200
+16:12:36.851 [main] INFO  com.cpms.api.CpmsApiTests - Authentication successful, token acquired
 ]]></system-out>
   </testcase>
-  <testcase name="testAuthenticationFailure" classname="com.cpms.api.CpmsApiTests" time="0.436">
-    <system-out><![CDATA[15:49:44.424 [main] INFO  com.cpms.api.CpmsApiTests - Testing API authentication with invalid credentials
-15:49:44.846 [main] INFO  com.cpms.api.CpmsApiTests - Authentication failure test completed - status: 400
+  <testcase name="testAuthenticationFailure" classname="com.cpms.api.CpmsApiTests" time="0.622">
+    <system-out><![CDATA[16:12:37.239 [main] INFO  com.cpms.api.CpmsApiTests - Testing API authentication with invalid credentials
+16:12:37.860 [main] INFO  com.cpms.api.CpmsApiTests - Authentication failure test completed - status: 400
 ]]></system-out>
   </testcase>
-  <testcase name="testGetProjects" classname="com.cpms.api.CpmsApiTests" time="1.435">
-    <system-out><![CDATA[15:49:44.864 [main] INFO  com.cpms.api.CpmsApiTests - Testing GET projects API
-15:49:45.720 [main] INFO  com.cpms.api.CpmsApiTests - Projects API response status: 200
-15:49:46.288 [main] INFO  com.cpms.api.CpmsApiTests - Projects list API test completed
+  <testcase name="testGetProjects" classname="com.cpms.api.CpmsApiTests" time="2.798">
+    <system-out><![CDATA[16:12:37.872 [main] INFO  com.cpms.api.CpmsApiTests - Testing GET projects API
+16:12:38.540 [main] INFO  com.cpms.api.CpmsApiTests - Projects API response status: 200
+16:12:40.663 [main] INFO  com.cpms.api.CpmsApiTests - Projects list API test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateProject" classname="com.cpms.api.CpmsApiTests" time="1.798">
-    <system-out><![CDATA[15:49:46.311 [main] INFO  com.cpms.api.CpmsApiTests - Testing POST create project API
-15:49:47.641 [main] INFO  com.cpms.api.CpmsApiTests - Create project API response status: 201
-15:49:47.746 [main] INFO  com.cpms.api.CpmsApiTests - Project creation API test completed
+  <testcase name="testCreateProject" classname="com.cpms.api.CpmsApiTests" time="1.463">
+    <system-out><![CDATA[16:12:40.674 [main] INFO  com.cpms.api.CpmsApiTests - Testing POST create project API
+16:12:42.043 [main] INFO  com.cpms.api.CpmsApiTests - Create project API response status: 201
+16:12:42.129 [main] INFO  com.cpms.api.CpmsApiTests - Project creation API test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateProjectValidation" classname="com.cpms.api.CpmsApiTests" time="0.433">
-    <system-out><![CDATA[15:49:48.098 [main] INFO  com.cpms.api.CpmsApiTests - Testing project creation validation
-15:49:48.502 [main] INFO  com.cpms.api.CpmsApiTests - Project validation API response status: 400
-15:49:48.524 [main] INFO  com.cpms.api.CpmsApiTests - Project validation API test completed
+  <testcase name="testCreateProjectValidation" classname="com.cpms.api.CpmsApiTests" time="0.474">
+    <system-out><![CDATA[16:12:42.205 [main] INFO  com.cpms.api.CpmsApiTests - Testing project creation validation
+16:12:42.614 [main] INFO  com.cpms.api.CpmsApiTests - Project validation API response status: 400
+16:12:42.642 [main] INFO  com.cpms.api.CpmsApiTests - Project validation API test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testBoqImport" classname="com.cpms.api.CpmsApiTests" time="0.661">
-    <system-out><![CDATA[15:49:48.538 [main] INFO  com.cpms.api.CpmsApiTests - Testing BOQ import API
-15:49:49.182 [main] INFO  com.cpms.api.CpmsApiTests - BOQ import API response status: 415
-15:49:49.182 [main] WARN  com.cpms.api.CpmsApiTests - BOQ import endpoint returned 415 (may not be implemented or requires different format)
-15:49:49.182 [main] INFO  com.cpms.api.CpmsApiTests - BOQ import API test completed
+  <testcase name="testBoqImport" classname="com.cpms.api.CpmsApiTests" time="0.883">
+    <system-out><![CDATA[16:12:42.651 [main] INFO  com.cpms.api.CpmsApiTests - Testing BOQ import API
+16:12:43.521 [main] INFO  com.cpms.api.CpmsApiTests - BOQ import API response status: 415
+16:12:43.522 [main] WARN  com.cpms.api.CpmsApiTests - BOQ import endpoint returned 415 (may not be implemented or requires different format)
+16:12:43.522 [main] INFO  com.cpms.api.CpmsApiTests - BOQ import API test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testApiSecurityUnauthenticated" classname="com.cpms.api.CpmsApiTests" time="0.628">
-    <system-out><![CDATA[15:49:49.203 [main] INFO  com.cpms.api.CpmsApiTests - Testing API security - unauthenticated access
-15:49:49.789 [main] INFO  com.cpms.api.CpmsApiTests - Unauthenticated API response status: 200
-15:49:49.789 [main] WARN  com.cpms.api.CpmsApiTests - Backend currently allows unauthenticated access to /projects - security gap noted
-15:49:49.813 [main] INFO  com.cpms.api.CpmsApiTests - API security test completed - current behavior: UNAUTHENTICATED_ALLOWED
+  <testcase name="testApiSecurityUnauthenticated" classname="com.cpms.api.CpmsApiTests" time="0.586">
+    <system-out><![CDATA[16:12:43.530 [main] INFO  com.cpms.api.CpmsApiTests - Testing API security - unauthenticated access
+16:12:44.088 [main] INFO  com.cpms.api.CpmsApiTests - Unauthenticated API response status: 200
+16:12:44.088 [main] WARN  com.cpms.api.CpmsApiTests - Backend currently allows unauthenticated access to /projects - security gap noted
+16:12:44.118 [main] INFO  com.cpms.api.CpmsApiTests - API security test completed - current behavior: UNAUTHENTICATED_ALLOWED
 ]]></system-out>
   </testcase>
-  <testcase name="testSqlInjectionPrevention" classname="com.cpms.api.CpmsApiTests" time="0.183">
-    <system-out><![CDATA[15:49:49.828 [main] INFO  com.cpms.api.CpmsApiTests - Testing SQL injection prevention
-15:49:49.994 [main] INFO  com.cpms.api.CpmsApiTests - SQL injection test response status: 403
-15:49:49.995 [main] INFO  com.cpms.api.CpmsApiTests - SQL injection prevention test completed
+  <testcase name="testSqlInjectionPrevention" classname="com.cpms.api.CpmsApiTests" time="0.158">
+    <system-out><![CDATA[16:12:44.128 [main] INFO  com.cpms.api.CpmsApiTests - Testing SQL injection prevention
+16:12:44.262 [main] INFO  com.cpms.api.CpmsApiTests - SQL injection test response status: 403
+16:12:44.263 [main] INFO  com.cpms.api.CpmsApiTests - SQL injection prevention test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testMalformedJsonHandling" classname="com.cpms.api.CpmsApiTests" time="0.411">
-    <system-out><![CDATA[15:49:50.008 [main] INFO  com.cpms.api.CpmsApiTests - Testing malformed JSON handling
-15:49:50.419 [main] INFO  com.cpms.api.CpmsApiTests - Malformed JSON handling response status: 400
-15:49:50.420 [main] INFO  com.cpms.api.CpmsApiTests - Malformed JSON handling test completed
+  <testcase name="testMalformedJsonHandling" classname="com.cpms.api.CpmsApiTests" time="0.433">
+    <system-out><![CDATA[16:12:44.289 [main] INFO  com.cpms.api.CpmsApiTests - Testing malformed JSON handling
+16:12:44.716 [main] INFO  com.cpms.api.CpmsApiTests - Malformed JSON handling response status: 400
+16:12:44.718 [main] INFO  com.cpms.api.CpmsApiTests - Malformed JSON handling test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testConsistentErrorFormat" classname="com.cpms.api.CpmsApiTests" time="0.857">
-    <system-out><![CDATA[15:49:50.427 [main] INFO  com.cpms.api.CpmsApiTests - Testing consistent error format
-15:49:51.273 [main] INFO  com.cpms.api.CpmsApiTests - Validation error status: 400, Not found status: 400
-15:49:51.273 [main] INFO  com.cpms.api.CpmsApiTests - Consistent error format test completed
+  <testcase name="testConsistentErrorFormat" classname="com.cpms.api.CpmsApiTests" time="0.989">
+    <system-out><![CDATA[16:12:44.725 [main] INFO  com.cpms.api.CpmsApiTests - Testing consistent error format
+16:12:45.640 [main] INFO  com.cpms.api.CpmsApiTests - Validation error status: 400, Not found status: 400
+16:12:45.640 [main] INFO  com.cpms.api.CpmsApiTests - Consistent error format test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testConcurrentRequests" classname="com.cpms.api.CpmsApiTests" time="1.306">
-    <system-out><![CDATA[15:49:51.285 [main] INFO  com.cpms.api.CpmsApiTests - Testing concurrent API requests
-15:49:52.584 [main] INFO  com.cpms.api.CpmsApiTests - Concurrent requests completed in 1299 ms
-15:49:52.585 [main] INFO  com.cpms.api.CpmsApiTests - Successful requests: 5/5
-15:49:52.585 [main] INFO  com.cpms.api.CpmsApiTests - Concurrent requests test completed
+  <testcase name="testConcurrentRequests" classname="com.cpms.api.CpmsApiTests" time="1.415">
+    <system-out><![CDATA[16:12:45.765 [main] INFO  com.cpms.api.CpmsApiTests - Testing concurrent API requests
+16:12:47.119 [main] INFO  com.cpms.api.CpmsApiTests - Concurrent requests completed in 1351 ms
+16:12:47.119 [main] INFO  com.cpms.api.CpmsApiTests - Successful requests: 5/5
+16:12:47.121 [main] INFO  com.cpms.api.CpmsApiTests - Concurrent requests test completed
 ]]></system-out>
   </testcase>
-  <testcase name="testJwtTokenExpiry" classname="com.cpms.api.CpmsApiTests" time="1.612">
-    <system-out><![CDATA[15:49:52.591 [main] INFO  com.cpms.api.CpmsApiTests - Testing JWT token expiry handling
-15:49:54.177 [main] INFO  com.cpms.api.CpmsApiTests - Expired token response status: 200
-15:49:54.177 [main] WARN  com.cpms.api.CpmsApiTests - Backend does not validate token expiry - security gap noted
-15:49:54.197 [main] INFO  com.cpms.api.CpmsApiTests - JWT token expiry test completed - current behavior: EXPIRY_NOT_VALIDATED
+  <testcase name="testJwtTokenExpiry" classname="com.cpms.api.CpmsApiTests" time="2.476">
+    <system-out><![CDATA[16:12:47.145 [main] INFO  com.cpms.api.CpmsApiTests - Testing JWT token expiry handling
+16:12:49.565 [main] INFO  com.cpms.api.CpmsApiTests - Expired token response status: 200
+16:12:49.565 [main] WARN  com.cpms.api.CpmsApiTests - Backend does not validate token expiry - security gap noted
+16:12:49.606 [main] INFO  com.cpms.api.CpmsApiTests - JWT token expiry test completed - current behavior: EXPIRY_NOT_VALIDATED
 ]]></system-out>
   </testcase>
-  <testcase name="testDirectorLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="34.725">
-    <system-out><![CDATA[15:49:54.203 [main] INFO  com.cpms.base.BaseTest - Setting up test class: AuthenticationTests
-15:49:54.208 [main] INFO  com.cpms.base.BaseTest - Starting test: testDirectorLoginSuccess
-15:50:00.274 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-15:50:01.587 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-15:50:01.667 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Director login test
-15:50:01.853 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-15:50:01.869 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-15:50:05.478 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing Director login
-15:50:05.478 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-15:50:05.480 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-15:50:05.480 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-15:50:05.812 [main] INFO  com.cpms.pages.LoginPage - Entering password
-15:50:06.030 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-15:50:21.660 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-15:50:21.712 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
-15:50:21.743 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-15:50:35.282 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
-15:50:35.337 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-15:50:35.341 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying Director role access
-15:50:35.349 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-15:50:35.376 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-15:50:35.513 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+  <testcase name="testDirectorLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="39.335">
+    <system-out><![CDATA[16:12:49.615 [main] INFO  com.cpms.base.BaseTest - Setting up test class: AuthenticationTests
+16:12:49.621 [main] INFO  com.cpms.base.BaseTest - Starting test: testDirectorLoginSuccess
+16:12:58.982 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+16:13:00.033 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+16:13:00.176 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Director login test
+16:13:00.263 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+16:13:00.277 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:13:04.138 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing Director login
+16:13:04.138 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+16:13:04.138 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+16:13:04.138 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+16:13:04.627 [main] INFO  com.cpms.pages.LoginPage - Entering password
+16:13:04.887 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+16:13:21.704 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+16:13:23.022 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
+16:13:23.172 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:13:37.321 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
+16:13:37.597 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
+16:13:37.604 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying Director role access
+16:13:37.624 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+16:13:37.639 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+16:13:37.930 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-15:50:35
+16:13:36
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -246,15 +246,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-15:50:35.551 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
-15:50:35.565 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-15:50:35.578 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-15:50:35.711 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+16:13:38.008 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
+16:13:38.022 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+16:13:38.075 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+16:13:38.295 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-15:50:35
+16:13:37
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -263,15 +263,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-15:50:35.763 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
-15:50:35.770 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-15:50:35.778 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-15:50:35.899 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+16:13:38.343 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
+16:13:38.356 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+16:13:38.370 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+16:13:38.679 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-15:50:35
+16:13:37
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -280,15 +280,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-15:50:35.955 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=true
-15:50:35.967 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-15:50:35.979 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-15:50:36.105 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+16:13:38.813 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=true
+16:13:38.837 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+16:13:38.847 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+16:13:39.063 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-15:50:35
+16:13:38
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -297,15 +297,15 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-15:50:36.154 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-15:50:36.165 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-15:50:36.177 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-15:50:36.311 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+16:13:39.172 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
+16:13:39.187 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+16:13:39.197 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+16:13:39.376 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-15:50:36
+16:13:38
 ACTIVE PROJECT
 001 — civil
 API-TEST-001 — API Test Project (no map pin)
@@ -314,120 +314,129 @@ API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
 API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
 API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
 API-TEST-1792864201673 — API Test Project 1792864201673 (no
-15:50:36.352 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-15:50:36.352 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=true, bi=true, tiger=true, projects=true, commercial=true
-15:50:36.352 [main] INFO  com.cpms.base.BaseTest - Test Step: Director login test completed successfully
+16:13:39.489 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
+16:13:39.489 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=true, bi=true, tiger=true, projects=true, commercial=true
+16:13:39.491 [main] INFO  com.cpms.base.BaseTest - Test Step: Director login test completed successfully
 ]]></system-out>
     <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 3:49:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Oct 25, 2026 4:12:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 3:49:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Oct 25, 2026 4:12:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidPasswordRejected" classname="com.cpms.tests.AuthenticationTests" time="34.106">
-    <system-out><![CDATA[15:50:36.363 [main] INFO  com.cpms.base.BaseTest - Test passed: testDirectorLoginSuccess
-15:50:37.094 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-15:50:37.097 [main] INFO  com.cpms.base.BaseTest - Starting test: testInvalidPasswordRejected
-15:50:42.886 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-15:50:43.866 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-15:50:43.878 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting invalid password test
-15:50:43.880 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-15:50:43.912 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-15:50:47.237 [main] INFO  com.cpms.base.BaseTest - Test Step: Attempting login with invalid password
-15:50:47.237 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-15:50:47.509 [main] INFO  com.cpms.pages.LoginPage - Entering password
-15:50:47.691 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-15:50:47.879 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login failure
-15:50:47.890 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-15:50:51.333 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=true, result=false
-15:51:04.394 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-15:51:07.902 [main] INFO  com.cpms.base.BaseTest - Test Step: Error displayed: false, Still on login: true
-15:51:17.967 [main] INFO  com.cpms.base.BaseTest - Test Step: Error message: ''
-15:51:17.967 [main] INFO  com.cpms.base.BaseTest - Test Step: Invalid password test completed - error properly shown
+  <testcase name="testInvalidPasswordRejected" classname="com.cpms.tests.AuthenticationTests" time="37.913">
+    <system-out><![CDATA[16:13:39.517 [main] INFO  com.cpms.base.BaseTest - Test passed: testDirectorLoginSuccess
+16:13:40.345 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+16:13:40.352 [main] INFO  com.cpms.base.BaseTest - Starting test: testInvalidPasswordRejected
+16:13:46.955 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+16:13:50.219 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+16:13:50.474 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting invalid password test
+16:13:50.499 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+16:13:51.157 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:13:55.258 [main] INFO  com.cpms.base.BaseTest - Test Step: Attempting login with invalid password
+16:13:55.258 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+16:13:55.866 [main] INFO  com.cpms.pages.LoginPage - Entering password
+16:13:56.704 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+16:13:57.047 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login failure
+16:13:57.061 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:14:01.470 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=true, result=false
+16:14:14.522 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:14:18.065 [main] INFO  com.cpms.base.BaseTest - Test Step: Error displayed: false, Still on login: true
+16:14:28.119 [main] INFO  com.cpms.base.BaseTest - Test Step: Error message: ''
+16:14:28.119 [main] INFO  com.cpms.base.BaseTest - Test Step: Invalid password test completed - error properly shown
 ]]></system-out>
     <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 3:50:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Oct 25, 2026 4:13:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 3:50:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Oct 25, 2026 4:13:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testLogoutFunctionality" classname="com.cpms.tests.AuthenticationTests" time="67.048">
-    <failure message="Should redirect to login when accessing protected page after logout expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Should redirect to login when accessing protected page after logout expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.cpms.tests.AuthenticationTests.testLogoutFunctionality(AuthenticationTests.java:234)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[15:51:17.982 [main] INFO  com.cpms.base.BaseTest - Test passed: testInvalidPasswordRejected
-15:51:18.981 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
-15:51:18.984 [main] INFO  com.cpms.base.BaseTest - Starting test: testLogoutFunctionality
-15:51:21.937 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-15:51:23.234 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-15:51:23.258 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting logout functionality test
-15:51:23.258 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-15:51:23.258 [main] INFO  com.cpms.base.BaseTest - Test Step: Logging in as Director
-15:51:23.258 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-15:51:23.258 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-15:51:23.258 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-15:51:24.045 [main] INFO  com.cpms.pages.LoginPage - Entering password
-15:51:24.237 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-15:51:39.543 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-15:51:39.595 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-15:51:39.595 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing logout
-15:51:39.595 [main] INFO  com.cpms.pages.DashboardPage - Logging out
-15:52:20.205 [main] ERROR com.cpms.pages.DashboardPage - Error during logout: Expected condition failed: waiting for url to contain "sign". Current url: "https://leaverageconstructionhub.vercel.app/" (tried for 30 second(s) with 500 milliseconds interval)
+  <testcase name="testLogoutFunctionality" classname="com.cpms.tests.AuthenticationTests" time="74.595">
+    <system-out><![CDATA[16:14:28.136 [main] INFO  com.cpms.base.BaseTest - Test passed: testInvalidPasswordRejected
+16:14:28.581 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+16:14:28.585 [main] INFO  com.cpms.base.BaseTest - Starting test: testLogoutFunctionality
+16:14:34.376 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+16:14:35.809 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+16:14:35.834 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting logout functionality test
+16:14:35.838 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+16:14:35.839 [main] INFO  com.cpms.base.BaseTest - Test Step: Logging in as Director
+16:14:35.840 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+16:14:35.843 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+16:14:35.843 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+16:14:36.688 [main] INFO  com.cpms.pages.LoginPage - Entering password
+16:14:36.949 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+16:14:52.924 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+16:14:53.229 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
+16:14:53.229 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing logout
+16:14:53.229 [main] INFO  com.cpms.pages.DashboardPage - Logging out
+16:15:33.992 [main] ERROR com.cpms.pages.DashboardPage - Error during logout: Expected condition failed: waiting for url to contain "sign". Current url: "https://leaverageconstructionhub.vercel.app/" (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63775}, goog:processID: 16484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63775/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af985600116d18d69ff053193b5d5c6a
-15:52:20.205 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-15:52:20.205 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying logout success
-15:52:20.220 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-15:52:23.674 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying session is ended
-15:52:23.689 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-15:52:27.024 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying session cannot access protected resources
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50502}, goog:processID: 19096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50502/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1090dbb0054908c019446546ad267256
+16:15:33.996 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+16:15:33.996 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying logout success
+16:15:34.009 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:15:37.739 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying session is ended
+16:15:37.750 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:15:42.180 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying session cannot access root after logout
+16:15:46.395 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+16:15:50.421 [main] INFO  com.cpms.base.BaseTest - Test Step: Logout functionality test completed
 ]]></system-out>
     <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 3:51:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Oct 25, 2026 4:14:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 3:51:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Oct 25, 2026 4:14:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testBiWorkspaceAccess" classname="com.cpms.tests.Cycle3FeatureTests" time="17.435">
+    <system-out><![CDATA[16:15:50.436 [main] INFO  com.cpms.base.BaseTest - Test passed: testLogoutFunctionality
+16:15:50.871 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+16:15:50.874 [main] INFO  com.cpms.base.BaseTest - Tearing down test class: AuthenticationTests
+16:15:50.874 [main] INFO  com.cpms.base.BaseTest - Setting up test class: Cycle3FeatureTests
+16:15:50.874 [main] INFO  com.cpms.base.BaseTest - Starting test: testBiWorkspaceAccess
+16:15:57.399 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+16:16:00.458 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+16:16:00.476 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting BI workspace access test
+16:16:00.478 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+16:16:00.478 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+16:16:00.478 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+16:16:00.478 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+16:16:01.629 [main] INFO  com.cpms.pages.LoginPage - Entering password
+16:16:01.886 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+16:16:17.356 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+16:16:17.431 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying BI tab is accessible for Director
+16:16:17.448 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+16:16:17.466 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+16:16:17.774 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+16:16:17
+ACTIVE PROJECT
+001 — civil
+API-TEST-001 — API Test Project (no map pin)
+API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
+API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
+API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
+API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
+API-TEST-1792864201673 — API Test Project 1792864201673 (no
+16:16:17.883 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
+16:16:17.884 [main] INFO  com.cpms.base.BaseTest - Test Step: BI workspace access test completed
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
+Oct 25, 2026 4:15:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 25, 2026 4:15:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
