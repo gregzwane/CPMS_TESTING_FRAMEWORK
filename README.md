@@ -131,7 +131,7 @@ assert dashboardPage.isApiLive();
 ```properties
 # config.properties
 local.url=https://leaverageconstructionhub.vercel.app/
-staging.url=https://leaverageconstructionhub-staging.vercel.app/
+staging.url=https://leaverageconstructionhub.vercel.app/
 api.base.url=https://cpms-api-l3o7.onrender.com
 
 # Test credentials
