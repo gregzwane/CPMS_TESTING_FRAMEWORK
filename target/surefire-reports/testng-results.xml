@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-25T21:16:26 SAST" name="Surefire suite" finished-at="2026-10-25T21:17:43 SAST" duration-ms="76863">
+  <suite started-at="2026-10-26T21:05:07 SAST" name="Surefire suite" finished-at="2026-10-26T21:09:57 SAST" duration-ms="289646">
     <groups>
     </groups>
-    <test started-at="2026-10-25T21:16:26 SAST" name="Surefire test" finished-at="2026-10-25T21:17:43 SAST" duration-ms="76863">
+    <test started-at="2026-10-26T21:05:07 SAST" name="Surefire test" finished-at="2026-10-26T21:09:57 SAST" duration-ms="289646">
       <class name="com.cpms.tests.AuthenticationTests">
-        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:com.cpms.tests.AuthenticationTests@d325518]" started-at="2026-10-25T21:16:25 SAST" name="suiteSetup" finished-at="2026-10-25T21:16:26 SAST" duration-ms="1186" status="PASS">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:com.cpms.tests.AuthenticationTests@459003a0]" started-at="2026-10-26T21:05:05 SAST" name="suiteSetup" finished-at="2026-10-26T21:05:07 SAST" duration-ms="2280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method is-config="true" signature="classSetup()[pri:0, instance:com.cpms.tests.AuthenticationTests@d325518]" started-at="2026-10-25T21:16:26 SAST" name="classSetup" finished-at="2026-10-25T21:16:26 SAST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:com.cpms.tests.AuthenticationTests@459003a0]" started-at="2026-10-26T21:05:07 SAST" name="classSetup" finished-at="2026-10-26T21:05:07 SAST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@d325518]" started-at="2026-10-25T21:16:26 SAST" name="testSetup" finished-at="2026-10-25T21:16:40 SAST" duration-ms="13214" status="PASS">
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.AuthenticationTests@459003a0]" started-at="2026-10-26T21:05:07 SAST" name="testSetup" finished-at="2026-10-26T21:05:20 SAST" duration-ms="12540" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,26 +26,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="testDirectorLoginSuccess()[pri:1, instance:com.cpms.tests.AuthenticationTests@d325518]" started-at="2026-10-25T21:16:40 SAST" name="testDirectorLoginSuccess" description="Director login succeeds with valid credentials" finished-at="2026-10-25T21:17:34 SAST" duration-ms="54640" status="PASS">
+        <test-method signature="testDirectorLoginSuccess()[pri:1, instance:com.cpms.tests.AuthenticationTests@459003a0]" started-at="2026-10-26T21:05:20 SAST" name="testDirectorLoginSuccess" description="Director login succeeds with valid credentials" finished-at="2026-10-26T21:09:29 SAST" duration-ms="248601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDirectorLoginSuccess -->
-        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@d325518]" started-at="2026-10-25T21:17:35 SAST" name="testTeardown" finished-at="2026-10-25T21:17:43 SAST" duration-ms="8114" status="PASS">
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.AuthenticationTests@459003a0]" started-at="2026-10-26T21:09:30 SAST" name="testTeardown" finished-at="2026-10-26T21:09:57 SAST" duration-ms="26677" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testDirectorLoginSuccess status=SUCCESS method=AuthenticationTests.testDirectorLoginSuccess()[pri:1, instance:com.cpms.tests.AuthenticationTests@d325518] output={null}]]]>
+                <![CDATA[[TestResult name=testDirectorLoginSuccess status=SUCCESS method=AuthenticationTests.testDirectorLoginSuccess()[pri:1, instance:com.cpms.tests.AuthenticationTests@459003a0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTeardown -->
-        <test-method is-config="true" signature="classTeardown()[pri:0, instance:com.cpms.tests.AuthenticationTests@d325518]" started-at="2026-10-25T21:17:43 SAST" name="classTeardown" finished-at="2026-10-25T21:17:43 SAST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:com.cpms.tests.AuthenticationTests@459003a0]" started-at="2026-10-26T21:09:57 SAST" name="classTeardown" finished-at="2026-10-26T21:09:57 SAST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTeardown -->
-        <test-method is-config="true" signature="suiteTeardown()[pri:0, instance:com.cpms.tests.AuthenticationTests@d325518]" started-at="2026-10-25T21:17:43 SAST" name="suiteTeardown" finished-at="2026-10-25T21:17:45 SAST" duration-ms="1704" status="PASS">
+        <test-method is-config="true" signature="suiteTeardown()[pri:0, instance:com.cpms.tests.AuthenticationTests@459003a0]" started-at="2026-10-26T21:09:57 SAST" name="suiteTeardown" finished-at="2026-10-26T21:09:59 SAST" duration-ms="2368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTeardown -->

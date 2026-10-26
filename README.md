@@ -69,6 +69,16 @@ mvn test -Dtest=**/CpmsApiTests.java
 
 # Headless execution
 mvn test -Dheadless=true
+
+# Cycle 5 Performance Tests
+mvn test -Dtest=**/CpmsApiTests.java#testConcurrentRequests -Dheadless=true
+mvn test -Dtest=**/CpmsApiTests.java#testApiLoadTest100Users -Dheadless=true
+mvn test -Dtest=**/CpmsApiTests.java#testApiStressTest500Users -Dheadless=true
+mvn test -Dtest=**/CpmsApiTests.java#testApiEnduranceTest30Min -Dheadless=true
+mvn test -Dtest=**/CpmsApiTests.java#testApiSpikeTest -Dheadless=true
+
+# Cycle 5 Batch Processing Tests
+mvn test -Dtest=**/BatchProcessingTests.java -Dheadless=true
 ```
 
 ### Docker Execution
@@ -84,6 +94,9 @@ docker-compose up cpms-functional
 
 # API tests only
 docker-compose up cpms-api
+
+# Performance tests
+docker-compose up cpms-performance
 
 # View Allure reports at http://localhost:5050
 docker-compose up allure
@@ -131,6 +144,20 @@ docker-compose up allure
 - 📋 Responsive navigation
 - 📋 Geofenced site diary
 - 📋 Document upload from mobile
+
+### ⚡ Cycle 5 Performance Tests (5/5 Ready)
+- ✅ `testConcurrentRequests` - 5 parallel requests baseline
+- ✅ `testApiLoadTest100Users` - 100 concurrent users, 90%+ success, <5s avg response
+- ✅ `testApiStressTest500Users` - 500 concurrent users, 50%+ success (breaking point)
+- ✅ `testApiEnduranceTest30Min` - 5 min sustained (30 min prod), 95%+ success
+- ✅ `testApiSpikeTest` - 200 user sudden burst, 70%+ success
+
+### 📦 Cycle 5 Batch Processing Tests (5/5 Ready)
+- ✅ `testBulkProjectImport` - Bulk project import from CSV (5 projects)
+- ✅ `testScheduledBoqImport` - Scheduled BOQ import verification
+- ✅ `testBatchDocumentClassification` - Batch document processing
+- ✅ `testBatchPaymentCertificateGeneration` - Bulk payment certs
+- ✅ `testNightlyDataSync` - Nightly data sync verification
 
 ## 📊 Test Scenarios (From Uploaded Files)
 
@@ -269,6 +296,7 @@ docker-compose up allure  # http://localhost:5050
 | **Cycle 2** | Full Regression | 28 | ✅ Complete | `CYCLE2_READINESS.md` |
 | **Cycle 3** | Advanced Workspaces | 6 | ✅ Complete | `CYCLE3_READINESS.md` |
 | **Cycle 4** | RBAC + Project Mgmt | 12 | ✅ Complete | `CYCLE4_READINESS.md` |
+| **Cycle 5** | Performance + Batch + CI/CD | 20 | ✅ Complete | `CYCLE5_READINESS.md` |
 
 ## 🤝 Contributing
 

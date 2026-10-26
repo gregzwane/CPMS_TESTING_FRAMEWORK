@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.cpms.api.CpmsApiTests
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.96 s -- in com.cpms.api.CpmsApiTests
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 379.5 s -- in com.cpms.api.CpmsApiTests

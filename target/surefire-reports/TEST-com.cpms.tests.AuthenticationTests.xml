@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cpms.tests.AuthenticationTests" time="89.404" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cpms.tests.AuthenticationTests" time="306.954" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ZA"/>
     <property name="sun.boot.library.path" value="C:\Java\jdk-21.0.12.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire3970931065281881992\surefirebooter-20261025211612449_3.jar C:\Users\Gregory Zwane\AppData\Local\Temp\surefire3970931065281881992 2026-10-25T21-16-07_059-jvmRun1 surefire-20261025211612449_1tmp surefire_0-20261025211612449_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire10164647309357528866\surefirebooter-20261026210449282_3.jar C:\Users\Gregory Zwane\AppData\Local\Temp\surefire10164647309357528866 2026-10-26T21-04-48_774-jvmRun1 surefire-20261026210449282_1tmp surefire_0-20261026210449282_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="**/AuthenticationTests.java#testDirectorLoginSuccess"/>
     <property name="surefire.test.class.path" value="C:\Development\Selenium\CPMS_Testing_Framework\target\test-classes;C:\Development\Selenium\CPMS_Testing_Framework\target\classes;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gregory Zwane\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gregory Zwane\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Gregory Zwane\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Gregory Zwane\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gregory Zwane\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Gregory Zwane\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;"/>
@@ -33,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire3970931065281881992\surefirebooter-20261025211612449_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire10164647309357528866\surefirebooter-20261026210449282_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-LTS-4"/>
@@ -63,7 +63,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testDirectorLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="55.087">
+  <testcase name="testDirectorLoginSuccess" classname="com.cpms.tests.AuthenticationTests" time="249.707">
     <system-out><![CDATA[ERROR StatusConsoleListener Could not create plugin of type class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile
  org.apache.logging.log4j.core.config.ConfigurationException: Configuration has multiple incompatible Appenders pointing to the same resource 'target/logs/cpms-tests.log'
 	at org.apache.logging.log4j.core.appender.AbstractManager.narrow(AbstractManager.java:200)
@@ -132,121 +132,161 @@ ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger c
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "io.restassured"
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "org.apache.http"
 ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "com.cpms"
-21:16:25.526 [main] INFO  com.cpms.base.BaseTest - Starting CPMS Test Suite
-21:16:25.549 [main] INFO  com.cpms.config.ConfigManager - Configuration properties loaded successfully
-21:16:26.621 [main] INFO  com.cpms.utils.ExtentManager - ExtentReports initialized. Report will be saved to: target/reports/CPMS_Test_Report_2026-10-25_21-16-25.html
-21:16:26.743 [main] INFO  com.cpms.base.BaseTest - Setting up test class: AuthenticationTests
-21:16:26.802 [main] INFO  com.cpms.base.BaseTest - Starting test: testDirectorLoginSuccess
-21:16:37.510 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
-21:16:40.006 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
-21:16:40.383 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Director login test
-21:16:40.500 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
-21:16:40.559 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-21:16:44.337 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing Director login
-21:16:44.338 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
-21:16:44.338 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
-21:16:44.338 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
-21:16:44.720 [main] INFO  com.cpms.pages.LoginPage - Entering password
-21:16:45.076 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
-21:17:01.090 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
-21:17:01.140 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
-21:17:01.160 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
-21:17:16.684 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
-21:17:18.892 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
-21:17:18.893 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying Director role access
-21:17:19.421 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-21:17:20.849 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-21:17:22.916 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+21:05:05.270 [main] INFO  com.cpms.base.BaseTest - Starting CPMS Test Suite
+21:05:05.305 [main] INFO  com.cpms.config.ConfigManager - Configuration properties loaded successfully
+21:05:07.461 [main] INFO  com.cpms.utils.ExtentManager - ExtentReports initialized. Report will be saved to: target/reports/CPMS_Test_Report_2026-10-26_21-05-05.html
+21:05:07.571 [main] INFO  com.cpms.base.BaseTest - Setting up test class: AuthenticationTests
+21:05:07.671 [main] INFO  com.cpms.base.BaseTest - Starting test: testDirectorLoginSuccess
+21:05:18.617 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+21:05:20.196 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+21:05:21.008 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Director login test
+21:05:21.162 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+21:05:21.221 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+21:05:24.899 [main] INFO  com.cpms.base.BaseTest - Test Step: Performing Director login
+21:05:24.899 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+21:05:24.899 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+21:05:24.899 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+21:05:25.594 [main] INFO  com.cpms.pages.LoginPage - Entering password
+21:05:26.203 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+21:09:02.552 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+21:09:02.647 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying login success
+21:09:02.746 [main] INFO  com.cpms.pages.LoginPage - Not on login page, navigating to sign in page
+21:09:17.153 [main] INFO  com.cpms.pages.LoginPage - isLoginSuccessful check: formVisible=false, result=true
+21:09:19.638 [main] INFO  com.cpms.pages.DashboardPage - isDashboardLoaded result: true
+21:09:19.640 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying Director role access
+21:09:20.152 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:09:20.491 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:09:21.002 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-21:17:21
+21:09:20
 ACTIVE PROJECT
 001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-21:17:24.421 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
-21:17:24.809 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-21:17:25.305 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-21:17:26.509 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+ATTRDG — ATTRIDGEVILLE
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+WORKSPACES
+Dashboard
+Projects
+BOQ & Budget
+Programme
+21:09:21.382 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
+21:09:21.486 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:09:21.579 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:09:22.074 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-21:17:25
+21:09:21
 ACTIVE PROJECT
 001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-21:17:26.930 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
-21:17:27.103 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-21:17:27.327 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-21:17:28.842 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+ATTRDG — ATTRIDGEVILLE
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+WORKSPACES
+Dashboard
+Projects
+BOQ & Budget
+Programme
+21:09:22.837 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
+21:09:23.325 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:09:23.509 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:09:24.409 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-21:17:27
+21:09:23
 ACTIVE PROJECT
 001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-21:17:30.126 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=true
-21:17:30.754 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-21:17:31.380 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-21:17:33.020 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+ATTRDG — ATTRIDGEVILLE
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+WORKSPACES
+Dashboard
+Projects
+BOQ & Budget
+Programme
+21:09:25.807 [main] INFO  com.cpms.pages.DashboardPage - Tab 'tiger' specific element: found=true, visible=true
+21:09:26.113 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:09:26.300 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:09:26.818 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-21:17:31
+21:09:26
 ACTIVE PROJECT
 001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-21:17:33.706 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
-21:17:33.956 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
-21:17:34.221 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
-21:17:34.683 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+ATTRDG — ATTRIDGEVILLE
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+WORKSPACES
+Dashboard
+Projects
+BOQ & Budget
+Programme
+21:09:27.226 [main] INFO  com.cpms.pages.DashboardPage - Tab 'projects' specific element: found=true, visible=true
+21:09:27.419 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+21:09:27.649 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+21:09:28.738 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
 PTA-A · Riverside Bulk Earthworks
 Director / Executive
 Sign out
 Connected
-21:17:33
+21:09:28
 ACTIVE PROJECT
 001 — civil
-API-TEST-001 — API Test Project (no map pin)
-API-TEST-1792863814336 — API Test Project 1792863814338 (no map pin)
-API-TEST-1792863874376 — API Test Project 1792863874379 (no map pin)
-API-TEST-1792863942071 — API Test Project 1792863942074 (no map pin)
-API-TEST-1792864012810 — API Test Project 1792864012813 (no map pin)
-API-TEST-1792864201673 — API Test Project 1792864201673 (no
-21:17:34.935 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
-21:17:34.935 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=true, bi=true, tiger=true, projects=true, commercial=true
-21:17:34.935 [main] INFO  com.cpms.base.BaseTest - Test Step: Director login test completed successfully
+ATTRDG — ATTRIDGEVILLE
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+WORKSPACES
+Dashboard
+Projects
+BOQ & Budget
+Programme
+21:09:29.405 [main] INFO  com.cpms.pages.DashboardPage - Tab 'commercial' specific element: found=true, visible=true
+21:09:29.405 [main] INFO  com.cpms.pages.DashboardPage - Director access check: settings=true, bi=true, tiger=true, projects=true, commercial=true
+21:09:29.405 [main] INFO  com.cpms.base.BaseTest - Test Step: Director login test completed successfully
 ]]></system-out>
     <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 155.0.8059.84 (resolved driver for Chrome 155)
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\155.0.8059.84\chromedriver.exe
-Oct 25, 2026 9:16:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Oct 26, 2026 9:05:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 155
-Oct 25, 2026 9:16:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Oct 26, 2026 9:05:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 155.0.8059.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
