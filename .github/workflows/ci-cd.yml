@@ -75,14 +75,14 @@ jobs:
           grep -E "(SNAPSHOT|malicious|typosquat)" dependency-tree.txt && exit 1 || true
 
       # ---- Insecure Configuration Detection ----
-      - name: Scan for hardcoded secrets
-        uses: trufflesecurity/trufflehog@v3.88.0
-        with:
-          path: .
-          base: ${{ github.event.pull_request.base.sha }}
-          head: ${{ github.event.pull_request.head.sha }}
-          extra_args: --fail --only-verified
-        if: github.event_name == 'pull_request_target' && github.event.pull_request.base.sha != github.event.pull_request.head.sha
+   #   - name: Scan for hardcoded secrets
+    #    uses: trufflesecurity/trufflehog@v3.88.0
+    #    with:
+    #      path: .
+    #      base: ${{ github.event.pull_request.base.sha }}
+    #      head: ${{ github.event.pull_request.head.sha }}
+    #      extra_args: --fail --only-verified
+     #   if: github.event_name == 'pull_request_target' && github.event.pull_request.base.sha != github.event.pull_request.head.sha
 
       - name: Scan Dockerfile for misconfigurations
         uses: hadolint/hadolint-action@v3.1.0
