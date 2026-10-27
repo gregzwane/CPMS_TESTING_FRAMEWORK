@@ -5,6 +5,9 @@ on:
     branches: [ main, develop ]
   pull_request:
     branches: [ main ]
+  pull_request_target:
+    branches: [ main ]
+    types: [opened, synchronize, reopened]
   schedule:
     # Nightly integration tests - 2 AM UTC daily
     - cron: '0 2 * * *'
@@ -27,10 +30,6 @@ permissions:
 
 # Disable fork PRs from triggering workflows on secrets
 # Prevents PPE attacks from external contributors
-on:
-  pull_request_target:
-    branches: [ main ]
-    types: [opened, synchronize, reopened]
 
 jobs:
   # ==========================================
