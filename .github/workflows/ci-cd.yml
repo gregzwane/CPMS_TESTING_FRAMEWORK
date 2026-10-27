@@ -102,14 +102,14 @@ jobs:
         name: allure-report-${{ matrix.browser }}-${{ matrix.environment }}
         path: target/site/allure-maven-plugin/
 
-    - name: Publish Test Results
-      if: always()
-      uses: dorny/test-reporter@v1
-      with:
-        name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
-        path: target/surefire-reports/*.xml
-        reporter: java-junit
-        fail-on-error: false
+   # - name: Publish Test Results
+    #  if: always()
+   #   uses: dorny/test-reporter@v1
+   #   with:
+   #     name: CPMS Tests (${{ matrix.browser }}-${{ matrix.environment }})
+    #    path: target/surefire-reports/*.xml
+    #    reporter: java-junit
+    #    fail-on-error: false
 
   security-scan:
     runs-on: ubuntu-latest
