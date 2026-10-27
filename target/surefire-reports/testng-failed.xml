@@ -3,12 +3,21 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.cpms.api.CpmsApiTests">
+      <class name="com.cpms.tests.AuthenticationTests">
         <methods>
-          <include name="setupApi"/>
-          <include name="testApiLoadTest100Users"/>
+          <include name="testApiWakeUpSequence"/>
+          <include name="suiteTeardown"/>
+          <include name="classTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="testLogoutFunctionality"/>
+          <include name="testTeardown"/>
+          <include name="testSetup"/>
+          <include name="testRoleTabAccessVerification"/>
+          <include name="testLoginPageUIElements"/>
+          <include name="classSetup"/>
+          <include name="testRoleBasedAccess"/>
         </methods>
-      </class> <!-- com.cpms.api.CpmsApiTests -->
+      </class> <!-- com.cpms.tests.AuthenticationTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
