@@ -76,7 +76,7 @@ jobs:
 
       # ---- Insecure Configuration Detection ----
       - name: Scan for hardcoded secrets
-        uses: trufflesecurity/trufflehog@v3
+        uses: trufflesecurity/trufflehog@v3.88.0
         with:
           path: .
           base: main
@@ -84,7 +84,7 @@ jobs:
           extra_args: --fail --only-verified
 
       - name: Scan Dockerfile for misconfigurations
-        uses: hadolint/hadolint-action@v3
+        uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: Dockerfile
           recursive: true
