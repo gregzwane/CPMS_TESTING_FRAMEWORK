@@ -138,11 +138,12 @@ jobs:
         run: |
           # Check for common misconfigurations
           echo "Checking for insecure configurations..."
-          find . -name "*.properties" -o -name "*.yml" -o -name "*.yaml" | xargs grep -l "password\|secret\|key" | while read f; do
-            if grep -q "password\s*=\s*[^${}]" "$f" 2>/dev/null; then
-              echo "::warning::Potential hardcoded password in $f"
+          while IFS= read -r -d '' file; do
+            if grep -qE "password\s*=\s*[^${}]" "$file" 2>/dev/null; then
+              echo "::warning::Potential hardcoded password in $file"
             fi
-          done
+          done < <(find . -type f \( -name "*.properties" -o -name "*.yml" -o -name "*.yaml" \) -print0 2>/dev/null)
+        shell: bash
 
   # ==========================================
   # STATIC CODE ANALYSIS & SAST
