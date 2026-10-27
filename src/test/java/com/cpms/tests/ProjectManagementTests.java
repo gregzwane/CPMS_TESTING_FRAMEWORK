@@ -14,10 +14,11 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
 /**
- * Project Management Tests based on uploaded tester scenarios
+ * CycleTwo - Project Management Tests based on uploaded tester scenarios
  * Covers project pack import, manual creation, filtering and geolocation
+ * Test Cycle: CycleTwo (Functional & Integration Tests)
  */
-@Epic("Project Management")
+@Epic("CycleTwo - Project Management")
 @Feature("Projects & Project Pack Import")
 public class ProjectManagementTests extends BaseTest {
 
@@ -26,9 +27,15 @@ public class ProjectManagementTests extends BaseTest {
     private static final String TEST_LATITUDE = "-26.2041";
     private static final String TEST_LONGITUDE = "28.0473";
 
-    @Test(description = "Director imports complete project pack successfully", priority = 1)
+    /**
+     * Test Case: CycleTwo - Director imports complete project pack successfully
+     * Scenario A1 - Import project pack with BOQ CSV and documents
+     * Tab: Projects -> Import Project Pack
+     * Priority: 1 (Functional)
+     */
+    @Test(description = "CycleTwo - Director imports complete project pack successfully", priority = 1)
     @Description("Scenario A1 - Import project pack with BOQ CSV and documents")
-    @Story("Project Pack Import - Complete Flow")
+    @Story("CycleTwo - Project Pack Import - Complete Flow")
     @Severity(SeverityLevel.BLOCKER)
     public void testProjectPackImport() {
         logTestStep("Starting project pack import test");
@@ -75,9 +82,15 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Project pack import test completed successfully");
     }
 
-    @Test(description = "Director creates new project manually with geolocation", priority = 2)
+    /**
+     * Test Case: CycleTwo - Director creates new project manually with geolocation
+     * Scenario A2 - Manual project creation with coordinates
+     * Tab: Projects -> New Project
+     * Priority: 2 (Functional)
+     */
+    @Test(description = "CycleTwo - Director creates new project manually with geolocation", priority = 2)
     @Description("Scenario A2 - Manual project creation with coordinates")
-    @Story("Manual Project Creation")
+    @Story("CycleTwo - Manual Project Creation")
     @Severity(SeverityLevel.BLOCKER)
     public void testManualProjectCreation() {
         logTestStep("Starting manual project creation test");
@@ -111,10 +124,16 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Manual project creation test completed successfully");
     }
 
-    @Test(description = "Project filtering works correctly", priority = 3)
+    /**
+     * Test Case: CycleTwo - Project filtering works correctly
+     * Scenario D - Filter projects by code and name
+     * Tab: Projects -> Filter
+     * Priority: 3 (Functional)
+     */
+    @Test(description = "CycleTwo - Project filtering works correctly", priority = 3)
     @Description("Scenario D - Filter projects by code and name")
-    @Story("Project Filter Functionality")
-@Severity(SeverityLevel.CRITICAL)
+    @Story("CycleTwo - Project Filter Functionality")
+    @Severity(SeverityLevel.CRITICAL)
     public void testProjectFiltering() {
         logTestStep("Starting project filtering test");
 
@@ -152,9 +171,15 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Project filtering test completed successfully");
     }
 
-    @Test(description = "Project creation validates required fields", priority = 4)
+    /**
+     * Test Case: CycleTwo - Project creation validates required fields
+     * Verify that project creation form validates missing required fields
+     * Tab: Projects -> New Project
+     * Priority: 4 (Functional)
+     */
+    @Test(description = "CycleTwo - Project creation validates required fields", priority = 4)
     @Description("Verify that project creation form validates missing required fields")
-    @Story("Project Validation - Required Fields")
+    @Story("CycleTwo - Project Validation - Required Fields")
     @Severity(SeverityLevel.BLOCKER)
     public void testProjectCreationValidation() {
         logTestStep("Starting project creation validation test");
@@ -189,9 +214,15 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Project creation validation test completed");
     }
 
-    @Test(description = "Client cannot edit project setup", priority = 5)
+    /**
+     * Test Case: CycleTwo - Client cannot edit project setup
+     * Verify that client role cannot access project creation/editing
+     * Tab: Projects (Client view)
+     * Priority: 5 (Functional)
+     */
+    @Test(description = "CycleTwo - Client cannot edit project setup", priority = 5)
     @Description("Verify that client role cannot access project creation/editing")
-    @Story("RBAC - Client Project Access")
+    @Story("CycleTwo - RBAC - Client Project Access")
     @Severity(SeverityLevel.BLOCKER)
     public void testClientProjectAccessRestriction() {
         logTestStep("Starting client project access restriction test");
@@ -224,9 +255,15 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Client project access restriction test completed");
     }
 
-    @Test(description = "Project geolocation appears correctly on dashboard map", priority = 6)
+    /**
+     * Test Case: CycleTwo - Project geolocation appears correctly on dashboard map
+     * Scenario C - Verify project pin appears on South Africa map
+     * Tab: Dashboard -> Map
+     * Priority: 6 (Functional)
+     */
+    @Test(description = "CycleTwo - Project geolocation appears correctly on dashboard map", priority = 6)
     @Description("Scenario C - Verify project pin appears on South Africa map")
-    @Story("Geolocation Integration")
+    @Story("CycleTwo - Geolocation Integration")
     @Severity(SeverityLevel.CRITICAL)
     public void testProjectGeolocationMapping() {
         logTestStep("Starting project geolocation mapping test");
@@ -242,9 +279,15 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Project geolocation mapping test completed");
     }
 
-    @Test(description = "Project editing updates coordinates correctly", priority = 7)
+    /**
+     * Test Case: CycleTwo - Project editing updates coordinates correctly
+     * Verify that editing project location updates map coordinates
+     * Tab: Projects -> Edit Project
+     * Priority: 7 (Functional)
+     */
+    @Test(description = "CycleTwo - Project editing updates coordinates correctly", priority = 7)
     @Description("Verify that editing project location updates map coordinates")
-    @Story("Project Location Update")
+    @Story("CycleTwo - Project Location Update")
     @Severity(SeverityLevel.CRITICAL)
     public void testProjectLocationUpdate() {
         logTestStep("Starting project location update test");
@@ -265,9 +308,15 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Project location update test completed");
     }
 
-    @Test(description = "Project import handles file classification correctly", priority = 8)
+    /**
+     * Test Case: CycleTwo - Project import handles file classification correctly
+     * Scenario E - Verify documents are routed to correct modules
+     * Tab: Projects -> Import Project Pack
+     * Priority: 8 (Integration)
+     */
+    @Test(description = "CycleTwo - Project import handles file classification correctly", priority = 8)
     @Description("Scenario E - Verify documents are routed to correct modules")
-    @Story("Document Classification in Import")
+    @Story("CycleTwo - Document Classification in Import")
     @Severity(SeverityLevel.CRITICAL)
     public void testProjectImportDocumentClassification() {
         logTestStep("Starting project import document classification test");
@@ -286,9 +335,15 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Project import document classification test completed");
     }
 
-    @Test(description = "Project dashboard shows appropriate role-based content", priority = 9)
+    /**
+     * Test Case: CycleTwo - Project dashboard shows appropriate role-based content
+     * Verify different roles see appropriate project information
+     * Tab: Dashboard (all roles)
+     * Priority: 9 (Integration)
+     */
+    @Test(description = "CycleTwo - Project dashboard shows appropriate role-based content", priority = 9)
     @Description("Verify different roles see appropriate project information")
-    @Story("Role-Based Project Dashboard")
+    @Story("CycleTwo - Role-Based Project Dashboard")
     @Severity(SeverityLevel.CRITICAL)
     public void testRoleBasedProjectDashboard() {
         logTestStep("Starting role-based project dashboard test");

@@ -29,6 +29,10 @@
         <allure.version>2.24.0</allure.version>
         <maven-surefire.version>3.2.2</maven-surefire.version>
         <maven-compiler.version>3.11.0</maven-compiler.version>
+
+        <!-- Logging and monitoring -->
+        <micrometer.version>1.12.0</micrometer.version>
+        <prometheus.version>0.16.0</prometheus.version>
     </properties>
 
     <dependencies>
@@ -107,11 +111,45 @@
             <version>5.2.4</version>
         </dependency>
 
-        <!-- SLF4J for logging facade -->
+        <!-- SLF4J with Logback for logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>2.0.9</version>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+
+        <!-- Micrometer for metrics and monitoring -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+            <version>${micrometer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>${micrometer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.prometheus</groupId>
+            <artifactId>simpleclient</artifactId>
+            <version>${prometheus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.prometheus</groupId>
+            <artifactId>simpleclient_httpserver</artifactId>
+            <version>${prometheus.version}</version>
+        </dependency>
+
+        <!-- JSON logging for structured monitoring -->
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>7.4</version>
         </dependency>
 
         <!-- Appium for mobile testing -->
@@ -167,7 +205,23 @@
                 <version>2.12.0</version>
                 <configuration>
                     <reportVersion>2.24.0</reportVersion>
+                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+                    <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
                 </configuration>
+            </plugin>
+
+            <!-- Micrometer/Prometheus metrics endpoint -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

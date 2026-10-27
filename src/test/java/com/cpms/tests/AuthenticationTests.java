@@ -15,16 +15,23 @@ import io.qameta.allure.Story;
 import java.util.List;
 
 /**
- * Authentication Tests for CPMS Sign In functionality
+ * CycleOne - Authentication Tests for CPMS Sign In functionality
  * Covers login scenarios for all user roles and validation
+ * Test Cycle: CycleOne (Build Verification & Smoke Tests)
  */
-@Epic("Authentication")
+@Epic("CycleOne - Authentication")
 @Feature("CPMS Sign In")
 public class AuthenticationTests extends BaseTest {
 
-    @Test(description = "Director login succeeds with valid credentials", priority = 1)
+    /**
+     * Test Case: CycleOne - Director login succeeds with valid credentials
+     * Verifies that Director can successfully login with valid demo credentials
+     * Tab: Sign In
+     * Priority: 1 (Smoke)
+     */
+    @Test(description = "CycleOne - Director login succeeds with valid credentials", priority = 1)
     @Description("Verify that Director can successfully login with valid demo credentials")
-    @Story("Valid Login - Director Role")
+    @Story("CycleOne - Valid Login - Director Role")
     @Severity(SeverityLevel.BLOCKER)
     public void testDirectorLoginSuccess() {
         logTestStep("Starting Director login test");
@@ -45,9 +52,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Director login test completed successfully");
     }
 
-    @Test(description = "Project Manager login succeeds with valid credentials", priority = 2)
+    /**
+     * Test Case: CycleOne - Project Manager login succeeds with valid credentials
+     * Verifies that Project Manager can successfully login with valid demo credentials
+     * Tab: Sign In
+     * Priority: 2 (Smoke)
+     */
+    @Test(description = "CycleOne - Project Manager login succeeds with valid credentials", priority = 2)
     @Description("Verify that Project Manager can successfully login with valid demo credentials")
-    @Story("Valid Login - PM Role")
+    @Story("CycleOne - Valid Login - PM Role")
     @Severity(SeverityLevel.BLOCKER)
     public void testProjectManagerLoginSuccess() {
         logTestStep("Starting Project Manager login test");
@@ -68,9 +81,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Project Manager login test completed successfully");
     }
 
-    @Test(description = "Quantity Surveyor login succeeds with valid credentials", priority = 3)
+    /**
+     * Test Case: CycleOne - Quantity Surveyor login succeeds with valid credentials
+     * Verifies that Quantity Surveyor can successfully login with valid demo credentials
+     * Tab: Sign In
+     * Priority: 3 (Smoke)
+     */
+    @Test(description = "CycleOne - Quantity Surveyor login succeeds with valid credentials", priority = 3)
     @Description("Verify that Quantity Surveyor can successfully login with valid demo credentials")
-    @Story("Valid Login - QS Role")
+    @Story("CycleOne - Valid Login - QS Role")
     @Severity(SeverityLevel.BLOCKER)
     public void testQuantitySurveyorLoginSuccess() {
         logTestStep("Starting Quantity Surveyor login test");
@@ -91,9 +110,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Quantity Surveyor login test completed successfully");
     }
 
-    @Test(description = "Client login succeeds with valid credentials", priority = 4)
+    /**
+     * Test Case: CycleOne - Client login succeeds with valid credentials
+     * Verifies that Client can successfully login with valid demo credentials
+     * Tab: Sign In
+     * Priority: 4 (Smoke)
+     */
+    @Test(description = "CycleOne - Client login succeeds with valid credentials", priority = 4)
     @Description("Verify that Client can successfully login with valid demo credentials")
-    @Story("Valid Login - Client Role")
+    @Story("CycleOne - Valid Login - Client Role")
     @Severity(SeverityLevel.BLOCKER)
     public void testClientLoginSuccess() {
         logTestStep("Starting Client login test");
@@ -114,9 +139,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Client login test completed successfully");
     }
 
-    @Test(description = "Invalid password is rejected with error message", priority = 5)
+    /**
+     * Test Case: CycleOne - Invalid password is rejected with error message
+     * Verifies that login fails with invalid password and shows appropriate error
+     * Tab: Sign In
+     * Priority: 5 (Functional)
+     */
+    @Test(description = "CycleOne - Invalid password is rejected with error message", priority = 5)
     @Description("Verify that login fails with invalid password and shows appropriate error")
-    @Story("Invalid Login - Wrong Password")
+    @Story("CycleOne - Invalid Login - Wrong Password")
     @Severity(SeverityLevel.BLOCKER)
     public void testInvalidPasswordRejected() {
         logTestStep("Starting invalid password test");
@@ -153,9 +184,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Invalid password test completed - error properly shown");
     }
 
-    @Test(description = "Required field validation prevents empty login", priority = 6)
+    /**
+     * Test Case: CycleOne - Required field validation prevents empty login
+     * Verifies that empty email/password fields are validated and prevent login
+     * Tab: Sign In
+     * Priority: 6 (Functional)
+     */
+    @Test(description = "CycleOne - Required field validation prevents empty login", priority = 6)
     @Description("Verify that empty email/password fields are validated and prevent login")
-    @Story("Field Validation - Required Fields")
+    @Story("CycleOne - Field Validation - Required Fields")
     @Severity(SeverityLevel.CRITICAL)
     public void testRequiredFieldValidation() {
         logTestStep("Starting required field validation test");
@@ -179,9 +216,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Required field validation test completed");
     }
 
-    @Test(description = "Login page displays all required elements", priority = 7)
+    /**
+     * Test Case: CycleOne - Login page displays all required elements
+     * Verifies that login page contains all necessary UI elements
+     * Tab: Sign In
+     * Priority: 7 (Functional)
+     */
+    @Test(description = "CycleOne - Login page displays all required elements", priority = 7)
     @Description("Verify that login page contains all necessary UI elements")
-    @Story("UI Elements - Login Page")
+    @Story("CycleOne - UI Elements - Login Page")
     @Severity(SeverityLevel.CRITICAL)
     public void testLoginPageUIElements() {
         logTestStep("Starting login page UI elements test");
@@ -201,9 +244,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Login page UI elements test completed");
     }
 
-    @Test(description = "Logout functionality ends session properly", priority = 8)
+    /**
+     * Test Case: CycleOne - Logout functionality ends session properly
+     * Verifies that logout properly ends user session and redirects to login
+     * Tab: Dashboard -> Sign Out
+     * Priority: 8 (Functional)
+     */
+    @Test(description = "CycleOne - Logout functionality ends session properly", priority = 8)
     @Description("Verify that logout properly ends user session and redirects to login")
-    @Story("Session Management - Logout")
+    @Story("CycleOne - Session Management - Logout")
     @Severity(SeverityLevel.BLOCKER)
     public void testLogoutFunctionality() {
         logTestStep("Starting logout functionality test");
@@ -239,9 +288,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Logout functionality test completed");
     }
 
-    @Test(description = "API wake-up sequence works after idle period", priority = 9)
+    /**
+     * Test Case: CycleOne - API wake-up sequence works after idle period
+     * Verifies that API cold start wake-up sequence completes successfully
+     * Tab: Dashboard
+     * Priority: 9 (Functional)
+     */
+    @Test(description = "CycleOne - API wake-up sequence works after idle period", priority = 9)
     @Description("Verify that API cold start wake-up sequence completes successfully")
-    @Story("API Management - Cold Start")
+    @Story("CycleOne - API Management - Cold Start")
     @Severity(SeverityLevel.BLOCKER)
     public void testApiWakeUpSequence() {
         logTestStep("Starting API wake-up sequence test");
@@ -259,9 +314,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("API wake-up sequence test completed");
     }
 
-    @Test(description = "Multiple role access patterns are correctly enforced", priority = 10)
+    /**
+     * Test Case: CycleOne - Multiple role access patterns are correctly enforced
+     * Verifies that different user roles have appropriate access restrictions
+     * Tab: Dashboard
+     * Priority: 10 (Integration)
+     */
+    @Test(description = "CycleOne - Multiple role access patterns are correctly enforced", priority = 10)
     @Description("Verify that different user roles have appropriate access restrictions")
-    @Story("Role-Based Access Control")
+    @Story("CycleOne - Role-Based Access Control")
     @Severity(SeverityLevel.BLOCKER)
     public void testRoleBasedAccess() {
         logTestStep("Starting role-based access control test");
@@ -286,9 +347,15 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Role-based access control test completed");
     }
 
-    @Test(description = "Each role can click and verify access to their tabs", priority = 11)
+    /**
+     * Test Case: CycleOne - Each role can click and verify access to their tabs
+     * Verifies each role can access their allowed tabs by clicking through them
+     * Tab: Dashboard (all tabs)
+     * Priority: 11 (Integration)
+     */
+    @Test(description = "CycleOne - Each role can click and verify access to their tabs", priority = 11)
     @Description("Verify each role can access their allowed tabs by clicking through them")
-    @Story("Role-Based Access Control - Tab Verification")
+    @Story("CycleOne - Role-Based Access Control - Tab Verification")
     @Severity(SeverityLevel.CRITICAL)
     public void testRoleTabAccessVerification() {
         logTestStep("Starting role tab access verification test");
@@ -338,6 +405,13 @@ public class AuthenticationTests extends BaseTest {
         logTestStep("Role tab access verification test completed");
     }
 
+    /**
+     * Helper method to verify tabs accessible for a role
+     * Tab: Dashboard (all tabs)
+     * @param dashboardPage The dashboard page object
+     * @param expectedTabs Array of expected tab names
+     * @param role The role being tested
+     */
     private void verifyTabsAccessible(DashboardPage dashboardPage, String[] expectedTabs, String role) {
         List<String> availableTabs = dashboardPage.getAvailableNavTabs();
         logTestStep(role + " available tabs: " + availableTabs);

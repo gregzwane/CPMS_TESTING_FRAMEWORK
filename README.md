@@ -6,12 +6,13 @@ Comprehensive Selenium TestNG automation framework for Construction Project Mana
 
 - **Base Framework**: Selenium WebDriver 4.15+ with TestNG 7.8+
 - **Design Pattern**: Page Object Model (POM) with Page Factory
-- **Reporting**: ExtentReports 5.1+ & Allure 2.24+
+- **Reporting**: ExtentReports 5.1+ & **Allure 2.24.0** (Allure 3 compatible)
 - **Build Tool**: Maven 3.8+
 - **Cross-Browser**: Chrome, Firefox, Edge support
-- **CI/CD**: GitHub Actions with parallel execution (Actions v4)
+- **CI/CD**: GitHub Actions with parallel execution (Actions v7+)
 - **API Testing**: REST Assured 5.3+ for backend validation
 - **Containerization**: Docker multi-stage build with Docker Compose
+- **Monitoring**: Micrometer + Prometheus metrics, structured JSON logging
 
 ## 📁 Project Structure
 
@@ -23,14 +24,14 @@ CPMS_Testing_Framework/
 │   ├── pages/          # Page Object Model classes
 │   └── utils/          # DriverManager, ExtentManager utilities
 ├── src/test/java/com/cpms/
-│   ├── tests/          # Web UI test classes
+│   ├── tests/          # Web UI test classes (organized by Cycle)
 │   ├── api/            # REST API test classes
 │   └── mobile/         # Mobile test classes (future)
 ├── src/test/resources/
 │   ├── data/           # Test data files (CSV, JSON)
 │   ├── testng/         # TestNG suite configurations
 │   └── config.properties
-├── .github/workflows/  # CI/CD pipeline (Actions v4)
+├── .github/workflows/  # CI/CD pipeline (Actions v7+)
 ├── Dockerfile          # Multi-stage Docker build
 ├── docker-compose.yml  # Multi-service orchestration
 └── pom.xml
@@ -64,7 +65,7 @@ mvn test -DsuiteXmlFile=src/test/resources/testng.xml
 # Cross-browser execution
 mvn test -Dbrowser=firefox -Denv=staging
 
-# API tests only (all 12 passing)
+# API tests only (all 16 passing)
 mvn test -Dtest=**/CpmsApiTests.java
 
 # Headless execution
@@ -102,9 +103,21 @@ docker-compose up cpms-performance
 docker-compose up allure
 ```
 
-## 🧪 Test Coverage (Cycle 4 - 95%+ Pass Rate)
+### Allure Report with Environment Information
+```bash
+# Generate and open Allure report
+mvn allure:serve
 
-### 🔐 Authentication Tests (Cycle 4 - 12/12 Passing)
+# Generate static Allure report
+mvn allure:report
+
+# Docker Allure UI
+docker-compose up allure  # http://localhost:5050
+```
+
+## 🧪 Test Coverage (Cycle 5 - 95%+ Pass Rate)
+
+### 🔐 Authentication Tests (CycleOne - 12/12 Passing)
 - ✅ Director, PM, QS, Client login validation
 - ✅ Invalid credential rejection with error message
 - ✅ Required field validation
@@ -112,7 +125,7 @@ docker-compose up allure
 - ✅ Role-based access control (updated for actual UI tabs)
 - ✅ **NEW**: Each role clicks and verifies all accessible tabs
 
-### 📋 Project Management Tests (Cycle 4 - 9/9 Resilient)
+### 📋 Project Management Tests (CycleTwo - 9/9 Resilient)
 - ✅ Project pack import (Scenario A1) with error handling
 - ✅ Manual project creation with geolocation
 - ✅ Project filtering and search (Scenario D) with tolerant assertions
@@ -123,15 +136,16 @@ docker-compose up allure
 - ✅ Document classification routing (Scenario E)
 - ✅ Role-based project dashboard
 
-### 🔌 API Tests (Cycle 4 - 12/12 Passing)
+### 🔌 API Tests (16/16 Passing)
 - ✅ Supabase JWT authentication & token validation
 - ✅ Projects API (Render backend with Bearer token)
 - ✅ CRUD operations with graceful 404/403 handling
 - ✅ Security: SQL injection prevention, malformed JSON, token expiry
 - ✅ Concurrent request handling
 - ✅ Consistent error format validation
+- ✅ Performance tests (load, stress, endurance, spike)
 
-### 🏢 Cycle 3 Advanced Feature Tests (6/6 Passing)
+### 🏢 CycleThree Advanced Feature Tests (6/6 Passing)
 - ✅ BI & Root Cause workspace access
 - ✅ Tiger Team workspace access
 - ✅ Settings workspace access
@@ -139,25 +153,25 @@ docker-compose up allure
 - ✅ QS workspace boundaries
 - ✅ Client Portal role restrictions
 
-### 📱 Mobile Tests (Framework Ready)
-- 📋 Mobile login for all roles
-- 📋 Responsive navigation
-- 📋 Geofenced site diary
-- 📋 Document upload from mobile
+### 📦 CycleFive Batch Processing Tests (5/5 Ready)
+- ✅ `testBulkProjectImport` - Bulk project import from CSV (5 projects)
+- ✅ `testScheduledBoqImport` - Scheduled BOQ import verification
+- ✅ `testBatchDocumentClassification` - Batch document processing
+- ✅ `testBatchPaymentCertificateGeneration` - Bulk payment certs
+- ✅ `testNightlyDataSync` - Nightly data sync verification
 
-### ⚡ Cycle 5 Performance Tests (5/5 Ready)
+### ⚡ CycleFive Performance Tests (5/5 Ready)
 - ✅ `testConcurrentRequests` - 5 parallel requests baseline
 - ✅ `testApiLoadTest100Users` - 100 concurrent users, 90%+ success, <5s avg response
 - ✅ `testApiStressTest500Users` - 500 concurrent users, 50%+ success (breaking point)
 - ✅ `testApiEnduranceTest30Min` - 5 min sustained (30 min prod), 95%+ success
 - ✅ `testApiSpikeTest` - 200 user sudden burst, 70%+ success
 
-### 📦 Cycle 5 Batch Processing Tests (5/5 Ready)
-- ✅ `testBulkProjectImport` - Bulk project import from CSV (5 projects)
-- ✅ `testScheduledBoqImport` - Scheduled BOQ import verification
-- ✅ `testBatchDocumentClassification` - Batch document processing
-- ✅ `testBatchPaymentCertificateGeneration` - Bulk payment certs
-- ✅ `testNightlyDataSync` - Nightly data sync verification
+### 📱 Mobile Tests (Framework Ready)
+- 📋 Mobile login for all roles
+- 📋 Responsive navigation
+- 📋 Geofenced site diary
+- 📋 Document upload from mobile
 
 ## 📊 Test Scenarios (From Uploaded Files)
 
@@ -228,11 +242,12 @@ mvn test -Dheadless=true
 - Cross-browser execution summary
 - Failure analysis with stack traces
 
-### Allure Reports
+### Allure Reports (v2.24.0 - Allure 3 Compatible)
 - Advanced test analytics and trends
 - Detailed test execution timeline
 - Attachment support (screenshots, logs)
 - Integration with CI/CD pipeline
+- **Environment information includes application URL**
 
 ### View Reports
 ```bash
@@ -240,27 +255,75 @@ mvn test -Dheadless=true
 # Available at: target/reports/CPMS_Test_Report_[timestamp].html
 
 # Generate Allure report
-mvn allure:serve
+mvn allure:report
 
 # Docker Allure UI
 docker-compose up allure  # http://localhost:5050
 ```
 
-## 🔄 CI/CD Pipeline (Actions v4)
+## 🔄 CI/CD Pipeline (Actions v7+ with Allure 3)
 
-### GitHub Actions Workflow
+### GitHub Actions Workflow - Allure 3 Report Publishing
+```yaml
+name: CPMS Testing Framework CI/CD
+
+on: [push]
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up JDK
+        uses: actions/setup-java@v6
+        with:
+          distribution: zulu
+          java-version: 17
+
+      - name: Run tests
+        run: SELENIDE_URL="${{ vars.SELENIDE_URL }}" ./gradlew clean test
+
+      - name: Build test report
+        if: always()
+        run: |
+          npm install -g allure
+          allure generate build/allure-results -o allure-report
+
+      - name: Publish test report
+        uses: peaceiris/actions-gh-pages@v4
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
+```
+
+### Current Pipeline Features
 - **Multi-browser**: Chrome, Firefox, Edge (browser-actions v1)
 - **Multi-environment**: Local, Staging
-- **Java 17 (LTS)** with temurin distribution
+- **Java 17 (LTS)** with Zulu distribution
 - **Parallel execution**: Reduced test time
 - **Security scanning**: OWASP dependency check
-- **Report deployment**: GitHub Pages hosting (peaceiris/actions-gh-pages v4)
-- **Notifications**: Slack & Email alerts
+- **SAST**: SpotBugs, Semgrep, PMD (SARIF upload)
+- **Container scanning**: Trivy, Docker Scout
+- **SBOM generation**: SPDX JSON
+- **Secret scanning**: TruffleHog
+- **Allure 3 report deployment** to GitHub Pages (peaceiris/actions-gh-pages v4)
+- **Performance test stage** with regression checking
+- **Slack & Email notifications** on failure
 
 ### Pipeline Triggers
 - Push to `main`/`develop` branches
 - Pull requests
-- Daily scheduled runs (2 AM UTC)
+- **Nightly integration tests** - 2 AM UTC daily
+- **Weekly dependency updates** - Sunday 3 AM UTC
+- **Weekly security scanning** - Sunday 4 AM UTC
+- **Weekly performance/load tests** - Sunday 5 AM UTC
+- **Batch data processing** - Daily 1 AM UTC
 - Manual triggers
 
 ## 🎯 Key Features
@@ -292,11 +355,11 @@ docker-compose up allure  # http://localhost:5050
 
 | Cycle | Focus | Tests | Status | Documentation |
 |-------|-------|-------|--------|---------------|
-| **Cycle 1** | Build Verification | 7 | ✅ Complete | `CYCLE1_READINESS.md` |
-| **Cycle 2** | Full Regression | 28 | ✅ Complete | `CYCLE2_READINESS.md` |
-| **Cycle 3** | Advanced Workspaces | 6 | ✅ Complete | `CYCLE3_READINESS.md` |
-| **Cycle 4** | RBAC + Project Mgmt | 12 | ✅ Complete | `CYCLE4_READINESS.md` |
-| **Cycle 5** | Performance + Batch + CI/CD | 20 | ✅ Complete | `CYCLE5_READINESS.md` |
+| **CycleOne** | Build Verification & Smoke | 12 | ✅ Complete | `CYCLE1_READINESS.md` |
+| **CycleTwo** | Full Regression | 9 | ✅ Complete | `CYCLE2_READINESS.md` |
+| **CycleThree** | Advanced Workspaces | 6 | ✅ Complete | `CYCLE3_READINESS.md` |
+| **CycleFour** | RBAC + Project Mgmt | 12 | ✅ Complete | `CYCLE4_READINESS.md` |
+| **CycleFive** | Performance + Batch + CI/CD | 20 | ✅ Complete | `CYCLE5_READINESS.md` |
 
 ## 🤝 Contributing
 
@@ -317,9 +380,9 @@ For framework issues or test failures:
 
 ---
 
-**Framework Version**: 1.1.0 (Cycle 4)  
+**Framework Version**: 1.2.0 (CycleFive)  
 **Last Updated**: October 2026  
-**Test Coverage**: Authentication, Projects, BOQ, Documents, API, RBAC, Advanced Workspaces  
+**Test Coverage**: Authentication, Projects, BOQ, Documents, API, RBAC, Advanced Workspaces, Performance, Batch Processing  
 **Supported Environments**: Local, Staging, Production  
 **Supported Browsers**: Chrome, Firefox, Edge  
 **Containerization**: Docker + Docker Compose ready

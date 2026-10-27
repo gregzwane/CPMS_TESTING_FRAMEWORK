@@ -13,21 +13,28 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
 /**
- * Cycle 3 Tests - New Feature Workspaces
+ * CycleThree - Advanced Feature Workspace Tests
  * Tests new views identified from scan:
  * - BI & Root Cause Analysis
  * - Tiger Team view
  * - Settings view
  * - Comms Hub view
  * - Site Map view
+ * Test Cycle: CycleThree (Advanced Feature Workspace Tests)
  */
-@Epic("Cycle 3 - Advanced Features")
+@Epic("CycleThree - Advanced Feature Workspaces")
 @Feature("New Workspace Views")
 public class Cycle3FeatureTests extends BaseTest {
 
-    @Test(description = "Director can access BI & Root Cause workspace", priority = 1)
+    /**
+     * Test Case: CycleThree - Director can access BI & Root Cause workspace
+     * Verifies that Director role can access and view the BI & Root Cause analysis workspace
+     * Tab: BI & Root Cause
+     * Priority: 1 (Functional)
+     */
+    @Test(description = "CycleThree - Director can access BI & Root Cause workspace", priority = 1)
     @Description("Verify that Director role can access and view the BI & Root Cause analysis workspace")
-    @Story("BI & Root Cause Workspace Access")
+    @Story("CycleThree - BI & Root Cause Workspace Access")
     @Severity(SeverityLevel.CRITICAL)
     public void testBiWorkspaceAccess() {
         logTestStep("Starting BI workspace access test");
@@ -42,9 +49,15 @@ public class Cycle3FeatureTests extends BaseTest {
         logTestStep("BI workspace access test completed");
     }
 
-    @Test(description = "Director can access Tiger Team workspace", priority = 2)
+    /**
+     * Test Case: CycleThree - Director can access Tiger Team workspace
+     * Verifies that Director role can access and view the Tiger Team incident workspace
+     * Tab: Tiger Team
+     * Priority: 2 (Functional)
+     */
+    @Test(description = "CycleThree - Director can access Tiger Team workspace", priority = 2)
     @Description("Verify that Director role can access and view the Tiger Team incident workspace")
-    @Story("Tiger Team Workspace Access")
+    @Story("CycleThree - Tiger Team Workspace Access")
     @Severity(SeverityLevel.CRITICAL)
     public void testTigerTeamWorkspaceAccess() {
         logTestStep("Starting Tiger Team workspace access test");
@@ -59,9 +72,15 @@ public class Cycle3FeatureTests extends BaseTest {
         logTestStep("Tiger Team workspace access test completed");
     }
 
-    @Test(description = "Director can access Settings workspace", priority = 3)
+    /**
+     * Test Case: CycleThree - Director can access Settings workspace
+     * Verifies that Director role can access the application Settings workspace
+     * Tab: Settings
+     * Priority: 3 (Functional)
+     */
+    @Test(description = "CycleThree - Director can access Settings workspace", priority = 3)
     @Description("Verify that Director role can access the application Settings workspace")
-    @Story("Settings Workspace Access")
+    @Story("CycleThree - Settings Workspace Access")
     @Severity(SeverityLevel.CRITICAL)
     public void testSettingsWorkspaceAccess() {
         logTestStep("Starting Settings workspace access test");
@@ -76,9 +95,15 @@ public class Cycle3FeatureTests extends BaseTest {
         logTestStep("Settings workspace access test completed");
     }
 
-    @Test(description = "PM has access to operational workspaces but not Client Portal", priority = 4)
+    /**
+     * Test Case: CycleThree - PM has access to operational workspaces but not Client Portal
+     * Verifies that PM has appropriate workspace boundaries enforced
+     * Tab: Dashboard (all operational tabs)
+     * Priority: 4 (Functional)
+     */
+    @Test(description = "CycleThree - PM has access to operational workspaces but not Client Portal", priority = 4)
     @Description("Verify that PM has appropriate workspace boundaries enforced")
-    @Story("PM Workspace Access Control")
+    @Story("CycleThree - PM Workspace Access Control")
     @Severity(SeverityLevel.CRITICAL)
     public void testPmWorkspaceBoundaries() {
         logTestStep("Starting PM workspace boundaries test");
@@ -96,9 +121,15 @@ public class Cycle3FeatureTests extends BaseTest {
         logTestStep("PM workspace boundaries test completed");
     }
 
-    @Test(description = "QS has access to commercial workspaces but not Site tab", priority = 5)
+    /**
+     * Test Case: CycleThree - QS has access to commercial workspaces but not Site tab
+     * Verifies that QS commercial focus is properly enforced via tab visibility
+     * Tab: Dashboard (commercial tabs)
+     * Priority: 5 (Functional)
+     */
+    @Test(description = "CycleThree - QS has access to commercial workspaces but not Site tab", priority = 5)
     @Description("Verify that QS commercial focus is properly enforced via tab visibility")
-    @Story("QS Workspace Access Control")
+    @Story("CycleThree - QS Workspace Access Control")
     @Severity(SeverityLevel.CRITICAL)
     public void testQsWorkspaceBoundaries() {
         logTestStep("Starting QS workspace boundaries test");
@@ -117,9 +148,15 @@ public class Cycle3FeatureTests extends BaseTest {
         logTestStep("QS workspace boundaries test completed");
     }
 
-    @Test(description = "Client Portal shows restricted view with Client role", priority = 6)
+    /**
+     * Test Case: CycleThree - Client Portal shows restricted view with Client role
+     * Verifies that Client role is restricted to Client Portal, Projects and Reports
+     * Tab: Dashboard (Client view)
+     * Priority: 6 (Integration)
+     */
+    @Test(description = "CycleThree - Client Portal shows restricted view with Client role", priority = 6)
     @Description("Verify that Client role is restricted to Client Portal, Projects and Reports")
-    @Story("Client Portal Restriction")
+    @Story("CycleThree - Client Portal Restriction")
     @Severity(SeverityLevel.BLOCKER)
     public void testClientPortalRoleRestrictions() {
         logTestStep("Starting Client Portal role restrictions test");
