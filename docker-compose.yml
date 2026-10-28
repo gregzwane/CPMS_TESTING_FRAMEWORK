@@ -12,7 +12,18 @@ services:
     networks:
       - cpms-network
 
-  # Main test runner service
+  # Clean Allure data before tests
+  clean-allure:
+    image: alpine:latest
+    container_name: cpms-clean-allure
+    command: >
+      sh -c "rm -rf /app/target/allure-results/* /app/target/allure-report/* /app/target/screenshots/* 2>/dev/null; echo 'Allure data cleaned'"
+    volumes:
+      - ./target:/app/target
+    networks:
+      - cpms-network
+
+  # Main test runner service - Cycle 1 & 2 (Authentication & Project Management)
   cpms-tests:
     build:
       context: .
@@ -20,6 +31,7 @@ services:
     container_name: cpms-test-runner
     depends_on:
       - xvfb
+      - clean-allure
     environment:
       - BROWSER=${BROWSER:-chrome}
       - ENV=${ENV:-local}
@@ -41,7 +53,7 @@ services:
     networks:
       - cpms-network
     entrypoint: ["mvn", "test", "-Dheadless=true"]
-    command: ["-Dtest=**/AuthenticationTests.java"]
+    command: ["-Dtest=**/AuthenticationTests.java,**/ProjectManagementTests.java"]
 
   # Smoke tests runner (quick validation)
   cpms-smoke:
@@ -51,6 +63,7 @@ services:
     container_name: cpms-smoke-tests
     depends_on:
       - xvfb
+      - clean-allure
     environment:
       - BROWSER=${BROWSER:-chrome}
       - ENV=${ENV:-local}
@@ -68,16 +81,17 @@ services:
     networks:
       - cpms-network
     entrypoint: ["mvn", "test", "-Dheadless=true"]
-    command: ["-Dtest=**/AuthenticationTests.java"]
+    command: ["-Dtest=**/AuthenticationTests.java#testDirectorLoginSuccess,**/AuthenticationTests.java#testClientLoginSuccess"]
 
-  # Full functional test suite
-  cpms-functional:
+  # Cycle 1 & 2 - Authentication & Project Management Tests
+  cpms-cycle1-2:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: cpms-functional-tests
+    container_name: cpms-cycle1-2-tests
     depends_on:
       - xvfb
+      - clean-allure
     environment:
       - BROWSER=${BROWSER:-chrome}
       - ENV=${ENV:-local}
@@ -92,6 +106,146 @@ services:
     tmpfs:
       - /tmp/.X11-unix
     shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/AuthenticationTests.java,**/ProjectManagementTests.java"]
+
+  # Cycle 3 - Advanced Feature Workspace Tests
+  cpms-cycle3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle3-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/Cycle3FeatureTests.java"]
+
+  # Cycle 4 - Role-Based Tab Access Tests
+  cpms-cycle4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle4-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/AuthenticationTests.java#testRoleTabAccessVerification"]
+
+  # Cycle 5 - Performance & Load Tests
+  cpms-cycle5-perf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle5-perf-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx4g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 4g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/Cycle5PerformanceTests.java"]
+
+  # Cycle 5 - Batch Processing Tests
+  cpms-cycle5-batch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle5-batch-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/BatchProcessingTests.java"]
+
+  # Cycle 5 - Full Regression (All Cycles)
+  cpms-cycle5-full:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle5-full-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx4g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 4g
     networks:
       - cpms-network
     entrypoint: ["mvn", "test", "-Dheadless=true"]

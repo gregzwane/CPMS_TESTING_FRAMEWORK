@@ -1,1 +1,0 @@
-{"uuid":"8fe30976-9d8c-4728-9e96-1b05c33fc76d","name":"com.cpms.api.CpmsApiTests","children":["8c5feb44-0e71-4c98-a8cd-46937537ce7a"],"befores":[{"name":"setupApi","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1792952956513,"stop":1792952956556}],"afters":[],"start":1792952956391,"stop":1792952976460}

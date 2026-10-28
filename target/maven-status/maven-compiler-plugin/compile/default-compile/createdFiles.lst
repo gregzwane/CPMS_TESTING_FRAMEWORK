@@ -1,12 +1,12 @@
-com\cpms\utils\ExtentManager.class
-com\cpms\utils\TestListener.class
 com\cpms\config\ConfigManager.class
 com\cpms\base\BasePage.class
 com\cpms\pages\DashboardPage.class
-com\cpms\pages\LoginPage.class
 com\cpms\pages\ProjectsPage.class
+com\cpms\base\BaseTest.class
+com\cpms\utils\ExtentManager.class
+com\cpms\utils\TestListener.class
+com\cpms\pages\LoginPage.class
 com\cpms\utils\DriverManager.class
 com\cpms\pages\DocumentsPage.class
 com\cpms\pages\BoqBudgetPage.class
 com\cpms\utils\DriverManager$BrowserType.class
-com\cpms\base\BaseTest.class
