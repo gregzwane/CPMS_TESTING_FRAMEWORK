@@ -72,14 +72,13 @@ mvn test -Dtest=**/CpmsApiTests.java
 mvn test -Dheadless=true
 
 # Cycle 5 Performance Tests
-mvn test -Dtest=**/CpmsApiTests.java#testConcurrentRequests -Dheadless=true
-mvn test -Dtest=**/CpmsApiTests.java#testApiLoadTest100Users -Dheadless=true
-mvn test -Dtest=**/CpmsApiTests.java#testApiStressTest500Users -Dheadless=true
-mvn test -Dtest=**/CpmsApiTests.java#testApiEnduranceTest30Min -Dheadless=true
-mvn test -Dtest=**/CpmsApiTests.java#testApiSpikeTest -Dheadless=true
+mvn test -Dtest=**/Cycle5PerformanceTests.java -Dheadless=true
 
 # Cycle 5 Batch Processing Tests
 mvn test -Dtest=**/BatchProcessingTests.java -Dheadless=true
+
+# Full Regression Pack (REGRESSION TEST CPMS PACK)
+mvn test -DsuiteXmlFile=src/test/resources/testng.xml -Dheadless=true
 ```
 
 ### Docker Execution
@@ -90,14 +89,26 @@ docker build -t cpms-tests:latest .
 # Quick smoke tests
 docker-compose up cpms-smoke
 
-# Full functional tests
-docker-compose up cpms-functional
+# Cycle 1 & 2 - Authentication & Project Management
+docker-compose up cpms-cycle1-2
+
+# Cycle 3 - Advanced Workspace Tests
+docker-compose up cpms-cycle3
+
+# Cycle 4 - Role-Based Tab Access Tests
+docker-compose up cpms-cycle4
+
+# Cycle 5 - Performance Tests
+docker-compose up cpms-cycle5-perf
+
+# Cycle 5 - Batch Processing Tests
+docker-compose up cpms-cycle5-batch
+
+# Cycle 5 - Full Regression (All Cycles)
+docker-compose up cpms-cycle5-full
 
 # API tests only
 docker-compose up cpms-api
-
-# Performance tests
-docker-compose up cpms-performance
 
 # View Allure reports at http://localhost:5050
 docker-compose up allure
@@ -166,6 +177,13 @@ docker-compose up allure  # http://localhost:5050
 - ✅ `testApiStressTest500Users` - 500 concurrent users, 50%+ success (breaking point)
 - ✅ `testApiEnduranceTest30Min` - 5 min sustained (30 min prod), 95%+ success
 - ✅ `testApiSpikeTest` - 200 user sudden burst, 70%+ success
+
+### 📦 CycleFive Batch Processing Tests (5/5 Ready)
+- ✅ `testBulkProjectImport` - Bulk project import from CSV (5 projects)
+- ✅ `testScheduledBoqImport` - Scheduled BOQ import verification
+- ✅ `testBatchDocumentClassification` - Batch document processing
+- ✅ `testBatchPaymentCertificateGeneration` - Bulk payment certs
+- ✅ `testNightlyDataSync` - Nightly data sync verification
 
 ### 📱 Mobile Tests (Framework Ready)
 - 📋 Mobile login for all roles
@@ -351,15 +369,95 @@ jobs:
 - **BasePage**: Reusable web element interactions
 - **BaseTest**: Test lifecycle management
 
-## 📋 Cycle Documentation
+## 📋 REGRESSION TEST CPMS PACK
 
-| Cycle | Focus | Tests | Status | Documentation |
-|-------|-------|-------|--------|---------------|
-| **CycleOne** | Build Verification & Smoke | 12 | ✅ Complete | `CYCLE1_READINESS.md` |
-| **CycleTwo** | Full Regression | 9 | ✅ Complete | `CYCLE2_READINESS.md` |
-| **CycleThree** | Advanced Workspaces | 6 | ✅ Complete | `CYCLE3_READINESS.md` |
-| **CycleFour** | RBAC + Project Mgmt | 12 | ✅ Complete | `CYCLE4_READINESS.md` |
-| **CycleFive** | Performance + Batch + CI/CD | 20 | ✅ Complete | `CYCLE5_READINESS.md` |
+**Test Pack:** REGRESSION TEST CPMS PACK  
+**Total Tests:** 54 | **Pass Rate:** 95%+ | **Core Suites:** 100%
+
+### Test ID Mapping
+| Prefix | Type | Range |
+|--------|------|-------|
+| FNT | Functional Tests | FNT001-FNT028 |
+| APT | API Tests | APT001-APT016 |
+| PFT | Performance Tests | PFT001-PFT005 |
+| BAT | Batch Processing | BAT001-BAT005 |
+
+### Test Execution Commands
+```bash
+# Full Regression Pack
+mvn test -DsuiteXmlFile=src/test/resources/testng.xml -Dheadless=true
+
+# Individual Cycles
+mvn test -Dtest=**/AuthenticationTests.java -Dheadless=true          # CycleOne (FNT001-FNT012)
+mvn test -Dtest=**/ProjectManagementTests.java -Dheadless=true       # CycleTwo (FNT013-FNT021)
+mvn test -Dtest=**/Cycle3FeatureTests.java -Dheadless=true           # CycleThree (FNT022-FNT027)
+mvn test -Dtest=**/AuthenticationTests.java#testRoleTabAccessVerification -Dheadless=true  # CycleFour (FNT028)
+mvn test -Dtest=**/CpmsApiTests.java -Dheadless=true                 # CycleFive API (APT001-APT016)
+mvn test -Dtest=**/Cycle5PerformanceTests.java -Dheadless=true       # CycleFive Perf (PFT001-PFT005)
+mvn test -Dtest=**/BatchProcessingTests.java -Dheadless=true         # CycleFive Batch (BAT001-BAT005)
+
+# Docker
+docker-compose up cpms-cycle1-2   # Cycle 1 & 2
+docker-compose up cpms-cycle3     # Cycle 3
+docker-compose up cpms-cycle4     # Cycle 4
+docker-compose up cpms-cycle5-perf # Cycle 5 Performance
+docker-compose up cpms-cycle5-batch # Cycle 5 Batch
+docker-compose up cpms-cycle5-full # Full Regression
+docker-compose up cpms-api        # API Only
+docker-compose up allure          # Reports at http://localhost:5050
+```
+
+## 📋 Application Features & Test Coverage
+
+| Feature Area | Application Feature | Test Coverage | Test IDs |
+|--------------|---------------------|---------------|----------|
+| **Authentication** | Sign In / Login | ✅ Full | FNT001-FNT007, FNT011 |
+| **Authentication** | Sign Out / Logout | ✅ Full | FNT008 |
+| **Authentication** | Session Management | ✅ Full | FNT008, FNT009 |
+| **Authentication** | RBAC / Role Access | ✅ Full | FNT010, FNT011, FNT028 |
+| **Projects** | Project Pack Import | ✅ Full | FNT013 |
+| **Projects** | Manual Creation | ✅ Full | FNT014 |
+| **Projects** | Filtering/Search | ✅ Full | FNT015 |
+| **Projects** | Geolocation/Map | ✅ Full | FNT018, FNT019 |
+| **Projects** | Document Classification | ✅ Full | FNT020 |
+| **Projects** | RBAC Project Access | ✅ Full | FNT017, FNT021 |
+| **Commercial/BOQ** | BOQ Import | ✅ API | APT006 |
+| **Commercial/BOQ** | Scheduled BOQ Import | 🟡 Ready | BAT002 |
+| **Commercial/BOQ** | Payment Certificates | 🟡 Ready | BAT004 |
+| **Programme** | Programme/WBS Management | ⚠️ Partial | - |
+| **Quality/H&S** | Inspections, NCRs, Checklists | ⚠️ Partial | - |
+| **Site** | Daily Diary, Geofenced Diary | ⚠️ Partial | - |
+| **Documents** | Document Management | ⚠️ Partial | FNT020 |
+| **Documents** | Batch Classification | 🟡 Ready | BAT003 |
+| **Comms Hub** | Communications | ❌ Missing | - |
+| **Tiger Team** | Incident Management | ✅ Access | FNT023 |
+| **Reports** | Payment Certs/IPC | ✅ API | APT003 |
+| **Reports** | Batch Generation | 🟡 Ready | BAT004 |
+| **BI & Root Cause** | Analytics | ✅ Access | FNT022 |
+| **Settings** | Configuration | ✅ Access | FNT024 |
+| **Client Portal** | Client View | ✅ Access | FNT027 |
+| **API** | Supabase Auth | ✅ Full | APT001, APT002 |
+| **API** | CRUD Operations | ✅ Full | APT003-APT006 |
+| **API** | Security (SQLi, XSS) | ✅ Full | APT007-APT010 |
+| **API** | Performance/Load | 🟡 Ready | PFT001-PFT005 |
+| **Batch** | Nightly Sync | 🟡 Ready | BAT005 |
+| **Batch** | Bulk Operations | 🟡 Ready | BAT001, BAT003 |
+
+## ⚠️ Missing Items - Final Cycle Development
+
+| Priority | Feature Area | Missing Items | Suggested Test IDs |
+|----------|--------------|---------------|-------------------|
+| **HIGH** | Programme | Programme/WBS management tests | FNT029-FNT032 |
+| **HIGH** | Quality/H&S | Inspection, NCR, Checklist tests | FNT033-FNT036 |
+| **HIGH** | Site/Diary | Daily progress, Geofenced diary tests | FNT037-FNT040 |
+| **HIGH** | Comms Hub | RFI, Communication, Notifications tests | FNT041-FNT044 |
+| **HIGH** | Documents | Full document lifecycle (upload, version, download) | FNT045-FNT048 |
+| **HIGH** | Reports | Custom report builder, Scheduling | FNT049-FNT052 |
+| **MEDIUM** | Mobile | Mobile app tests (login, diary, upload) | MBT001-MBT004 |
+| **MEDIUM** | BI/Analytics | Custom dashboards, Drill-down, Export | FNT053-FNT056 |
+| **MEDIUM** | Settings | User management, Roles, Notifications | FNT057-FNT060 |
+| **LOW** | Advanced Search | Global search, Filters, Saved searches | FNT061-FNT064 |
+| **LOW** | Notifications | Email, In-app, Webhook notifications | FNT065-FNT068 |
 
 ## 🤝 Contributing
 

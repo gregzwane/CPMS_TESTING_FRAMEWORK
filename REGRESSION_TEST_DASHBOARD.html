@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPMS Regression Test Pack - Deployment Readiness Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc; color: #1e293b; line-height: 1.6;
+            padding: 24px; max-width: 1400px; margin: 0 auto;
+        }
+        .header { margin-bottom: 32px; }
+        .header h1 { font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+        .header .meta { color: #64748b; font-size: 14px; }
+        .status-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; text-transform: uppercase; }
+        .status-amber { background: #fef3c7; color: #92400e; }
+        .grid { display: grid; gap: 24px; }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        @media (max-width: 1024px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+        .card {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .card h2 { font-size: 16px; font-weight: 600; color: #0f172a; margin-bottom: 16px; }
+        .stat-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f1f5f9; }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-label { color: #64748b; font-size: 14px; }
+        .stat-value { font-weight: 600; font-size: 14px; }
+        .stat-pass { color: #16a34a; }
+        .stat-warn { color: #ca8a04; }
+        .stat-fail { color: #dc2626; }
+        .stat-info { color: #2563eb; }
+        .progress-bar { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; margin-top: 12px; }
+        .progress-fill { height: 100%; border-radius: 4px; transition: width 0.3s ease; }
+        .progress-green { background: #16a34a; }
+        .progress-amber { background: #ca8a04; }
+        .progress-red { background: #dc2626; }
+        .chart-container { height: 300px; position: relative; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #f1f5f9; }
+        th { font-weight: 600; color: #334155; background: #f8fafc; white-space: nowrap; }
+        td { color: #475569; }
+        .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+        .badge-green { background: #dcfce7; color: #166534; }
+        .badge-amber { background: #fef3c7; color: #92400e; }
+        .badge-red { background: #fee2e2; color: #991b1b; }
+        .badge-gray { background: #f1f5f9; color: #64748b; }
+        .section { margin-top: 32px; }
+        .section h2 { font-size: 20px; font-weight: 700; color: #0f172a; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; }
+        .action-list { list-style: none; }
+        .action-list li { padding: 12px 0; border-bottom: 1px solid #f1f5f9; display: flex; gap: 12px; align-items: flex-start; }
+        .action-list li:last-child { border-bottom: none; }
+        .action-num { background: #3b82f6; color: white; width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; flex-shrink: 0; }
+        .action-text { flex: 1; }
+        .action-meta { font-size: 12px; color: #64748b; margin-top: 4px; }
+        .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px; }
+        .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #475569; }
+        .legend-dot { width: 12px; height: 12px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CPMS Regression Test Pack — Deployment Readiness</h1>
+        <div class="meta">Framework 1.2.0 (CycleFive) · Generated 2026-10-28 · Application: leaverageconstructionhub.vercel.app</div>
+        <div style="margin-top: 12px;">
+            <span class="status-badge status-amber">QA Status: AMBER — Conditional Go</span>
+        </div>
+    </div>
+
+    <div class="grid grid-3">
+        <div class="card">
+            <h2>Test Execution Summary</h2>
+            <div class="stat-row"><span class="stat-label">Total Test Cases</span><span class="stat-value stat-info">54</span></div>
+            <div class="stat-row"><span class="stat-label">Executed & Passing</span><span class="stat-value stat-pass">38 (70%)</span></div>
+            <div class="stat-row"><span class="stat-label">Ready / Not Executed</span><span class="stat-value stat-warn">16 (30%)</span></div>
+            <div class="stat-row"><span class="stat-label">Missing Coverage (HIGH)</span><span class="stat-value stat-fail">~24 tests</span></div>
+            <div class="progress-bar"><div class="progress-fill progress-green" style="width: 70%"></div></div>
+        </div>
+        <div class="card">
+            <h2>Cycle Breakdown</h2>
+            <div class="stat-row"><span class="stat-label">Cycle 1 (Auth/Smoke)</span><span class="stat-value stat-pass">12/12 ✅</span></div>
+            <div class="stat-row"><span class="stat-label">Cycle 2 (Projects)</span><span class="stat-value stat-pass">9/9 ✅</span></div>
+            <div class="stat-row"><span class="stat-label">Cycle 3 (Workspaces)</span><span class="stat-value stat-pass">6/6 ✅</span></div>
+            <div class="stat-row"><span class="stat-label">Cycle 4 (RBAC)</span><span class="stat-value stat-pass">1/1 ✅</span></div>
+            <div class="stat-row"><span class="stat-label">Cycle 5 API</span><span class="stat-value stat-pass">16/16 ✅</span></div>
+            <div class="stat-row"><span class="stat-label">Cycle 5 Performance</span><span class="stat-value stat-warn">0/5 🟡</span></div>
+            <div class="stat-row"><span class="stat-label">Cycle 5 Batch</span><span class="stat-value stat-warn">0/5 🟡</span></div>
+        </div>
+        <div class="card">
+            <h2>Quality Gates</h2>
+            <div class="stat-row"><span class="stat-label">Critical Defects</span><span class="stat-value stat-pass">0</span></div>
+            <div class="stat-row"><span class="stat-label">High Defects</span><span class="stat-value stat-pass">0</span></div>
+            <div class="stat-row"><span class="stat-label">API Security (SQLi/XSS)</span><span class="stat-value stat-pass">PASS</span></div>
+            <div class="stat-row"><span class="stat-label">Performance Baseline</span><span class="stat-value stat-warn">NOT RUN</span></div>
+            <div class="stat-row"><span class="stat-label">Batch Reliability</span><span class="stat-value stat-warn">NOT RUN</span></div>
+            <div class="stat-row"><span class="stat-label">Requirement Coverage</span><span class="stat-value stat-warn">~65%</span></div>
+        </div>
+    </div>
+
+    <div class="grid grid-2">
+        <div class="card">
+            <h2>Test Status Distribution</h2>
+            <div class="chart-container"><canvas id="statusChart"></canvas></div>
+            <div class="legend">
+                <span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>Passed (38)</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#ca8a04"></span>Ready/Not Run (16)</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>Missing Coverage (est. 24)</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Coverage by Feature Area</h2>
+            <div class="chart-container"><canvas id="coverageChart"></canvas></div>
+            <div class="legend">
+                <span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>Full Coverage</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#ca8a04"></span>Partial / Ready</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>Missing (HIGH)</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#94a3b8"></span>Missing (MED/LOW)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Critical Feature Gaps (Blocking Deployment)</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Priority</th><th>Feature Area</th><th>Current Coverage</th><th>Missing Tests</th><th>Business Risk</th><th>Suggested IDs</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="badge badge-red">HIGH</span></td><td>Programme / WBS</td><td>0%</td><td>4</td><td>Core planning untested</td><td>FNT029-FNT032</td></tr>
+                    <tr><td><span class="badge badge-red">HIGH</span></td><td>Quality / H&S</td><td>0%</td><td>4</td><td>Regulatory/compliance</td><td>FNT033-FNT036</td></tr>
+                    <tr><td><span class="badge badge-red">HIGH</span></td><td>Site / Daily Diary</td><td>0%</td><td>4</td><td>Progress tracking</td><td>FNT037-FNT040</td></tr>
+                    <tr><td><span class="badge badge-red">HIGH</span></td><td>Comms Hub</td><td>0%</td><td>4</td><td>Collaboration broken</td><td>FNT041-FNT044</td></tr>
+                    <tr><td><span class="badge badge-amber">MEDIUM</span></td><td>Documents (Full)</td><td>Partial (20%)</td><td>4</td><td>Doc control gap</td><td>FNT045-FNT048</td></tr>
+                    <tr><td><span class="badge badge-amber">MEDIUM</span></td><td>Reports (Custom)</td><td>0%</td><td>4</td><td>No UI validation</td><td>FNT049-FNT052</td></tr>
+                    <tr><td><span class="badge badge-amber">MEDIUM</span></td><td>BI / Analytics</td><td>Access only</td><td>4</td><td>Dashboards untested</td><td>FNT053-FNT056</td></tr>
+                    <tr><td><span class="badge badge-amber">MEDIUM</span></td><td>Settings (User mgmt)</td><td>Access only</td><td>4</td><td>Config untested</td><td>FNT057-FNT060</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pre-Deployment Action Plan</h2>
+        <ul class="action-list">
+            <li>
+                <span class="action-num">1</span>
+                <div class="action-text">
+                    <strong>Execute PFT Suite (Cycle 5 Performance)</strong>
+                    <div class="action-meta">Owner: QA Engineer · Due: T+1 day · Command: <code>mvn test -Dtest=**/Cycle5PerformanceTests.java -Dheadless=true</code></div>
+                </div>
+            </li>
+            <li>
+                <span class="action-num">2</span>
+                <div class="action-text">
+                    <strong>Execute BAT Suite (Cycle 5 Batch)</strong>
+                    <div class="action-meta">Owner: QA Engineer · Due: T+1 day · Command: <code>mvn test -Dtest=**/BatchProcessingTests.java -Dheadless=true</code></div>
+                </div>
+            </li>
+            <li>
+                <span class="action-num">3</span>
+                <div class="action-text">
+                    <strong>Implement Programme & Quality/H&S Tests</strong>
+                    <div class="action-meta">Owner: QA Engineer · Due: Sprint +1 · Files: <code>ProgrammeManagementTests.java</code>, <code>QualityHSTests.java</code></div>
+                </div>
+            </li>
+            <li>
+                <span class="action-num">4</span>
+                <div class="action-text">
+                    <strong>Implement Site/Diary & Comms Hub Tests</strong>
+                    <div class="action-meta">Owner: QA Engineer · Due: Sprint +2 · Files: <code>SiteDiaryTests.java</code>, <code>CommsHubTests.java</code></div>
+                </div>
+            </li>
+            <li>
+                <span class="action-num">5</span>
+                <div class="action-text">
+                    <strong>Extend Document Management Tests</strong>
+                    <div class="action-meta">Owner: QA Engineer · Due: Sprint +2 · File: <code>DocumentManagementTests.java</code> (extend)</div>
+                </div>
+            </li>
+            <li>
+                <span class="action-num">6</span>
+                <div class="action-text">
+                    <strong>Add CI Gates for Performance Thresholds</strong>
+                    <div class="action-meta">Owner: DevOps · Due: Sprint +1 · Pipeline: p95 < 2s, 90%+ success rate</div>
+                </div>
+            </li>
+            <li>
+                <span class="action-num">7</span>
+                <div class="action-text">
+                    <strong>Stakeholder Risk Sign-off Meeting</strong>
+                    <div class="action-meta">Owner: QA Lead/PM · Due: Pre-deploy · Document accepted residual risks</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Release Recommendation</h2>
+        <div class="card" style="background: #fef3c7; border-color: #fde68a;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+                <div style="background: #ca8a04; color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">⚠</div>
+                <div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: #92400e; margin-bottom: 8px;">CONDITIONAL GO — With Mandatory Pre-Deployment Actions</h3>
+                    <p style="color: #78350f; margin-bottom: 12px;">The system is stable in tested areas (Auth, Projects, RBAC, API). <strong>Do not deploy until PFT/BAT cycles execute and pass.</strong> HIGH-priority gaps (Programme, Quality/H&S, Site, Comms) must be documented as accepted risks with stakeholder sign-off.</p>
+                    <ul style="color: #78350f; padding-left: 20px; margin: 0;">
+                        <li>Execute PFT001-PFT005 and BAT001-BAT005 → must pass thresholds</li>
+                        <li>Document known gaps in Release Notes with risk acceptance</li>
+                        <li>Stakeholder sign-off on residual risk (especially Quality/H&S — regulatory)</li>
+                        <li>Schedule Phase 2 gap closure in next 2 sprints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Status Distribution Chart
+        new Chart(document.getElementById('statusChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Passed (Executed)', 'Ready (Not Executed)', 'Missing Coverage'],
+                datasets: [{
+                    data: [38, 16, 24],
+                    backgroundColor: ['#16a34a', '#ca8a04', '#dc2626'],
+                    borderWidth: 0,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const total = 78;
+                                const pct = ((context.raw / total) * 100).toFixed(1);
+                                return `${context.label}: ${context.raw} (${pct}%)`;
+                            }
+                        }
+                    }
+                },
+                cutout: '65%'
+            }
+        });
+
+        // Coverage by Feature Area Chart
+        new Chart(document.getElementById('coverageChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Auth', 'Projects', 'Workspaces', 'RBAC', 'API', 'Performance', 'Batch', 'Programme', 'Quality/H&S', 'Site/Diary', 'Comms', 'Documents', 'Reports', 'BI', 'Settings'],
+                datasets: [{
+                    label: 'Coverage %',
+                    data: [100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0],
+                    backgroundColor: [
+                        '#16a34a', '#16a34a', '#16a34a', '#16a34a', '#16a34a',
+                        '#ca8a04', '#ca8a04',
+                        '#dc2626', '#dc2626', '#dc2626', '#dc2626',
+                        '#ca8a04',
+                        '#ca8a04', '#ca8a04', '#ca8a04'
+                    ],
+                    borderRadius: 4,
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { min: 0, max: 100, ticks: { callback: v => v + '%' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
