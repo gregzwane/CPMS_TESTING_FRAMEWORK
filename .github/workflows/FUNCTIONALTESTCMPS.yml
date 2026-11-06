@@ -16,7 +16,7 @@ on:
       browser:
         description: 'Browser to run tests on'
         required: true
-        default: 'chrome'
+        default: 'edge'
         type: choice
         options:
           - chrome
