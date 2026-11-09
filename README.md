@@ -104,8 +104,20 @@ docker-compose up cpms-cycle5-perf
 # Cycle 5 - Batch Processing Tests
 docker-compose up cpms-cycle5-batch
 
-# Cycle 5 - Full Regression (All Cycles)
+# Cycle 5 - Full Regression (All Cycles 1-5)
 docker-compose up cpms-cycle5-full
+
+# Cycle 6 - Complete Coverage (All Cycles 1-6)
+docker-compose up cpms-cycle6
+
+# Cycle 6 - Programme & Quality Tests (HIGH Priority)
+docker-compose up cpms-cycle6-pq
+
+# Cycle 6 - Site & Comms Hub Tests (HIGH Priority)
+docker-compose up cpms-cycle6-sc
+
+# Cycle 6 - Mobile, BI, Settings, Search, Notifications (MEDIUM/LOW)
+docker-compose up cpms-cycle6-ml
 
 # API tests only
 docker-compose up cpms-api
@@ -126,7 +138,7 @@ mvn allure:report
 docker-compose up allure  # http://localhost:5050
 ```
 
-## 🧪 Test Coverage (Cycle 5 - 95%+ Pass Rate)
+## 🧪 Test Coverage (Cycle 6 - 95%+ Pass Rate)
 
 ### 🔐 Authentication Tests (CycleOne - 12/12 Passing)
 - ✅ Director, PM, QS, Client login validation
@@ -184,6 +196,19 @@ docker-compose up allure  # http://localhost:5050
 - ✅ `testBatchDocumentClassification` - Batch document processing
 - ✅ `testBatchPaymentCertificateGeneration` - Bulk payment certs
 - ✅ `testNightlyDataSync` - Nightly data sync verification
+
+### 🔄 CycleSix Complete Coverage Tests (44 Tests - HIGH/MEDIUM/LOW Priority)
+- ✅ **Programme/WBS**: `testProgrammeWbsAccess`, `testWbsTreeNavigation`, `testBaselineScheduleSaveCompare`, `testWhatIfCpmAnalysis` (HIGH)
+- ✅ **Quality/H&S**: `testQualityInspections`, `testNcrManagement`, `testHsChecklistExecution`, `testQualityTrendAnalysis` (HIGH)
+- ✅ **Site/Diary**: `testDailyDiaryEntry`, `testGeofencedSiteDiary`, `testLabourPlantReturns`, `testSiteEvidenceUpload` (HIGH)
+- ✅ **Comms Hub**: `testRfiManagement`, `testChannelMessaging`, `testEmailNotifications`, `testInAppNotifications` (HIGH)
+- ✅ **Documents**: `testDocumentUpload`, `testDocumentVersionControl`, `testDocumentPreviewDownload`, `testDocumentClassification` (HIGH)
+- ✅ **Reports**: `testCustomReportBuilder`, `testReportScheduling`, `testReportExportFormats`, `testEarnedValueReporting` (HIGH)
+- ✅ **Mobile**: `testMobileLoginAllRoles`, `testMobileGeofencedDiary`, `testMobileDocumentUpload`, `testMobileNavigation` (MEDIUM)
+- ✅ **BI/Analytics**: `testCustomDashboards`, `testDrillDownAnalytics`, `testBiReportExport`, `testRootCauseAnalysis` (MEDIUM)
+- ✅ **Settings**: `testUserManagement`, `testRolePermissionManagement`, `testNotificationSettings`, `testSystemConfiguration` (MEDIUM)
+- ✅ **Search**: `testGlobalSearch`, `testAdvancedFilters`, `testSavedSearches`, `testSearchExport` (LOW)
+- ✅ **Notifications**: `testEmailTemplates`, `testNotificationCenter`, `testWebhookIntegration`, `testRealtimeNotifications` (LOW)
 
 ### 📱 Mobile Tests (Framework Ready)
 - 📋 Mobile login for all roles

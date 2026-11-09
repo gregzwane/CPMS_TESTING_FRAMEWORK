@@ -251,6 +251,118 @@ services:
     entrypoint: ["mvn", "test", "-Dheadless=true"]
     command: ["-DsuiteXmlFile=src/test/resources/testng.xml"]
 
+  # Cycle 6 - Final Cycle Complete Coverage Tests
+  cpms-cycle6:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle6-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/Cycle6FinalTests.java"]
+
+  # Cycle 6 - Programme & Quality Tests (HIGH Priority)
+  cpms-cycle6-pq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle6-pq-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/Cycle6FinalTests.java#testProgrammeWbsAccess,**/Cycle6FinalTests.java#testWbsTreeNavigation,**/Cycle6FinalTests.java#testBaselineScheduleSaveCompare,**/Cycle6FinalTests.java#testWhatIfCpmAnalysis,**/Cycle6FinalTests.java#testQualityInspections,**/Cycle6FinalTests.java#testNcrManagement,**/Cycle6FinalTests.java#testHsChecklistExecution,**/Cycle6FinalTests.java#testQualityTrendAnalysis"]
+
+  # Cycle 6 - Site & Comms Hub Tests (HIGH Priority)
+  cpms-cycle6-sc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle6-sc-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/Cycle6FinalTests.java#testDailyDiaryEntry,**/Cycle6FinalTests.java#testGeofencedSiteDiary,**/Cycle6FinalTests.java#testLabourPlantReturns,**/Cycle6FinalTests.java#testSiteEvidenceUpload,**/Cycle6FinalTests.java#testRfiManagement,**/Cycle6FinalTests.java#testChannelMessaging,**/Cycle6FinalTests.java#testEmailNotifications,**/Cycle6FinalTests.java#testInAppNotifications"]
+
+  # Cycle 6 - Documents, Reports, Mobile, BI, Settings, Search, Notifications (MEDIUM/LOW)
+  cpms-cycle6-ml:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpms-cycle6-ml-tests
+    depends_on:
+      - xvfb
+      - clean-allure
+    environment:
+      - BROWSER=${BROWSER:-chrome}
+      - ENV=${ENV:-local}
+      - HEADLESS=true
+      - MAVEN_OPTS=-Xmx2g
+      - DISPLAY=:99
+    volumes:
+      - ./target/reports:/app/target/reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/screenshots:/app/target/screenshots
+      - ./target/surefire-reports:/app/target/surefire-reports
+    tmpfs:
+      - /tmp/.X11-unix
+    shm_size: 2g
+    networks:
+      - cpms-network
+    entrypoint: ["mvn", "test", "-Dheadless=true"]
+    command: ["-Dtest=**/Cycle6FinalTests.java#testDocumentUpload,**/Cycle6FinalTests.java#testDocumentVersionControl,**/Cycle6FinalTests.java#testDocumentPreviewDownload,**/Cycle6FinalTests.java#testDocumentClassification,**/Cycle6FinalTests.java#testCustomReportBuilder,**/Cycle6FinalTests.java#testReportScheduling,**/Cycle6FinalTests.java#testReportExportFormats,**/Cycle6FinalTests.java#testEarnedValueReporting,**/Cycle6FinalTests.java#testMobileLoginAllRoles,**/Cycle6FinalTests.java#testMobileGeofencedDiary,**/Cycle6FinalTests.java#testMobileDocumentUpload,**/Cycle6FinalTests.java#testMobileNavigation,**/Cycle6FinalTests.java#testCustomDashboards,**/Cycle6FinalTests.java#testDrillDownAnalytics,**/Cycle6FinalTests.java#testBiReportExport,**/Cycle6FinalTests.java#testRootCauseAnalysis,**/Cycle6FinalTests.java#testUserManagement,**/Cycle6FinalTests.java#testRolePermissionManagement,**/Cycle6FinalTests.java#testNotificationSettings,**/Cycle6FinalTests.java#testSystemConfiguration,**/Cycle6FinalTests.java#testGlobalSearch,**/Cycle6FinalTests.java#testAdvancedFilters,**/Cycle6FinalTests.java#testSavedSearches,**/Cycle6FinalTests.java#testSearchExport,**/Cycle6FinalTests.java#testEmailTemplates,**/Cycle6FinalTests.java#testNotificationCenter,**/Cycle6FinalTests.java#testWebhookIntegration,**/Cycle6FinalTests.java#testRealtimeNotifications"]
+
   # API tests only
   cpms-api:
     build:

@@ -104,8 +104,63 @@
         </classes>
     </test>
 
+    <!-- Cycle 6 - Final Cycle Complete Coverage -->
+    <test name="Cycle 6 Final Tests" priority="6">
+        <parameter name="testType" value="cycle6"/>
+        <classes>
+            <class name="com.cpms.tests.Cycle6FinalTests">
+                <methods>
+                    <include name="testProgrammeWbsAccess"/>
+                    <include name="testWbsTreeNavigation"/>
+                    <include name="testBaselineScheduleSaveCompare"/>
+                    <include name="testWhatIfCpmAnalysis"/>
+                    <include name="testQualityInspections"/>
+                    <include name="testNcrManagement"/>
+                    <include name="testHsChecklistExecution"/>
+                    <include name="testQualityTrendAnalysis"/>
+                    <include name="testDailyDiaryEntry"/>
+                    <include name="testGeofencedSiteDiary"/>
+                    <include name="testLabourPlantReturns"/>
+                    <include name="testSiteEvidenceUpload"/>
+                    <include name="testRfiManagement"/>
+                    <include name="testChannelMessaging"/>
+                    <include name="testEmailNotifications"/>
+                    <include name="testInAppNotifications"/>
+                    <include name="testDocumentUpload"/>
+                    <include name="testDocumentVersionControl"/>
+                    <include name="testDocumentPreviewDownload"/>
+                    <include name="testDocumentClassification"/>
+                    <include name="testCustomReportBuilder"/>
+                    <include name="testReportScheduling"/>
+                    <include name="testReportExportFormats"/>
+                    <include name="testEarnedValueReporting"/>
+                    <include name="testMobileLoginAllRoles"/>
+                    <include name="testMobileGeofencedDiary"/>
+                    <include name="testMobileDocumentUpload"/>
+                    <include name="testMobileNavigation"/>
+                    <include name="testCustomDashboards"/>
+                    <include name="testDrillDownAnalytics"/>
+                    <include name="testBiReportExport"/>
+                    <include name="testRootCauseAnalysis"/>
+                    <include name="testUserManagement"/>
+                    <include name="testRolePermissionManagement"/>
+                    <include name="testNotificationSettings"/>
+                    <include name="testSystemConfiguration"/>
+                    <include name="testGlobalSearch"/>
+                    <include name="testAdvancedFilters"/>
+                    <include name="testSavedSearches"/>
+                    <include name="testSearchExport"/>
+                    <include name="testEmailTemplates"/>
+                    <include name="testNotificationCenter"/>
+                    <include name="testWebhookIntegration"/>
+                    <include name="testRealtimeNotifications"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
     <!-- Regression Test Suite - All tests -->
-    <test name="Regression Tests" priority="6" enabled="false">
+    <test name="Regression Tests" priority="7" enabled="false">
         <parameter name="testType" value="regression"/>
         <packages>
             <package name="com.cpms.tests"/>
