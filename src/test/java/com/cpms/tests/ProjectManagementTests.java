@@ -13,6 +13,8 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
+import java.util.List;
+
 /**
  * CycleTwo - Project Management Tests based on uploaded tester scenarios
  * Covers project pack import, manual creation, filtering and geolocation
@@ -149,10 +151,19 @@ public class ProjectManagementTests extends BaseTest {
         logTestStep("Filtering projects by 'JHB'");
         projectsPage.filterProjects("JHB");
 
+        // Wait longer for filter to complete
+        try { Thread.sleep(2000); } catch (InterruptedException ignored) {}
+
         int filteredCount = projectsPage.getVisibleProjectCount();
         logTestStep("Filtered count: " + filteredCount + " (initial: " + initialCount + ")");
+
+        // Log actual project codes for debugging
+        List<String> visibleCodes = projectsPage.getVisibleProjectCodes();
+        logTestStep("Visible project codes after JHB filter: " + visibleCodes);
+
+        // Verify filtered count is less than or equal to initial (allowing for timing issues)
         Assert.assertTrue(filteredCount <= initialCount,
-            "Filtered count should be less than or equal to initial count");
+            "Filtered count (" + filteredCount + ") should be <= initial count (" + initialCount + ")");
 
         // Clear filter and verify full list returns
         logTestStep("Clearing filter");
@@ -160,7 +171,6 @@ public class ProjectManagementTests extends BaseTest {
 
         int clearedCount = projectsPage.getVisibleProjectCount();
         logTestStep("Cleared count: " + clearedCount);
-        // Allow some tolerance for async loading - just verify it increased from filtered count
         Assert.assertTrue(clearedCount >= filteredCount,
             "Count should increase after clearing filter (filtered: " + filteredCount + ", cleared: " + clearedCount + ")");
 

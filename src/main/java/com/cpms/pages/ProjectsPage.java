@@ -331,7 +331,8 @@ public class ProjectsPage extends BasePage {
                 Thread.sleep(500);
             }
 
-            clearAndType(filterInput, searchTerm);
+            WebElement input = waitForElementToBeVisible(filterInput);
+            clearAndType(input, searchTerm);
         } catch (Exception e) {
             logger.warn("Filter input handling error: {}", e.getMessage());
             try {
@@ -344,7 +345,7 @@ public class ProjectsPage extends BasePage {
 
         // Wait for filter results
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }

@@ -437,7 +437,7 @@ jobs:
         uses: dorny/test-reporter@v1
         with:
           name: CPMS Functional Tests (${{ matrix.browser }}-${{ matrix.testCycle }})
-          path: target/surefire-reports/*.xml
+          path: "target/surefire-reports"
           reporter: java-junit
           fail-on-error: false
           annotate-only: true

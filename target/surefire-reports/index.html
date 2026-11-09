@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.ProjectManagementTests" class="method navigator-link" hash-for-method="testProjectCreationValidation">testProjectCreationValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.ProjectManagementTests" class="method navigator-link" hash-for-method="testProjectFiltering">testProjectFiltering</a> <!-- method navigator-link -->
@@ -124,6 +129,15 @@
               <span class="class-name">com.cpms.tests.ProjectManagementTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProjectCreationValidation">
+                  </a> <!-- testProjectCreationValidation -->
+                  <span class="method-name">testProjectCreationValidation</span>
+                  <em>
+(CycleTwo - Project creation validates required fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testProjectFiltering">
@@ -191,16 +205,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testProjectFiltering')
+data.setCell(0, 1, 'testProjectCreationValidation')
 data.setCell(0, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(0, 3, 34310);
+data.setCell(0, 3, 55786);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testProjectFiltering')
+data.setCell(1, 2, 'com.cpms.tests.ProjectManagementTests')
+data.setCell(1, 3, 38249);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -215,27 +233,25 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.cpms.tests.ProjectManagementTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testProjectLocationUpdate</span>
+                <span class="ignored-method-name">testRoleBasedProjectDashboard</span>
                 <br/>
                 <span class="ignored-method-name">testProjectGeolocationMapping</span>
                 <br/>
-                <span class="ignored-method-name">testProjectPackImport</span>
+                <span class="ignored-method-name">testProjectLocationUpdate</span>
                 <br/>
-                <span class="ignored-method-name">testRoleBasedProjectDashboard</span>
+                <span class="ignored-method-name">testProjectPackImport</span>
                 <br/>
                 <span class="ignored-method-name">testManualProjectCreation</span>
                 <br/>
                 <span class="ignored-method-name">testProjectImportDocumentClassification</span>
                 <br/>
                 <span class="ignored-method-name">testClientProjectAccessRestriction</span>
-                <br/>
-                <span class="ignored-method-name">testProjectCreationValidation</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -254,27 +270,39 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">classSetup</span>
-                <span class="method-start">961 ms</span>
+                <span class="method-start">1548 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectFiltering())</span>
-                <span class="method-start">988 ms</span>
+                <span class="method-start">1607 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testProjectFiltering</span>
-                <span class="method-start">9222 ms</span>
+                <span class="method-start">8396 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testProjectFiltering status=SUCCESS method=ProjectManagementTests.testProjectFilter...)</span>
-                <span class="method-start">43552 ms</span>
+                <span class="method-start">46684 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectCreationValidation())</span>
+                <span class="method-start">47425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testProjectCreationValidation</span>
+                <span class="method-start">51219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testProjectCreationValidation status=SUCCESS method=ProjectManagementTests.testProj...)</span>
+                <span class="method-start">107017 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">classTeardown</span>
-                <span class="method-start">43994 ms</span>
+                <span class="method-start">107543 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">suiteTeardown</span>
-                <span class="method-start">44057 ms</span>
+                <span class="method-start">107617 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
