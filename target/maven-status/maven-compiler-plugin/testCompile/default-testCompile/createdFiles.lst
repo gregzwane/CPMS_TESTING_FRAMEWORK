@@ -4,3 +4,4 @@ com\cpms\api\CpmsApiTests.class
 com\cpms\tests\BatchProcessingTests.class
 com\cpms\tests\ProjectManagementTests.class
 com\cpms\tests\AuthenticationTests.class
+com\cpms\tests\Cycle6FinalTests.class

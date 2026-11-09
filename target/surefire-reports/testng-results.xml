@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-09T20:00:38 SAST" name="Surefire suite" finished-at="2026-11-09T20:01:21 SAST" duration-ms="43102">
+    <groups>
+    </groups>
+    <test started-at="2026-11-09T20:00:38 SAST" name="Surefire test" finished-at="2026-11-09T20:01:21 SAST" duration-ms="43102">
+      <class name="com.cpms.tests.ProjectManagementTests">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:com.cpms.tests.ProjectManagementTests@51b51641]" started-at="2026-11-09T20:00:37 SAST" name="suiteSetup" finished-at="2026-11-09T20:00:38 SAST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:com.cpms.tests.ProjectManagementTests@51b51641]" started-at="2026-11-09T20:00:38 SAST" name="classSetup" finished-at="2026-11-09T20:00:38 SAST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method is-config="true" signature="testSetup(java.lang.reflect.Method)[pri:0, instance:com.cpms.tests.ProjectManagementTests@51b51641]" started-at="2026-11-09T20:00:38 SAST" name="testSetup" finished-at="2026-11-09T20:00:46 SAST" duration-ms="7871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cpms.tests.ProjectManagementTests.testProjectFiltering()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testProjectFiltering()[pri:3, instance:com.cpms.tests.ProjectManagementTests@51b51641]" started-at="2026-11-09T20:00:46 SAST" name="testProjectFiltering" description="CycleTwo - Project filtering works correctly" finished-at="2026-11-09T20:01:20 SAST" duration-ms="34310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProjectFiltering -->
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestResult)[pri:0, instance:com.cpms.tests.ProjectManagementTests@51b51641]" started-at="2026-11-09T20:01:20 SAST" name="testTeardown" finished-at="2026-11-09T20:01:21 SAST" duration-ms="439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testProjectFiltering status=SUCCESS method=ProjectManagementTests.testProjectFiltering()[pri:3, instance:com.cpms.tests.ProjectManagementTests@51b51641] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:com.cpms.tests.ProjectManagementTests@51b51641]" started-at="2026-11-09T20:01:21 SAST" name="classTeardown" finished-at="2026-11-09T20:01:21 SAST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTeardown -->
+        <test-method is-config="true" signature="suiteTeardown()[pri:0, instance:com.cpms.tests.ProjectManagementTests@51b51641]" started-at="2026-11-09T20:01:21 SAST" name="suiteTeardown" finished-at="2026-11-09T20:01:22 SAST" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTeardown -->
+      </class> <!-- com.cpms.tests.ProjectManagementTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

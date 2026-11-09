@@ -1,0 +1,2399 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>CPMS Test Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css">.brand-logo {
+background-color: #1f4e78 !important;
+}
+.nav-wrapper {
+background-color: #1f4e78 !important;
+}
+.test-count-item {
+background-color: #2d6aa5 !important;
+}
+</style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Construction Project Management System - Test Results</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">2026-10-28 15:55:04</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Cycle3FeatureTests</a><a class="dropdown-item" href="#">AuthenticationTests</a><a class="dropdown-item" href="#">ProjectManagementTests</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDirectorLoginSuccess</p>
+            <p class="text-sm">
+              <span>15:55:25</span> / <span>00:01:09:289</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDirectorLoginSuccess</h5>
+<span class='badge badge-success'>10.28.2026 15:55:25</span>
+<span class='badge badge-danger'>10.28.2026 15:56:35</span>
+<span class='badge badge-default'>00:01:09:289</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Director login succeeds with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:55:28</td>
+        <td>
+          Starting Director login test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:55:33</td>
+        <td>
+          Performing Director login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:55:53</td>
+        <td>
+          Verifying login success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:56:16</td>
+        <td>
+          Verifying Director role access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:56:35</td>
+        <td>
+          Director login test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:56:35</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectPackImport</p>
+            <p class="text-sm">
+              <span>15:55:25</span> / <span>00:01:11:943</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testProjectPackImport</h5>
+<span class='badge badge-success'>10.28.2026 15:55:25</span>
+<span class='badge badge-danger'>10.28.2026 15:56:37</span>
+<span class='badge badge-default'>00:01:11:943</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Director imports complete project pack successfully</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:55:28</td>
+        <td>
+          Starting project pack import test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:56:25</td>
+        <td>
+          Navigating to Projects page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>15:56:37</td>
+        <td>
+          Test Failed: Projects page should load expected [true] but found [false]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:56:37</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-10-28_15-56-37-866.png' src="target/screenshots/screenshot_2026-10-28_15-56-37-866.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectGeolocationMapping</p>
+            <p class="text-sm">
+              <span>15:56:47</span> / <span>00:00:49:257</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testProjectGeolocationMapping</h5>
+<span class='badge badge-success'>10.28.2026 15:56:47</span>
+<span class='badge badge-danger'>10.28.2026 15:57:37</span>
+<span class='badge badge-default'>00:00:49:257</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project geolocation appears correctly on dashboard map</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:56:48</td>
+        <td>
+          Starting project geolocation mapping test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:57:05</td>
+        <td>
+          Checking map visibility on dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>15:57:15</td>
+        <td>
+          Test Failed: Map should be visible on dashboard expected [true] but found [false]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:57:37</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-10-28_15-57-31-705.png' src="target/screenshots/screenshot_2026-10-28_15-57-31-705.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectManagerLoginSuccess</p>
+            <p class="text-sm">
+              <span>15:57:05</span> / <span>00:01:34:050</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectManagerLoginSuccess</h5>
+<span class='badge badge-success'>10.28.2026 15:57:05</span>
+<span class='badge badge-danger'>10.28.2026 15:58:39</span>
+<span class='badge badge-default'>00:01:34:050</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Project Manager login succeeds with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:57:07</td>
+        <td>
+          Starting Project Manager login test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:57:12</td>
+        <td>
+          Performing PM login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:57:45</td>
+        <td>
+          Verifying login success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:58:05</td>
+        <td>
+          Verifying PM role access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:58:39</td>
+        <td>
+          Project Manager login test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:58:39</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testManualProjectCreation</p>
+            <p class="text-sm">
+              <span>15:57:10</span> / <span>00:01:39:577</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testManualProjectCreation</h5>
+<span class='badge badge-success'>10.28.2026 15:57:10</span>
+<span class='badge badge-danger'>10.28.2026 15:58:49</span>
+<span class='badge badge-default'>00:01:39:577</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Director creates new project manually with geolocation</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:57:11</td>
+        <td>
+          Starting manual project creation test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:58:03</td>
+        <td>
+          Creating project manually with geolocation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:58:49</td>
+        <td>
+          Project creation handled: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .new-project-modal, .project-form' (tried for 30 second(s) with 500 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:58:49</td>
+        <td>
+          Manual project creation test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:58:49</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectLocationUpdate</p>
+            <p class="text-sm">
+              <span>15:58:14</span> / <span>00:00:57:091</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectLocationUpdate</h5>
+<span class='badge badge-success'>10.28.2026 15:58:14</span>
+<span class='badge badge-danger'>10.28.2026 15:59:12</span>
+<span class='badge badge-default'>00:00:57:091</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project editing updates coordinates correctly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:58:17</td>
+        <td>
+          Starting project location update test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:58:59</td>
+        <td>
+          Editing project location
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:59:12</td>
+        <td>
+          Project location update test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:59:12</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testQuantitySurveyorLoginSuccess</p>
+            <p class="text-sm">
+              <span>15:59:11</span> / <span>00:02:25:619</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testQuantitySurveyorLoginSuccess</h5>
+<span class='badge badge-success'>10.28.2026 15:59:11</span>
+<span class='badge badge-danger'>10.28.2026 16:01:37</span>
+<span class='badge badge-default'>00:02:25:619</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Quantity Surveyor login succeeds with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:59:14</td>
+        <td>
+          Starting Quantity Surveyor login test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:59:18</td>
+        <td>
+          Performing QS login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:59:44</td>
+        <td>
+          Verifying login success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:00:02</td>
+        <td>
+          Verifying QS role access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:01:36</td>
+        <td>
+          Quantity Surveyor login test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:01:37</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="8"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectFiltering</p>
+            <p class="text-sm">
+              <span>15:59:21</span> / <span>00:03:02:523</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testProjectFiltering</h5>
+<span class='badge badge-success'>10.28.2026 15:59:21</span>
+<span class='badge badge-danger'>10.28.2026 16:02:23</span>
+<span class='badge badge-default'>00:03:02:523</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project filtering works correctly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:59:23</td>
+        <td>
+          Starting project filtering test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:00:09</td>
+        <td>
+          Initial project count: 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:00:09</td>
+        <td>
+          Filtering projects by 'JHB'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:01:35</td>
+        <td>
+          Filtered count: 0 (initial: 0)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:01:35</td>
+        <td>
+          Clearing filter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>16:02:21</td>
+        <td>
+          Test Failed: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[contains(@placeholder, 'Filter') or contains(@placeholder, 'Search') or contains(@class, 'filter') or contains(@class, 'search')] | //input[@type='text'] | //input[not(@type='hidden')]' (tried for 30 second(s) with 500 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:02:23</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-10-28_16-02-23-877.png' src="target/screenshots/screenshot_2026-10-28_16-02-23-877.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectImportDocumentClassification</p>
+            <p class="text-sm">
+              <span>15:59:48</span> / <span>00:01:26:888</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectImportDocumentClassification</h5>
+<span class='badge badge-success'>10.28.2026 15:59:48</span>
+<span class='badge badge-danger'>10.28.2026 16:01:15</span>
+<span class='badge badge-default'>00:01:26:888</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project import handles file classification correctly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:59:53</td>
+        <td>
+          Starting project import document classification test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:01:15</td>
+        <td>
+          Verifying document classification after project import
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:01:15</td>
+        <td>
+          Project import document classification test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:01:15</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRoleBasedProjectDashboard</p>
+            <p class="text-sm">
+              <span>16:01:52</span> / <span>00:04:46:909</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRoleBasedProjectDashboard</h5>
+<span class='badge badge-success'>10.28.2026 16:01:52</span>
+<span class='badge badge-danger'>10.28.2026 16:06:39</span>
+<span class='badge badge-default'>00:04:46:909</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project dashboard shows appropriate role-based content</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:01:53</td>
+        <td>
+          Starting role-based project dashboard test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:01:53</td>
+        <td>
+          Testing Director dashboard view
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:03:12</td>
+        <td>
+          Testing PM dashboard view
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:24</td>
+        <td>
+          Testing Client dashboard view (restricted)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:06:37</td>
+        <td>
+          Role-based project dashboard test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:06:39</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testClientLoginSuccess</p>
+            <p class="text-sm">
+              <span>16:02:13</span> / <span>00:02:14:757</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testClientLoginSuccess</h5>
+<span class='badge badge-success'>10.28.2026 16:02:13</span>
+<span class='badge badge-danger'>10.28.2026 16:04:28</span>
+<span class='badge badge-default'>00:02:14:757</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Client login succeeds with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:02:25</td>
+        <td>
+          Starting Client login test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:02:30</td>
+        <td>
+          Performing Client login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:02:49</td>
+        <td>
+          Verifying login success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:03:03</td>
+        <td>
+          Verifying Client role access (restricted)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:04:28</td>
+        <td>
+          Client login test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:04:28</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectCreationValidation</p>
+            <p class="text-sm">
+              <span>16:02:55</span> / <span>00:01:31:480</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testProjectCreationValidation</h5>
+<span class='badge badge-success'>10.28.2026 16:02:55</span>
+<span class='badge badge-danger'>10.28.2026 16:04:26</span>
+<span class='badge badge-default'>00:01:31:480</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project creation validates required fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:02:57</td>
+        <td>
+          Starting project creation validation test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:03:29</td>
+        <td>
+          Attempting to create project with missing required fields
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>16:04:23</td>
+        <td>
+          Test Failed: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .new-project-modal, .project-form' (tried for 30 second(s) with 500 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:04:26</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-10-28_16-04-26-837.png' src="target/screenshots/screenshot_2026-10-28_16-04-26-837.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testInvalidPasswordRejected</p>
+            <p class="text-sm">
+              <span>16:04:57</span> / <span>00:00:55:664</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testInvalidPasswordRejected</h5>
+<span class='badge badge-success'>10.28.2026 16:04:57</span>
+<span class='badge badge-danger'>10.28.2026 16:05:53</span>
+<span class='badge badge-default'>00:00:55:664</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Invalid password is rejected with error message</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:04:59</td>
+        <td>
+          Starting invalid password test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:05</td>
+        <td>
+          Attempting login with invalid password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:11</td>
+        <td>
+          Verifying login failure
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:41</td>
+        <td>
+          Error displayed: false, Still on login: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:52</td>
+        <td>
+          Error message: ''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:53</td>
+        <td>
+          Invalid password test completed - error properly shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:05:53</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testApiWakeUpSequence</p>
+            <p class="text-sm">
+              <span>16:04:57</span> / <span>00:00:35:625</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testApiWakeUpSequence</h5>
+<span class='badge badge-success'>10.28.2026 16:04:57</span>
+<span class='badge badge-danger'>10.28.2026 16:05:33</span>
+<span class='badge badge-default'>00:00:35:625</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - API wake-up sequence works after idle period</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:04:59</td>
+        <td>
+          Starting API wake-up sequence test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:22</td>
+        <td>
+          Waiting for API to be ready
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:32</td>
+        <td>
+          Verifying API live status
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:05:32</td>
+        <td>
+          API wake-up sequence test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:05:33</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testBiWorkspaceAccess</p>
+            <p class="text-sm">
+              <span>16:06:15</span> / <span>00:00:38:020</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testBiWorkspaceAccess</h5>
+<span class='badge badge-success'>10.28.2026 16:06:15</span>
+<span class='badge badge-danger'>10.28.2026 16:06:53</span>
+<span class='badge badge-default'>00:00:38:020</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - Director can access BI & Root Cause workspace</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:06:17</td>
+        <td>
+          Starting BI workspace access test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:06:52</td>
+        <td>
+          Verifying BI tab is accessible for Director
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:06:53</td>
+        <td>
+          BI workspace access test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:06:53</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="16"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testClientProjectAccessRestriction</p>
+            <p class="text-sm">
+              <span>16:06:42</span> / <span>00:00:27:305</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testClientProjectAccessRestriction</h5>
+<span class='badge badge-success'>10.28.2026 16:06:42</span>
+<span class='badge badge-danger'>10.28.2026 16:07:10</span>
+<span class='badge badge-default'>00:00:27:305</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Client cannot edit project setup</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:06:44</td>
+        <td>
+          Starting client project access restriction test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:09</td>
+        <td>
+          Verifying client has restricted project access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>16:07:09</td>
+        <td>
+          Test Failed: Client should be able to view projects page expected [true] but found [false]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:10</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-10-28_16-07-10-060.png' src="target/screenshots/screenshot_2026-10-28_16-07-10-060.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testTigerTeamWorkspaceAccess</p>
+            <p class="text-sm">
+              <span>16:07:27</span> / <span>00:00:18:429</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testTigerTeamWorkspaceAccess</h5>
+<span class='badge badge-success'>10.28.2026 16:07:27</span>
+<span class='badge badge-danger'>10.28.2026 16:07:46</span>
+<span class='badge badge-default'>00:00:18:429</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - Director can access Tiger Team workspace</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:28</td>
+        <td>
+          Starting Tiger Team workspace access test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:45</td>
+        <td>
+          Verifying Tiger Team tab is accessible for Director
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:46</td>
+        <td>
+          Tiger Team workspace access test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:07:46</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRequiredFieldValidation</p>
+            <p class="text-sm">
+              <span>16:07:41</span> / <span>00:00:18:084</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRequiredFieldValidation</h5>
+<span class='badge badge-success'>10.28.2026 16:07:41</span>
+<span class='badge badge-danger'>10.28.2026 16:07:59</span>
+<span class='badge badge-default'>00:00:18:084</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Required field validation prevents empty login</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:42</td>
+        <td>
+          Starting required field validation test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:46</td>
+        <td>
+          Attempting login with empty fields
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:47</td>
+        <td>
+          Verifying validation prevents submission
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:07:59</td>
+        <td>
+          Required field validation test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:07:59</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testLoginPageUIElements</p>
+            <p class="text-sm">
+              <span>16:08:06</span> / <span>00:00:05:960</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLoginPageUIElements</h5>
+<span class='badge badge-success'>10.28.2026 16:08:06</span>
+<span class='badge badge-danger'>10.28.2026 16:08:12</span>
+<span class='badge badge-default'>00:00:05:960</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Login page displays all required elements</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:07</td>
+        <td>
+          Starting login page UI elements test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:07</td>
+        <td>
+          Verifying login page elements are present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:12</td>
+        <td>
+          Verifying page title
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:12</td>
+        <td>
+          Login page UI elements test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:08:12</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testSettingsWorkspaceAccess</p>
+            <p class="text-sm">
+              <span>16:08:08</span> / <span>00:00:18:511</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSettingsWorkspaceAccess</h5>
+<span class='badge badge-success'>10.28.2026 16:08:08</span>
+<span class='badge badge-danger'>10.28.2026 16:08:27</span>
+<span class='badge badge-default'>00:00:18:511</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - Director can access Settings workspace</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:10</td>
+        <td>
+          Starting Settings workspace access test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:27</td>
+        <td>
+          Verifying Settings tab is accessible for Director
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:27</td>
+        <td>
+          Settings workspace access test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:08:27</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testLogoutFunctionality</p>
+            <p class="text-sm">
+              <span>16:08:35</span> / <span>00:01:42:035</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLogoutFunctionality</h5>
+<span class='badge badge-success'>10.28.2026 16:08:35</span>
+<span class='badge badge-danger'>10.28.2026 16:10:17</span>
+<span class='badge badge-default'>00:01:42:035</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Logout functionality ends session properly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:38</td>
+        <td>
+          Starting logout functionality test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:38</td>
+        <td>
+          Logging in as Director
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:09:03</td>
+        <td>
+          Performing logout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:01</td>
+        <td>
+          Verifying logout success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:06</td>
+        <td>
+          Verifying session is ended
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:10</td>
+        <td>
+          Verifying session cannot access root after logout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:17</td>
+        <td>
+          Logout functionality test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:10:17</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testPmWorkspaceBoundaries</p>
+            <p class="text-sm">
+              <span>16:08:36</span> / <span>00:00:55:795</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testPmWorkspaceBoundaries</h5>
+<span class='badge badge-success'>10.28.2026 16:08:36</span>
+<span class='badge badge-danger'>10.28.2026 16:09:32</span>
+<span class='badge badge-default'>00:00:55:795</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - PM has access to operational workspaces but not Client Portal</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:08:38</td>
+        <td>
+          Starting PM workspace boundaries test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:09:02</td>
+        <td>
+          Verifying PM has operational tabs
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:09:07</td>
+        <td>
+          Verifying PM does not have Client Portal access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:09:32</td>
+        <td>
+          PM workspace boundaries test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:09:32</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testQsWorkspaceBoundaries</p>
+            <p class="text-sm">
+              <span>16:09:54</span> / <span>00:00:32:417</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testQsWorkspaceBoundaries</h5>
+<span class='badge badge-success'>10.28.2026 16:09:54</span>
+<span class='badge badge-danger'>10.28.2026 16:10:27</span>
+<span class='badge badge-default'>00:00:32:417</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - QS has access to commercial workspaces but not Site tab</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:09:56</td>
+        <td>
+          Starting QS workspace boundaries test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:15</td>
+        <td>
+          Verifying QS has commercial tabs
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:16</td>
+        <td>
+          Verifying QS does not have Client Portal access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:27</td>
+        <td>
+          QS workspace boundaries test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:10:27</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRoleBasedAccess</p>
+            <p class="text-sm">
+              <span>16:10:37</span> / <span>00:04:07:442</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRoleBasedAccess</h5>
+<span class='badge badge-success'>10.28.2026 16:10:37</span>
+<span class='badge badge-danger'>10.28.2026 16:14:44</span>
+<span class='badge badge-default'>00:04:07:442</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Multiple role access patterns are correctly enforced</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:39</td>
+        <td>
+          Starting role-based access control test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:39</td>
+        <td>
+          Testing Director access level
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:11:24</td>
+        <td>
+          Performing logout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:12:33</td>
+        <td>
+          Testing Client access level (restricted)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:14:44</td>
+        <td>
+          Role-based access control test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:14:44</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testClientPortalRoleRestrictions</p>
+            <p class="text-sm">
+              <span>16:10:37</span> / <span>00:01:54:237</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testClientPortalRoleRestrictions</h5>
+<span class='badge badge-success'>10.28.2026 16:10:37</span>
+<span class='badge badge-danger'>10.28.2026 16:12:31</span>
+<span class='badge badge-default'>00:01:54:237</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - Client Portal shows restricted view with Client role</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:10:39</td>
+        <td>
+          Starting Client Portal role restrictions test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:11:03</td>
+        <td>
+          Verifying Client has restricted workspace access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:11:14</td>
+        <td>
+          Verifying Client does not have internal management tabs
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>16:12:31</td>
+        <td>
+          Client Portal role restrictions test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>16:12:31</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">Cycle3FeatureTests</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Cycle3FeatureTests</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:06:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testBiWorkspaceAccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:07:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>testTigerTeamWorkspaceAccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:08:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>testSettingsWorkspaceAccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:08:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testPmWorkspaceBoundaries</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:09:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>testQsWorkspaceBoundaries</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:10:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>testClientPortalRoleRestrictions</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+</span>
+<p class="name">AuthenticationTests</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>AuthenticationTests</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:55:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>testDirectorLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:57:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testProjectManagerLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:59:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>testQuantitySurveyorLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:02:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>testClientLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>testInvalidPasswordRejected</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>testApiWakeUpSequence</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:07:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>testRequiredFieldValidation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:08:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>testLoginPageUIElements</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:08:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>testLogoutFunctionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:10:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>testRoleBasedAccess</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">ProjectManagementTests</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ProjectManagementTests</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:55:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testProjectPackImport</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:56:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>testProjectGeolocationMapping</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:57:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>testManualProjectCreation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:58:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>testProjectLocationUpdate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:59:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>testProjectFiltering</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:59:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>testProjectImportDocumentClassification</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>testRoleBasedProjectDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:02:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>testProjectCreationValidation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:06:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>testClientProjectAccessRestriction</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>2026-10-28 15:55:04</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>2026-10-28 16:15:15</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>20</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>5</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'>
+<b>20</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='20%'><b>5</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='15%'><b>20</b> events passed</small></div>
+<div>
+<small data-tooltip='3%'><b>5</b> events failed,
+<b data-tooltip='%'>104</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testDirectorLoginSuccess":69.289,"testProjectPackImport":71.943,"testProjectGeolocationMapping":49.257,"testProjectManagerLoginSuccess":94.05,"testManualProjectCreation":99.577,"testProjectLocationUpdate":57.091,"testQuantitySurveyorLoginSuccess":145.619,"testProjectFiltering":182.523,"testProjectImportDocumentClassification":86.888,"testRoleBasedProjectDashboard":286.909,"testClientLoginSuccess":134.757,"testProjectCreationValidation":91.48,"testInvalidPasswordRejected":55.664,"testApiWakeUpSequence":35.625,"testBiWorkspaceAccess":38.02,"testClientProjectAccessRestriction":27.305,"testTigerTeamWorkspaceAccess":18.429,"testRequiredFieldValidation":18.084,"testLoginPageUIElements":5.96,"testSettingsWorkspaceAccess":18.511,"testLogoutFunctionality":102.035,"testPmWorkspaceBoundaries":55.795,"testQsWorkspaceBoundaries":32.417,"testRoleBasedAccess":247.442,"testClientPortalRoleRestrictions":114.237
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Cycle3FeatureTests</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>AuthenticationTests</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ProjectManagementTests</td>
+<td>4</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>44,444%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>CPMS - Construction Project Management System</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>local</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>chrome</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>21.0.12.1</td>
+</tr>
+<tr>
+<td>User</td>
+<td>Gregory Zwane</td>
+</tr>
+<tr>
+<td>Test Framework</td>
+<td>Selenium WebDriver + TestNG</td>
+</tr>
+<tr>
+<td>Reporting</td>
+<td>ExtentReports v5.1.1</td>
+</tr>
+<tr>
+<td>Execution Time</td>
+<td>2026-10-28 15:55:06</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 20,
+failParent: 5,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 20,
+failEvents: 5,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 104
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
