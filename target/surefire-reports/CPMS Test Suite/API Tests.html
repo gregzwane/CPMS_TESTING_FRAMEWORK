@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>API Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 28 17:23:00 SAST 2026</td>
+<td>Started on:</td><td>Thu Nov 12 06:51:44 SAST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>99 seconds (99459 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28177 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,51 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testCreateProject()'><b>testCreateProject</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/projects creates new project</td>
+<td><div><pre>java.lang.AssertionError: Unexpected response code: 400
+	at com.cpms.api.CpmsApiTests.testCreateProject(CpmsApiTests.java:188)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace602474620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace602474620'><pre>java.lang.AssertionError: Unexpected response code: 400
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.cpms.api.CpmsApiTests.testCreateProject(CpmsApiTests.java:188)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,50 +121,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.cpms.api.CpmsApiTests.testCreateProjectValidation()'><b>testCreateProjectValidation</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/projects validates required fields</td>
+<td title='com.cpms.api.CpmsApiTests.testAuthenticationSuccess()'><b>testAuthenticationSuccess</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /auth/v1/token validates credentials successfully</td>
 <td></td>
-<td>1</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
-<tr>
-<td title='com.cpms.api.CpmsApiTests.testSqlInjectionPrevention()'><b>testSqlInjectionPrevention</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API prevents SQL injection in filters</td>
-<td></td>
-<td>0</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
+<td>21</td>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
 <tr>
 <td title='com.cpms.api.CpmsApiTests.testGetProjects()'><b>testGetProjects</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: GET /api/v1/projects returns project list for authenticated user</td>
 <td></td>
-<td>53</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
-<tr>
-<td title='com.cpms.api.CpmsApiTests.testBoqImport()'><b>testBoqImport</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/boq/import processes CSV data</td>
-<td></td>
-<td>4</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
-<tr>
-<td title='com.cpms.api.CpmsApiTests.testAuthenticationSuccess()'><b>testAuthenticationSuccess</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /auth/v1/token validates credentials successfully</td>
-<td></td>
-<td>31</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
-<tr>
-<td title='com.cpms.api.CpmsApiTests.testApiSecurityUnauthenticated()'><b>testApiSecurityUnauthenticated</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API requires authentication for protected endpoints</td>
-<td></td>
 <td>1</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
 <tr>
-<td title='com.cpms.api.CpmsApiTests.testAuthenticationFailure()'><b>testAuthenticationFailure</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /auth/v1/token rejects invalid credentials</td>
+<td title='com.cpms.api.CpmsApiTests.testCreateProjectValidation()'><b>testCreateProjectValidation</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/projects validates required fields</td>
 <td></td>
-<td>1</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
-<tr>
-<td title='com.cpms.api.CpmsApiTests.testCreateProject()'><b>testCreateProject</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/projects creates new project</td>
-<td></td>
-<td>3</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
 <tr>
 <td title='com.cpms.api.CpmsApiTests.testMalformedJsonHandling()'><b>testMalformedJsonHandling</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API handles malformed JSON requests</td>
 <td></td>
 <td>0</td>
-<td>com.cpms.api.CpmsApiTests@3b33fff9</td></tr>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testAuthenticationFailure()'><b>testAuthenticationFailure</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /auth/v1/token rejects invalid credentials</td>
+<td></td>
+<td>1</td>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testApiSecurityUnauthenticated()'><b>testApiSecurityUnauthenticated</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API requires authentication for protected endpoints</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testSqlInjectionPrevention()'><b>testSqlInjectionPrevention</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: API prevents SQL injection in filters</td>
+<td></td>
+<td>0</td>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
+<tr>
+<td title='com.cpms.api.CpmsApiTests.testBoqImport()'><b>testBoqImport</b><br>Test class: com.cpms.api.CpmsApiTests<br>Test method: POST /api/v1/boq/import processes CSV data</td>
+<td></td>
+<td>1</td>
+<td>com.cpms.api.CpmsApiTests@3cf8a235</td></tr>
 </table><p>
 </body>
 </html>
