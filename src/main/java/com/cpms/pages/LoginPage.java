@@ -148,6 +148,16 @@ public class LoginPage extends BasePage {
     }
 
     /**
+     * Login as Foreman
+     */
+    public DashboardPage loginAsForeman() {
+        String email = config.getForemanEmail();
+        String password = config.getForemanPassword();
+        logger.info("Logging in as Foreman: {}", email);
+        return login(email, password);
+    }
+
+    /**
      * Check if login error is displayed
      */
     public boolean isLoginErrorDisplayed() {

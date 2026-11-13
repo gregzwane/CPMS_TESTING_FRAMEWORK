@@ -466,6 +466,15 @@ public class DashboardPage extends BasePage {
     }
 
     /**
+     * Check if user has Foreman level access
+     * Foreman nav: dashboard, site, quality, programme, comms, settings
+     */
+    public boolean hasForemanAccess() {
+        return isTabVisible("site") && isTabVisible("quality") && isTabVisible("programme") &&
+               isTabVisible("collab") && isTabVisible("settings") && !isTabVisible("client") && !isTabVisible("tiger");
+    }
+
+    /**
      * Check if user has Client level access (restricted view)
      */
     public boolean hasClientAccess() {

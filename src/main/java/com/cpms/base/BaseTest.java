@@ -58,8 +58,24 @@ public class BaseTest {
         // Navigate to application URL
         String environment = System.getProperty("env", "local");
         String url = config.getApplicationUrl(environment);
+
+        // Try to navigate with retry logic for slow-loading sites
+        int maxRetries = 3;
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            try {
         driver.get(url);
+                // Wait for page to load
+                try { Thread.sleep(3000); } catch (InterruptedException ignored) {}
         logger.info("Navigated to: {}", url);
+                break;
+            } catch (Exception e) {
+                logger.warn("Navigation attempt {} failed: {}", attempt, e.getMessage());
+                if (attempt == maxRetries) {
+                    throw e;
+                }
+                try { Thread.sleep(2000); } catch (InterruptedException ignored) {}
+            }
+        }
     }
 
     @AfterMethod(alwaysRun = true)

@@ -7,6 +7,17 @@
     <listener class-name="com.cpms.utils.TestListener"/>
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
   </listeners>
+  <test thread-count="3" parallel="tests" name="API Tests(failed)" verbose="0">
+    <parameter name="testType" value="api"/>
+    <classes>
+      <class name="com.cpms.api.CpmsApiTests">
+        <methods>
+          <include name="setupApi"/>
+          <include name="testCreateProject"/>
+        </methods>
+      </class> <!-- com.cpms.api.CpmsApiTests -->
+    </classes>
+  </test> <!-- API Tests(failed) -->
   <test thread-count="3" parallel="tests" name="Integration Tests(failed)" verbose="0">
     <parameter name="testType" value="integration"/>
     <classes>
@@ -28,18 +39,33 @@
     <classes>
       <class name="com.cpms.tests.ProjectManagementTests">
         <methods>
+          <include name="testProjectPackImport"/>
+          <include name="suiteTeardown"/>
           <include name="testClientProjectAccessRestriction"/>
           <include name="classTeardown"/>
-          <include name="suiteTeardown"/>
-          <include name="testProjectPackImport"/>
           <include name="suiteSetup"/>
-          <include name="testProjectFiltering"/>
           <include name="testTeardown"/>
-          <include name="testProjectCreationValidation"/>
+          <include name="testManualProjectCreation"/>
           <include name="testSetup"/>
           <include name="classSetup"/>
         </methods>
       </class> <!-- com.cpms.tests.ProjectManagementTests -->
     </classes>
   </test> <!-- Functional Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Cycle 6 Final Tests(failed)" verbose="0">
+    <parameter name="testType" value="cycle6"/>
+    <classes>
+      <class name="com.cpms.tests.Cycle6FinalTests">
+        <methods>
+          <include name="suiteTeardown"/>
+          <include name="classTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="testTeardown"/>
+          <include name="testSetup"/>
+          <include name="classSetup"/>
+          <include name="testRfiManagement"/>
+        </methods>
+      </class> <!-- com.cpms.tests.Cycle6FinalTests -->
+    </classes>
+  </test> <!-- Cycle 6 Final Tests(failed) -->
 </suite> <!-- Failed suite [CPMS Test Suite] -->

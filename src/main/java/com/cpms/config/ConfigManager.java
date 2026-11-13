@@ -53,8 +53,8 @@ public class ConfigManager {
         properties.setProperty("browser", DEFAULT_BROWSER);
         properties.setProperty("timeout", DEFAULT_TIMEOUT);
         properties.setProperty("environment", DEFAULT_ENVIRONMENT);
-        properties.setProperty("local.url", "https://leaverageconstructionhub.vercel.app/");
-        properties.setProperty("staging.url", "https://leaverageconstructionhub-staging.vercel.app/");
+        properties.setProperty("local.url", "https://cpms.eminovatech.com/");
+        properties.setProperty("staging.url", "https://cpms.eminovatech.com/");
         properties.setProperty("api.base.url", "https://cpms-api-l3o7.onrender.com");
         properties.setProperty("headless", "false");
         properties.setProperty("screenshots.enabled", "true");
@@ -113,6 +113,14 @@ public class ConfigManager {
 
     public String getClientPassword() {
         return properties.getProperty("client.password", "ChangeMe123!");
+    }
+
+    public String getForemanEmail() {
+        return properties.getProperty("foreman.email", "foreman@cps.demo");
+    }
+
+    public String getForemanPassword() {
+        return properties.getProperty("foreman.password", "ChangeMe123!");
     }
 
     // Browser options

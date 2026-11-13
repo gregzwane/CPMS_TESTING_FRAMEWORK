@@ -19,7 +19,7 @@
     <option name="sessionTitles">
       <map>
         <entry key="4b82a69b-f392-4db4-ae1f-622ecaab6c54" value="localhost:55599/sessions/new?workingDir=C%3A%2FDevelopment%2FSelenium%2FCPMS_Testing_Framework&amp;panelId=4b82a69b-f392-4db4-ae1f-622ecaab6c54&amp;theme=dark&amp;pair=woB5bt5_oimOToAnM8mfNGXmJ2rFPAaX" />
-        <entry key="6879d5e3-a82f-4ae0-908f-05d15483b625" value="Claude Code" />
+        <entry key="6879d5e3-a82f-4ae0-908f-05d15483b625" value="localhost:64908/switch-account?workingDir=C%3A%2FDevelopment%2FSelenium%2FCPMS_Testing_Framework&amp;panelId=6879d5e3-a82f-4ae0-908f-05d15483b625&amp;theme=dark" />
         <entry key="84f14cd2-05b6-4039-902f-65f23d45df88" value="Set up Docker CI/CD pipeline" />
         <entry key="fbe03d90-cdb8-4b6d-b67d-a8b7b69bff2d" value="Claude Code" />
       </map>
