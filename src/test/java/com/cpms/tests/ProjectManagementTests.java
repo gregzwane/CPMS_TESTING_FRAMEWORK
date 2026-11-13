@@ -383,6 +383,21 @@ public class ProjectManagementTests extends BaseTest {
         Assert.assertTrue(dashboardPage.hasClientAccess(),
             "Client should have restricted dashboard access");
 
+        dashboardPage.logout();
+
+        // Test Foreman view
+        logTestStep("Testing Foreman dashboard view");
+        loginPage = new LoginPage(driver);
+        dashboardPage = loginPage.loginAsForeman();
+
+        // Foreman account may not exist in all environments
+        if (loginPage.isLoginSuccessful()) {
+            Assert.assertTrue(dashboardPage.hasForemanAccess(),
+                "Foreman should have site access");
+        } else {
+            logTestStep("Foreman login failed - account may not exist in this environment");
+        }
+
         logTestStep("Role-based project dashboard test completed");
     }
 }

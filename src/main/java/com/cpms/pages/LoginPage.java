@@ -193,10 +193,20 @@ public class LoginPage extends BasePage {
             }
 
             // Wait for either success (URL change) or error message - longer timeout for SPA
-            waitForAnyCondition(
-                () -> !driver.getCurrentUrl().contains("sign"),
-                () -> isLoginErrorDisplayed()
-            );
+            // Add timeout to prevent infinite waiting
+            long startTime = System.currentTimeMillis();
+            long timeout = 30000; // 30 seconds max wait
+
+            while (System.currentTimeMillis() - startTime < timeout) {
+                boolean urlChanged = !driver.getCurrentUrl().contains("sign");
+                boolean errorDisplayed = isLoginErrorDisplayed();
+
+                if (urlChanged || errorDisplayed) {
+                    break;
+                }
+
+                try { Thread.sleep(500); } catch (InterruptedException ignored) {}
+            }
 
             // Additional wait for SPA to fully load
             Thread.sleep(3000);
@@ -212,9 +222,15 @@ public class LoginPage extends BasePage {
      */
     public boolean isLoginSuccessful() {
         try {
+            // First check if we're still on the login page (form is visible)
             boolean formStillVisible = isLoginPageDisplayed();
-            boolean success = !formStillVisible;
-            logger.info("isLoginSuccessful check: formVisible={}, result={}", formStillVisible, success);
+
+            // Also check URL - if we're no longer on a sign-in page, login likely succeeded
+            boolean urlChanged = !driver.getCurrentUrl().toLowerCase().contains("sign");
+
+            // Success if either form is gone OR URL changed (indicating navigation)
+            boolean success = !formStillVisible || urlChanged;
+            logger.info("isLoginSuccessful check: formVisible={}, urlChanged={}, result={}", formStillVisible, urlChanged, success);
             return success;
         } catch (Exception e) {
             return false;

@@ -21,6 +21,7 @@
                     <include name="testProjectManagerLoginSuccess"/>
                     <include name="testQuantitySurveyorLoginSuccess"/>
                     <include name="testClientLoginSuccess"/>
+                    <include name="testForemanLoginSuccess"/>
                     <include name="testApiWakeUpSequence"/>
                 </methods>
             </class>
@@ -37,6 +38,7 @@
                     <include name="testRequiredFieldValidation"/>
                     <include name="testLoginPageUIElements"/>
                     <include name="testLogoutFunctionality"/>
+                    <include name="testForemanLogoutFunctionality"/>
                     <include name="testRoleBasedAccess"/>
                 </methods>
             </class>
@@ -99,6 +101,7 @@
                     <include name="testPmWorkspaceBoundaries"/>
                     <include name="testQsWorkspaceBoundaries"/>
                     <include name="testClientPortalRoleRestrictions"/>
+                    <include name="testForemanWorkspaceBoundaries"/>
                 </methods>
             </class>
         </classes>
