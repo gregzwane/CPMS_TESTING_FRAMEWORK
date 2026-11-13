@@ -110,15 +110,14 @@ jobs:
           path: target/allure-report/
           retention-days: 30
 
-      - name: Publish Test Results (JUnit)
-        if: always()
-        uses: dorny/test-reporter@v1
-        with:
-          name: CPMS Functional Tests (${{ matrix.browser }}-${{ matrix.environment }})
-          path: "target/surefire-reports"
-          reporter: java-junit
-          fail-on-error: false
-          annotate-only: true
+    #  - name: Publish Test Results (JUnit)
+    #    if: always()
+    #    uses: dorny/test-reporter@v1
+    #    with:
+    #      name: CPMS Functional Tests (${{ matrix.browser }}-${{ matrix.environment }})
+    #      path: "target/surefire-reports"
+    #      reporter: java-junit
+    #      fail-on-error: false
 
   security-scan:
     runs-on: ubuntu-latest
