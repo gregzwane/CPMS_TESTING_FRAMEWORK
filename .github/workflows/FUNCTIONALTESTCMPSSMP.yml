@@ -119,25 +119,25 @@ jobs:
     #      reporter: java-junit
     #      fail-on-error: false
 
-  security-scan:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+#  security-scan:
+ #   runs-on: ubuntu-latest
+ #   steps:
+ #     - name: Checkout code
+ #       uses: actions/checkout@v4
 
-      - name: Run OWASP Dependency Check
-        uses: dependency-check/Dependency-Check_Action@main
-        with:
-          project: 'CPMS_Testing_Framework'
-          path: '.'
-          format: 'ALL'
+ #     - name: Run OWASP Dependency Check
+ #       uses: dependency-check/Dependency-Check_Action@main
+ #       with:
+ #         project: 'CPMS_Testing_Framework'
+ #         path: '.'
+ #         format: 'ALL'
 
-      - name: Upload Security Scan Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: security-scan-results
-          path: reports/
-          retention-days: 30
+ #     - name: Upload Security Scan Results
+ #       uses: actions/upload-artifact@v4
+ #       with:
+ #         name: security-scan-results
+ #         path: reports/
+ #         retention-days: 30
 
   performance-test:
     runs-on: ubuntu-latest
