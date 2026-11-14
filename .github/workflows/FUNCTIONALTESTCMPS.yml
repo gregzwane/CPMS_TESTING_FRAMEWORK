@@ -32,6 +32,7 @@ on:
           - 'cycle3'
           - 'cycle4'
           - 'cycle5-full'
+          - 'cycle6'
 
 # Global permissions - least privilege
 permissions:
@@ -301,9 +302,9 @@ jobs:
       matrix:
         browser: [chrome, edge, firefox]
         include:
-          - browser: chrome
+          - browser: edge
             testCycle: cycle1-2
-          - browser: firefox
+          - browser: edge
             testCycle: cycle3
           - browser: edge
             testCycle: cycle4

@@ -1,4 +1,4 @@
-name: CPMS Testing Framework CI/CD
+name: CPMS Testing Framework CI/CD SMP
 
 on:
   push:
