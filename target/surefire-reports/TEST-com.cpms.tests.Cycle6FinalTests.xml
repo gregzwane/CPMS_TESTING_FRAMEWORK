@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cpms.tests.Cycle6FinalTests" time="811.537" tests="44" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Gregory Zwane\.cache\selenium\chromedriver\win64\156.0.8078.80\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Development\Selenium\CPMS_Testing_Framework\target\test-classes;C:\Development\Selenium\CPMS_Testing_Framework\target\classes;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gregory Zwane\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gregory Zwane\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Gregory Zwane\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Gregory Zwane\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gregory Zwane\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Gregory Zwane\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\Gregory Zwane\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-core\1.12.0\micrometer-core-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Gregory Zwane\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-registry-prometheus\1.12.0\micrometer-registry-prometheus-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_common\0.16.0\simpleclient_common-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient\0.16.0\simpleclient-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_tracer_otel\0.16.0\simpleclient_tracer_otel-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_tracer_common\0.16.0\simpleclient_tracer_common-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_tracer_otel_agent\0.16.0\simpleclient_tracer_otel_agent-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_httpserver\0.16.0\simpleclient_httpserver-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\net\logstash\logback\logstash-logback-encoder\7.4\logstash-logback-encoder-7.4.jar;C:\Users\Gregory Zwane\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Johannesburg"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ZA"/>
+    <property name="sun.boot.library.path" value="C:\Java\jdk-21.0.12.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire11932458988982331401\surefirebooter-20261109190343136_3.jar C:\Users\Gregory Zwane\AppData\Local\Temp\surefire11932458988982331401 2026-11-09T19-03-42_751-jvmRun1 surefire-20261109190343136_1tmp surefire_0-20261109190343136_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="**/Cycle6FinalTests.java"/>
+    <property name="surefire.test.class.path" value="C:\Development\Selenium\CPMS_Testing_Framework\target\test-classes;C:\Development\Selenium\CPMS_Testing_Framework\target\classes;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Gregory Zwane\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Gregory Zwane\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Gregory Zwane\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Gregory Zwane\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gregory Zwane\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gregory Zwane\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Gregory Zwane\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Gregory Zwane\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gregory Zwane\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gregory Zwane\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Gregory Zwane\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Gregory Zwane\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gregory Zwane\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gregory Zwane\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Gregory Zwane\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\Gregory Zwane\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-core\1.12.0\micrometer-core-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Gregory Zwane\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Gregory Zwane\.m2\repository\io\micrometer\micrometer-registry-prometheus\1.12.0\micrometer-registry-prometheus-1.12.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_common\0.16.0\simpleclient_common-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient\0.16.0\simpleclient-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_tracer_otel\0.16.0\simpleclient_tracer_otel-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_tracer_common\0.16.0\simpleclient_tracer_common-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_tracer_otel_agent\0.16.0\simpleclient_tracer_otel_agent-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\io\prometheus\simpleclient_httpserver\0.16.0\simpleclient_httpserver-0.16.0.jar;C:\Users\Gregory Zwane\.m2\repository\net\logstash\logback\logstash-logback-encoder\7.4\logstash-logback-encoder-7.4.jar;C:\Users\Gregory Zwane\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;"/>
+    <property name="allure.results.directory" value="C:\Development\Selenium\CPMS_Testing_Framework\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Gregory Zwane"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Java\jdk-21.0.12.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Development\Selenium\CPMS_Testing_Framework"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Gregory Zwane\AppData\Local\Temp\surefire11932458988982331401\surefirebooter-20261109190343136_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.12.1+1-LTS-4"/>
+    <property name="user.name" value="Gregory Zwane"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Gregory Zwane\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\GREGOR~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.12.1"/>
+    <property name="user.dir" value="C:\Development\Selenium\CPMS_Testing_Framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="headless" value="true"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Java\jdk-21.0.12.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Gregory Zwane\bin;C:\Program Files\Git\ucrt64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\ucrt64\bin;C:\Program Files\Git\usr\bin;C:\Users\Gregory Zwane\bin;C:\Users\Gregory Zwane\.local\bin;C:\Users\Gregory Zwane\.claude-code-gui\bin;C:\Users\Gregory Zwane\AppData\Roaming\npm;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python314\Scripts;C:\Python314;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Development\Tools\apache-maven-3.9.16\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\GitHub CLI;C:\Android\SDK\platform-tools;C:\Program Files\Tailscale;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Git\cmd;C:\Java\jdk-26.0.2\bin;C:\Program Files (x86)\cloudflared;C:\Users\Gregory Zwane\AppData\Local\Programs\OpenAI\Codex\bin;C:\Users\Gregory Zwane\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.6.3\bin;C:\Users\Gregory Zwane\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Gregory Zwane\AppData\Local\Microsoft\WinGet\Links;C:\Users\Gregory Zwane\AppData\Local\Python\bin;C:\Program Files\JetBrains\PyCharm 2026.2.3\bin;C:\Users\Gregory Zwane\AppData\Local\Programs\DockerDesktop\resources\bin;C:\Users\Gregory Zwane\.bun\bin;C:\Users\Gregory Zwane\AppData\Local\claude-mem\bin;C:\Users\Gregory Zwane\AppData\Local\Microsoft\WinGet\Packages\Anthropic.ClaudeCode_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.12.1+1-LTS-4"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testProgrammeWbsAccess" classname="com.cpms.tests.Cycle6FinalTests" time="21.17">
+    <system-out><![CDATA[19:03:47,512 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+19:03:47,517 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2a685eba - No custom configurators were discovered as a service.
+19:03:47,517 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2a685eba - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+19:03:47,523 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2a685eba - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+19:03:47,536 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+19:03:47,537 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+19:03:47,558 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2a685eba - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 16 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+19:03:47,558 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2a685eba - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+19:03:47,562 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2a685eba - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+19:03:47,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/C:/Development/Selenium/CPMS_Testing_Framework/target/test-classes/logback-test.xml]
+19:03:48,401 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE_JSON]
+19:03:48,401 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+19:03:48,604 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LoggingEventJsonProviders] for [providers] property
+19:03:48,710 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LoggingEventFormattedTimestampJsonProvider] for [timestamp] property
+19:03:48,726 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LogLevelJsonProvider] for [logLevel] property
+19:03:48,736 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LoggerNameJsonProvider] for [loggerName] property
+19:03:48,738 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.MessageJsonProvider] for [message] property
+19:03:48,741 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.MdcJsonProvider] for [mdc] property
+19:03:48,747 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.ArgumentsJsonProvider] for [arguments] property
+19:03:48,770 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.StackTraceJsonProvider] for [stackTrace] property
+19:03:50,570 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE_JSON]
+19:03:50,570 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+19:03:50,617 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [maxFileSize] in [ch.qos.logback.core.rolling.TimeBasedRollingPolicy]
+19:03:50,664 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@204354148 - setting totalSizeCap to 1 GB
+19:03:50,726 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@204354148 - Will use gz compression
+19:03:50,734 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@204354148 - Will use the pattern project.build.directory_IS_UNDEFINED/logs/test-local-%d{yyyy-MM-dd}.%i.log for the active file
+19:03:50,755 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'project.build.directory_IS_UNDEFINED/logs/test-local-%d{yyyy-MM-dd}.%i.log.gz'.
+19:03:50,755 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+19:03:50,757 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-11-09T17:03:50.757Z
+19:03:50,761 |-ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [project.build.directory_IS_UNDEFINED/logs/test-local-%d{yyyy-MM-dd}.%i.log.gz] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
+19:03:50,761 |-WARN in c.q.l.core.rolling.TimeBasedRollingPolicy@204354148 - Subcomponent did not start. TimeBasedRollingPolicy will not start.
+19:03:50,762 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LoggingEventJsonProviders] for [providers] property
+19:03:50,763 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LoggingEventFormattedTimestampJsonProvider] for [timestamp] property
+19:03:50,763 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LogLevelJsonProvider] for [logLevel] property
+19:03:50,764 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.LoggerNameJsonProvider] for [loggerName] property
+19:03:50,764 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.MessageJsonProvider] for [message] property
+19:03:50,767 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.MdcJsonProvider] for [mdc] property
+19:03:50,767 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.ArgumentsJsonProvider] for [arguments] property
+19:03:50,767 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [net.logstash.logback.composite.loggingevent.StackTraceJsonProvider] for [stackTrace] property
+19:03:50,771 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE_JSON] - TriggeringPolicy has not started. RollingFileAppender will not start
+19:03:50,771 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC_CONSOLE]
+19:03:50,771 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+19:03:50,785 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE_JSON] to ch.qos.logback.classic.AsyncAppender[ASYNC_CONSOLE]
+19:03:50,789 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_CONSOLE] - Attaching appender named [CONSOLE_JSON] to AsyncAppender.
+19:03:50,802 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_CONSOLE] - Setting discardingThreshold to 51
+19:03:50,804 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC_FILE]
+19:03:50,804 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+19:03:50,804 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE_JSON] to ch.qos.logback.classic.AsyncAppender[ASYNC_FILE]
+19:03:50,804 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Attaching appender named [FILE_JSON] to AsyncAppender.
+19:03:50,804 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Setting discardingThreshold to 51
+19:03:50,805 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+19:03:50,805 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_CONSOLE] to Logger[ROOT]
+19:03:50,805 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ROOT]
+19:03:50,807 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.cpms] to DEBUG
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [com.cpms] to false
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_CONSOLE] to Logger[com.cpms]
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[com.cpms]
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.openqa.selenium] to WARN
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.openqa.selenium] to false
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_CONSOLE] to Logger[org.openqa.selenium]
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[org.openqa.selenium]
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.restassured] to INFO
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [io.restassured] to false
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_CONSOLE] to Logger[io.restassured]
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[io.restassured]
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.micrometer] to DEBUG
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [io.micrometer] to false
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_CONSOLE] to Logger[io.micrometer]
+19:03:50,819 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[io.micrometer]
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.prometheus] to DEBUG
+19:03:50,819 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [io.prometheus] to false
+19:03:50,820 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_CONSOLE] to Logger[io.prometheus]
+19:03:50,820 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[io.prometheus]
+19:03:50,820 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@107f4980 - End of configuration.
+19:03:50,823 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@75a118e6 - Registering current configuration as safe fallback point
+19:03:50,823 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2a685eba - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 3261 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+ERROR StatusConsoleListener Could not create plugin of type class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile
+ org.apache.logging.log4j.core.config.ConfigurationException: Configuration has multiple incompatible Appenders pointing to the same resource 'target/logs/cpms-tests.log'
+	at org.apache.logging.log4j.core.appender.AbstractManager.narrow(AbstractManager.java:200)
+	at org.apache.logging.log4j.core.appender.rolling.RollingFileManager.getFileManager(RollingFileManager.java:217)
+	at org.apache.logging.log4j.core.appender.RollingFileAppender$Builder.build(RollingFileAppender.java:135)
+	at org.apache.logging.log4j.core.appender.RollingFileAppender$Builder.build(RollingFileAppender.java:62)
+	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:123)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1138)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1063)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1055)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:664)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:258)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:304)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:621)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:694)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:711)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:253)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
+	at com.cpms.base.BaseTest.<clinit>(BaseTest.java:24)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:301)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:104)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:200)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:549)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:38)
+	at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:18)
+	at org.testng.internal.objects.SimpleObjectDispenser.instantiateUsingDefaultConstructor(SimpleObjectDispenser.java:178)
+	at org.testng.internal.objects.SimpleObjectDispenser.createInstance(SimpleObjectDispenser.java:87)
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:40)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:28)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:106)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:136)
+	at org.testng.TestClass.getInstances(TestClass.java:129)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:109)
+	at org.testng.TestClass.init(TestClass.java:101)
+	at org.testng.TestClass.<init>(TestClass.java:66)
+	at org.testng.TestRunner.initMethods(TestRunner.java:483)
+	at org.testng.TestRunner.init(TestRunner.java:356)
+	at org.testng.TestRunner.init(TestRunner.java:309)
+	at org.testng.TestRunner.<init>(TestRunner.java:184)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:652)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:224)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:116)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1375)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1349)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1191)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+ERROR StatusConsoleListener Null object returned for RollingFile in Appenders.
+ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "root"
+ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "org.openqa.selenium"
+ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "io.restassured"
+ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "org.apache.http"
+ERROR StatusConsoleListener Unable to locate appender "RollingFile" for logger config "com.cpms"
+19:03:56.886 [main] INFO  com.cpms.base.BaseTest - Starting CPMS Test Suite
+19:03:56.900 [main] INFO  com.cpms.config.ConfigManager - Configuration properties loaded successfully
+19:03:58.682 [main] INFO  com.cpms.utils.ExtentManager - ExtentReports initialized. Report will be saved to: target/reports/CPMS_Test_Report_2026-11-09_19-03-56.html
+19:03:58.785 [main] INFO  com.cpms.base.BaseTest - Setting up test class: Cycle6FinalTests
+19:03:58.850 [main] INFO  com.cpms.base.BaseTest - Starting test: testProgrammeWbsAccess
+{"@timestamp":"2026-11-09T17:04:00.11685Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:04:00.3552283Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:04:00.394 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:04:06.550 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:04:08.098 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:04:09.316 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting Programme/WBS access test
+19:04:09.456 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:04:09.457 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:04:09.458 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:04:09.458 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:04:09.884 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:04:10.109 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:04:25.793 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:04:25.834 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to Programme tab
+19:04:25.863 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:04:25.874 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:04:26.106 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:04:25
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:04:26.208 [main] INFO  com.cpms.pages.DashboardPage - Tab 'programme' specific element: found=true, visible=true
+19:04:26.217 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying WBS tree is displayed
+19:04:26.219 [main] INFO  com.cpms.pages.DashboardPage - Navigating to Projects
+19:04:29.691 [main] INFO  com.cpms.pages.ProjectsPage - ProjectsPage initialized
+19:04:29.691 [main] INFO  com.cpms.base.BaseTest - Test Step: Programme/WBS access test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:04:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:04:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testWbsTreeNavigation" classname="com.cpms.tests.Cycle6FinalTests" time="16.467">
+    <system-out><![CDATA[19:04:30.205 [main] INFO  com.cpms.base.BaseTest - Test passed: testProgrammeWbsAccess
+19:04:30.657 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:04:30.664 [main] INFO  com.cpms.base.BaseTest - Starting test: testWbsTreeNavigation
+{"@timestamp":"2026-11-09T17:04:30.6833523Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:04:30.831265Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:04:30.832 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:04:32.775 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:04:33.588 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:04:33.611 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting WBS tree navigation test
+19:04:33.628 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:04:33.628 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:04:33.628 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:04:33.632 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:04:33.955 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:04:34.139 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:04:49.991 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:04:50.051 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying WBS tree interaction
+19:04:50.054 [main] INFO  com.cpms.base.BaseTest - Test Step: WBS tree navigation test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:04:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:04:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testBaselineScheduleSaveCompare" classname="com.cpms.tests.Cycle6FinalTests" time="15.888">
+    <system-out><![CDATA[19:04:50.072 [main] INFO  com.cpms.base.BaseTest - Test passed: testWbsTreeNavigation
+19:04:53.422 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:04:53.427 [main] INFO  com.cpms.base.BaseTest - Starting test: testBaselineScheduleSaveCompare
+{"@timestamp":"2026-11-09T17:04:53.4522931Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:04:53.7670806Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:04:53.767 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:04:55.799 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:04:56.599 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:04:56.648 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting baseline schedule test
+19:04:56.670 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:04:56.671 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:04:56.671 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:04:56.671 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:04:56.980 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:04:57.187 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:05:12.439 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:05:12.490 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying baseline save functionality
+19:05:12.490 [main] INFO  com.cpms.base.BaseTest - Test Step: Baseline schedule test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:04:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:04:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testWhatIfCpmAnalysis" classname="com.cpms.tests.Cycle6FinalTests" time="15.869">
+    <system-out><![CDATA[19:05:12.515 [main] INFO  com.cpms.base.BaseTest - Test passed: testBaselineScheduleSaveCompare
+19:05:13.405 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:05:13.408 [main] INFO  com.cpms.base.BaseTest - Starting test: testWhatIfCpmAnalysis
+{"@timestamp":"2026-11-09T17:05:13.4236624Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:05:13.548018Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:05:13.548 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:05:14.857 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:05:15.709 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:05:15.741 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting what-if CPM analysis test
+19:05:15.744 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:05:15.747 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:05:15.747 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:05:15.749 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:05:16.061 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:05:16.249 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:05:31.563 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:05:31.575 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying what-if CPM functionality
+19:05:31.575 [main] INFO  com.cpms.base.BaseTest - Test Step: What-if CPM analysis test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:05:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:05:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testQualityInspections" classname="com.cpms.tests.Cycle6FinalTests" time="16.208">
+    <system-out><![CDATA[19:05:31.590 [main] INFO  com.cpms.base.BaseTest - Test passed: testWhatIfCpmAnalysis
+19:05:31.999 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:05:32.003 [main] INFO  com.cpms.base.BaseTest - Starting test: testQualityInspections
+{"@timestamp":"2026-11-09T17:05:32.020543Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:05:32.1447436Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:05:32.144 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:05:33.540 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:05:34.464 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:05:34.570 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting quality inspections test
+19:05:34.574 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:05:34.574 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:05:34.574 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:05:34.575 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:05:34.868 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:05:35.089 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:05:50.501 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:05:50.510 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to Quality & H&S tab
+19:05:50.521 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:05:50.534 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:05:50.671 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:05:50
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:05:50.721 [main] INFO  com.cpms.pages.DashboardPage - Tab 'quality' specific element: found=true, visible=true
+19:05:50.721 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying inspection creation
+19:05:50.722 [main] INFO  com.cpms.base.BaseTest - Test Step: Quality inspections test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:05:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:05:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testNcrManagement" classname="com.cpms.tests.Cycle6FinalTests" time="15.829">
+    <system-out><![CDATA[19:05:50.738 [main] INFO  com.cpms.base.BaseTest - Test passed: testQualityInspections
+19:05:51.988 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:05:51.992 [main] INFO  com.cpms.base.BaseTest - Starting test: testNcrManagement
+{"@timestamp":"2026-11-09T17:05:52.0093167Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:05:52.121259Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:05:52.121 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:05:53.392 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:05:54.399 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:05:54.417 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting NCR management test
+19:05:54.418 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:05:54.419 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:05:54.419 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:05:54.419 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:05:54.775 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:05:54.941 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:06:10.218 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:06:10.228 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying NCR creation
+19:06:10.228 [main] INFO  com.cpms.base.BaseTest - Test Step: NCR management test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:05:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:05:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testHsChecklistExecution" classname="com.cpms.tests.Cycle6FinalTests" time="15.773">
+    <system-out><![CDATA[19:06:10.236 [main] INFO  com.cpms.base.BaseTest - Test passed: testNcrManagement
+19:06:10.552 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:06:10.555 [main] INFO  com.cpms.base.BaseTest - Starting test: testHsChecklistExecution
+{"@timestamp":"2026-11-09T17:06:10.570596Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:06:10.6880517Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:06:10.689 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:06:11.834 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:06:12.632 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:06:12.660 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting H&S checklist test
+19:06:12.661 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:06:12.661 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:06:12.661 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:06:12.661 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:06:13.004 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:06:13.179 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:06:28.403 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:06:28.412 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying H&S checklist execution
+19:06:28.413 [main] INFO  com.cpms.base.BaseTest - Test Step: H&S checklist test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:06:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:06:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testQualityTrendAnalysis" classname="com.cpms.tests.Cycle6FinalTests" time="15.952">
+    <system-out><![CDATA[19:06:28.419 [main] INFO  com.cpms.base.BaseTest - Test passed: testHsChecklistExecution
+19:06:28.706 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:06:28.710 [main] INFO  com.cpms.base.BaseTest - Starting test: testQualityTrendAnalysis
+{"@timestamp":"2026-11-09T17:06:28.7268635Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:06:28.843386Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:06:28.844 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:06:30.073 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:06:31.134 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:06:31.140 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting quality trend analysis test
+19:06:31.142 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:06:31.143 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:06:31.144 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:06:31.144 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:06:31.616 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:06:31.788 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:06:47.074 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:06:47.085 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying quality trends dashboard
+19:06:47.085 [main] INFO  com.cpms.base.BaseTest - Test Step: Quality trend analysis test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:06:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:06:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testDailyDiaryEntry" classname="com.cpms.tests.Cycle6FinalTests" time="16.056">
+    <system-out><![CDATA[19:06:47.089 [main] INFO  com.cpms.base.BaseTest - Test passed: testQualityTrendAnalysis
+19:06:47.473 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:06:47.476 [main] INFO  com.cpms.base.BaseTest - Starting test: testDailyDiaryEntry
+{"@timestamp":"2026-11-09T17:06:47.4902558Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:06:47.593195Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:06:47.593 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:06:48.785 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:06:49.647 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:06:49.696 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting daily diary entry test
+19:06:49.697 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:06:49.697 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:06:49.697 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:06:49.697 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:06:50.025 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:06:50.202 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:07:05.426 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:07:05.443 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to Site tab
+19:07:05.457 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:07:05.482 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:07:05.648 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:07:04
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:07:05.701 [main] INFO  com.cpms.pages.DashboardPage - Tab 'site' specific element: found=true, visible=true
+19:07:05.701 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying daily diary creation
+19:07:05.702 [main] INFO  com.cpms.base.BaseTest - Test Step: Daily diary entry test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:06:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:06:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testGeofencedSiteDiary" classname="com.cpms.tests.Cycle6FinalTests" time="15.818">
+    <system-out><![CDATA[19:07:05.706 [main] INFO  com.cpms.base.BaseTest - Test passed: testDailyDiaryEntry
+19:07:06.094 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:07:06.097 [main] INFO  com.cpms.base.BaseTest - Starting test: testGeofencedSiteDiary
+{"@timestamp":"2026-11-09T17:07:06.1132268Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:07:06.2195059Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:07:06.219 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:07:07.431 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:07:08.246 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:07:08.262 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting geofenced site diary test
+19:07:08.262 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:07:08.262 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:07:08.262 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:07:08.262 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:07:08.615 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:07:08.815 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:07:24.044 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:07:24.067 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying geofence validation
+19:07:24.067 [main] INFO  com.cpms.base.BaseTest - Test Step: Geofenced site diary test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:07:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:07:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testLabourPlantReturns" classname="com.cpms.tests.Cycle6FinalTests" time="15.811">
+    <system-out><![CDATA[19:07:24.073 [main] INFO  com.cpms.base.BaseTest - Test passed: testGeofencedSiteDiary
+19:07:25.123 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:07:25.126 [main] INFO  com.cpms.base.BaseTest - Starting test: testLabourPlantReturns
+{"@timestamp":"2026-11-09T17:07:25.1420703Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:07:25.2481893Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:07:25.248 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:07:26.474 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:07:27.295 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:07:27.310 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting labour and plant returns test
+19:07:27.311 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:07:27.311 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:07:27.311 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:07:27.311 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:07:27.660 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:07:27.831 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:07:43.107 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:07:43.114 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying labour/plant returns
+19:07:43.114 [main] INFO  com.cpms.base.BaseTest - Test Step: Labour and plant returns test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:07:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:07:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testSiteEvidenceUpload" classname="com.cpms.tests.Cycle6FinalTests" time="15.705">
+    <system-out><![CDATA[19:07:43.117 [main] INFO  com.cpms.base.BaseTest - Test passed: testLabourPlantReturns
+19:07:43.697 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:07:43.701 [main] INFO  com.cpms.base.BaseTest - Starting test: testSiteEvidenceUpload
+{"@timestamp":"2026-11-09T17:07:43.7176482Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:07:43.8593848Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:07:43.859 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:07:45.236 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:07:46.398 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:07:46.425 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting site evidence upload test
+19:07:46.428 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:07:46.428 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:07:46.428 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:07:46.428 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:07:46.661 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:07:46.848 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:08:02.081 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:08:02.099 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying evidence upload
+19:08:02.099 [main] INFO  com.cpms.base.BaseTest - Test Step: Site evidence upload test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:07:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:07:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testRfiManagement" classname="com.cpms.tests.Cycle6FinalTests" time="17.709">
+    <failure message="Comms Hub tab should be visible expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Comms Hub tab should be visible expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.cpms.tests.Cycle6FinalTests.testRfiManagement(Cycle6FinalTests.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[19:08:02.111 [main] INFO  com.cpms.base.BaseTest - Test passed: testSiteEvidenceUpload
+19:08:02.599 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:08:02.602 [main] INFO  com.cpms.base.BaseTest - Starting test: testRfiManagement
+{"@timestamp":"2026-11-09T17:08:02.6194634Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:08:02.7303194Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:08:02.730 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:08:03.970 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:08:04.854 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:08:04.863 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting RFI management test
+19:08:04.878 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:08:04.878 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:08:04.879 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:08:04.879 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:08:05.293 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:08:05.477 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:08:20.910 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:08:20.917 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to Comms Hub
+19:08:20.928 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:08:20.938 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:08:21.071 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:08:20
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:08:21.072 [main] INFO  com.cpms.pages.DashboardPage - Tab 'collab' specific element: not found
+19:08:22.497 [main] INFO  com.cpms.pages.DashboardPage - getAvailableNavTabs returning: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Client Portal, Settings]
+19:08:22.498 [main] INFO  com.cpms.pages.DashboardPage - Available navigation tabs: [Dashboard, Projects, BOQ & Budget, Programme, BI & Root Cause, Site, Quality & H&S, Documents, Comms Hub, Tiger Team, Reports, Client Portal, Settings]
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:08:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:08:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testChannelMessaging" classname="com.cpms.tests.Cycle6FinalTests" time="16.112">
+    <system-out><![CDATA[19:08:22.564 [main] ERROR com.cpms.base.BaseTest - Test failed: testRfiManagement
+19:08:23.474 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:08:23.482 [main] INFO  com.cpms.base.BaseTest - Starting test: testChannelMessaging
+{"@timestamp":"2026-11-09T17:08:23.5028843Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:08:23.6111589Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:08:23.611 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:08:25.308 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:08:26.238 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:08:26.265 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting channel messaging test
+19:08:26.266 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:08:26.267 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:08:26.268 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:08:26.279 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:08:26.623 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:08:26.818 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:08:42.341 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:08:42.355 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying channel messaging
+19:08:42.356 [main] INFO  com.cpms.base.BaseTest - Test Step: Channel messaging test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:08:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:08:25 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testEmailNotifications" classname="com.cpms.tests.Cycle6FinalTests" time="16.001">
+    <system-out><![CDATA[19:08:42.366 [main] INFO  com.cpms.base.BaseTest - Test passed: testChannelMessaging
+19:08:42.699 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:08:42.703 [main] INFO  com.cpms.base.BaseTest - Starting test: testEmailNotifications
+{"@timestamp":"2026-11-09T17:08:42.7204552Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:08:42.8401715Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:08:42.840 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:08:44.135 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:08:45.497 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:08:45.535 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting email notifications test
+19:08:45.535 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:08:45.535 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:08:45.535 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:08:45.535 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:08:46.007 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:08:46.240 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:09:01.511 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:09:01.522 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying email notification triggers
+19:09:01.522 [main] INFO  com.cpms.base.BaseTest - Test Step: Email notifications test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:08:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:08:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testInAppNotifications" classname="com.cpms.tests.Cycle6FinalTests" time="15.883">
+    <system-out><![CDATA[19:09:01.530 [main] INFO  com.cpms.base.BaseTest - Test passed: testEmailNotifications
+19:09:01.848 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:09:01.851 [main] INFO  com.cpms.base.BaseTest - Starting test: testInAppNotifications
+{"@timestamp":"2026-11-09T17:09:01.8676634Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:09:01.9771047Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:09:01.978 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:09:03.207 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:09:04.028 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:09:04.037 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting in-app notifications test
+19:09:04.060 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:09:04.060 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:09:04.060 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:09:04.070 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:09:04.425 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:09:04.631 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:09:19.898 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:09:19.909 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying in-app notifications
+19:09:19.909 [main] INFO  com.cpms.base.BaseTest - Test Step: In-app notifications test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:09:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:09:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testDocumentUpload" classname="com.cpms.tests.Cycle6FinalTests" time="16.175">
+    <system-out><![CDATA[19:09:19.917 [main] INFO  com.cpms.base.BaseTest - Test passed: testInAppNotifications
+19:09:20.314 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:09:20.317 [main] INFO  com.cpms.base.BaseTest - Starting test: testDocumentUpload
+{"@timestamp":"2026-11-09T17:09:20.3326426Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:09:20.4341143Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:09:20.434 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:09:21.590 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:09:22.431 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:09:22.451 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting document upload test
+19:09:22.452 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:09:22.452 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:09:22.454 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:09:22.454 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:09:22.789 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:09:22.968 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:09:38.286 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:09:38.422 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to Documents tab
+19:09:38.432 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:09:38.449 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:09:38.575 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:09:38
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:09:38.608 [main] INFO  com.cpms.pages.DashboardPage - Tab 'documents' specific element: found=true, visible=true
+19:09:38.609 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying document upload with metadata
+19:09:38.609 [main] INFO  com.cpms.base.BaseTest - Test Step: Document upload test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:09:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:09:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testDocumentVersionControl" classname="com.cpms.tests.Cycle6FinalTests" time="16.071">
+    <system-out><![CDATA[19:09:38.613 [main] INFO  com.cpms.base.BaseTest - Test passed: testDocumentUpload
+19:09:40.348 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:09:40.352 [main] INFO  com.cpms.base.BaseTest - Starting test: testDocumentVersionControl
+{"@timestamp":"2026-11-09T17:09:40.3719166Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:09:40.504025Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:09:40.504 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:09:41.791 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:09:42.709 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:09:42.718 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting document version control test
+19:09:42.718 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:09:42.718 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:09:42.718 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:09:42.718 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:09:43.087 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:09:43.261 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:09:58.616 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:09:58.714 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying document versioning
+19:09:58.726 [main] INFO  com.cpms.base.BaseTest - Test Step: Document version control test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:09:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:09:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testDocumentPreviewDownload" classname="com.cpms.tests.Cycle6FinalTests" time="15.839">
+    <system-out><![CDATA[19:09:58.785 [main] INFO  com.cpms.base.BaseTest - Test passed: testDocumentVersionControl
+19:09:59.701 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:09:59.704 [main] INFO  com.cpms.base.BaseTest - Starting test: testDocumentPreviewDownload
+{"@timestamp":"2026-11-09T17:09:59.723908Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:09:59.8330573Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:09:59.833 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:10:01.128 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:10:01.974 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:10:01.983 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting document preview/download test
+19:10:01.983 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:10:01.984 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:10:01.984 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:10:01.984 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:10:02.334 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:10:02.515 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:10:17.796 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:10:17.808 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying document preview and download
+19:10:17.809 [main] INFO  com.cpms.base.BaseTest - Test Step: Document preview/download test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:10:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:10:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testDocumentClassification" classname="com.cpms.tests.Cycle6FinalTests" time="15.897">
+    <system-out><![CDATA[19:10:17.817 [main] INFO  com.cpms.base.BaseTest - Test passed: testDocumentPreviewDownload
+19:10:18.542 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:10:18.545 [main] INFO  com.cpms.base.BaseTest - Starting test: testDocumentClassification
+{"@timestamp":"2026-11-09T17:10:18.5607877Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:10:18.6954341Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:10:18.696 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:10:20.153 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:10:21.135 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:10:21.186 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting document classification test
+19:10:21.186 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:10:21.186 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:10:21.190 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:10:21.190 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:10:21.526 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:10:21.725 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:10:37.039 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:10:37.062 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying document auto-classification
+19:10:37.062 [main] INFO  com.cpms.base.BaseTest - Test Step: Document classification test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:10:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:10:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testCustomReportBuilder" classname="com.cpms.tests.Cycle6FinalTests" time="17.038">
+    <system-out><![CDATA[19:10:37.095 [main] INFO  com.cpms.base.BaseTest - Test passed: testDocumentClassification
+19:10:38.037 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:10:38.041 [main] INFO  com.cpms.base.BaseTest - Starting test: testCustomReportBuilder
+{"@timestamp":"2026-11-09T17:10:38.0576345Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:10:38.1571384Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:10:38.158 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:10:39.455 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:10:40.447 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:10:40.474 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting custom report builder test
+19:10:40.475 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:10:40.475 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:10:40.475 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:10:40.475 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:10:40.838 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:10:41.012 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:10:56.279 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:10:56.533 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to Reports tab
+19:10:56.959 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:10:57.042 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:10:57.316 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:10:56
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:10:57.474 [main] INFO  com.cpms.pages.DashboardPage - Tab 'reports' specific element: found=true, visible=true
+19:10:57.474 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying custom report builder
+19:10:57.474 [main] INFO  com.cpms.base.BaseTest - Test Step: Custom report builder test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:10:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:10:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testReportScheduling" classname="com.cpms.tests.Cycle6FinalTests" time="16.377">
+    <system-out><![CDATA[19:10:57.510 [main] INFO  com.cpms.base.BaseTest - Test passed: testCustomReportBuilder
+19:11:00.545 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:11:00.548 [main] INFO  com.cpms.base.BaseTest - Starting test: testReportScheduling
+{"@timestamp":"2026-11-09T17:11:00.5700742Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:11:00.7013792Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:11:00.705 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:11:02.320 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:11:03.338 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:11:03.360 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting report scheduling test
+19:11:03.360 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:11:03.360 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:11:03.361 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:11:03.361 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:11:03.948 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:11:04.204 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:11:19.642 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:11:19.726 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying report scheduling
+19:11:19.726 [main] INFO  com.cpms.base.BaseTest - Test Step: Report scheduling test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:11:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:11:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testReportExportFormats" classname="com.cpms.tests.Cycle6FinalTests" time="15.774">
+    <system-out><![CDATA[19:11:19.742 [main] INFO  com.cpms.base.BaseTest - Test passed: testReportScheduling
+19:11:26.086 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:11:26.089 [main] INFO  com.cpms.base.BaseTest - Starting test: testReportExportFormats
+{"@timestamp":"2026-11-09T17:11:26.1064665Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:11:26.2152669Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:11:26.216 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:11:28.228 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:11:29.055 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:11:29.060 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting report export test
+19:11:29.060 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:11:29.060 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:11:29.060 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:11:29.060 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:11:29.410 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:11:29.568 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:11:44.827 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:11:44.835 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying report export formats
+19:11:44.836 [main] INFO  com.cpms.base.BaseTest - Test Step: Report export test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:11:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:11:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testEarnedValueReporting" classname="com.cpms.tests.Cycle6FinalTests" time="15.912">
+    <system-out><![CDATA[19:11:44.840 [main] INFO  com.cpms.base.BaseTest - Test passed: testReportExportFormats
+19:11:45.178 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:11:45.181 [main] INFO  com.cpms.base.BaseTest - Starting test: testEarnedValueReporting
+{"@timestamp":"2026-11-09T17:11:45.1983815Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:11:45.30477Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:11:45.304 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:11:46.798 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:11:47.631 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:11:47.642 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting earned value reporting test
+19:11:47.642 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:11:47.642 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:11:47.643 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:11:47.643 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:11:48.038 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:11:48.258 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:12:03.529 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:12:03.544 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying earned value reports
+19:12:03.545 [main] INFO  com.cpms.base.BaseTest - Test Step: Earned value reporting test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:11:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:11:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testMobileLoginAllRoles" classname="com.cpms.tests.Cycle6FinalTests" time="0.013">
+    <system-out><![CDATA[19:12:03.549 [main] INFO  com.cpms.base.BaseTest - Test passed: testEarnedValueReporting
+19:12:03.922 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:12:03.925 [main] INFO  com.cpms.base.BaseTest - Starting test: testMobileLoginAllRoles
+{"@timestamp":"2026-11-09T17:12:03.9435883Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:12:04.057274Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:12:04.057 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:12:05.261 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:12:06.309 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:12:06.317 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting mobile login test
+19:12:06.321 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:12:06.321 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying mobile login for all roles
+19:12:06.322 [main] INFO  com.cpms.base.BaseTest - Test Step: Mobile login test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:12:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:12:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testMobileGeofencedDiary" classname="com.cpms.tests.Cycle6FinalTests" time="0.012">
+    <system-out><![CDATA[19:12:06.328 [main] INFO  com.cpms.base.BaseTest - Test passed: testMobileLoginAllRoles
+19:12:06.535 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:12:06.538 [main] INFO  com.cpms.base.BaseTest - Starting test: testMobileGeofencedDiary
+{"@timestamp":"2026-11-09T17:12:06.5542292Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:12:06.6542314Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:12:06.654 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:12:07.847 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:12:08.664 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:12:08.673 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting mobile geofenced diary test
+19:12:08.674 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying mobile geofenced diary
+19:12:08.674 [main] INFO  com.cpms.base.BaseTest - Test Step: Mobile geofenced diary test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:12:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:12:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testMobileDocumentUpload" classname="com.cpms.tests.Cycle6FinalTests" time="0.001">
+    <system-out><![CDATA[19:12:08.683 [main] INFO  com.cpms.base.BaseTest - Test passed: testMobileGeofencedDiary
+19:12:08.955 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:12:08.958 [main] INFO  com.cpms.base.BaseTest - Starting test: testMobileDocumentUpload
+{"@timestamp":"2026-11-09T17:12:08.9732315Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:12:09.072086Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:12:09.072 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:12:10.290 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:12:11.078 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:12:11.082 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting mobile document upload test
+19:12:11.083 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying mobile document upload
+19:12:11.083 [main] INFO  com.cpms.base.BaseTest - Test Step: Mobile document upload test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:12:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:12:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testMobileNavigation" classname="com.cpms.tests.Cycle6FinalTests" time="0.004">
+    <system-out><![CDATA[19:12:11.086 [main] INFO  com.cpms.base.BaseTest - Test passed: testMobileDocumentUpload
+19:12:11.296 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:12:11.300 [main] INFO  com.cpms.base.BaseTest - Starting test: testMobileNavigation
+{"@timestamp":"2026-11-09T17:12:11.3182502Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:12:11.4182133Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:12:11.418 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:12:12.569 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:12:13.395 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:12:13.401 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting mobile navigation test
+19:12:13.401 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying mobile responsive navigation
+19:12:13.402 [main] INFO  com.cpms.base.BaseTest - Test Step: Mobile navigation test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:12:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:12:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testCustomDashboards" classname="com.cpms.tests.Cycle6FinalTests" time="15.911">
+    <system-out><![CDATA[19:12:13.410 [main] INFO  com.cpms.base.BaseTest - Test passed: testMobileNavigation
+19:12:13.618 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:12:13.621 [main] INFO  com.cpms.base.BaseTest - Starting test: testCustomDashboards
+{"@timestamp":"2026-11-09T17:12:13.6346937Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:12:13.744256Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:12:13.744 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:12:14.852 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:12:15.764 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:12:15.770 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting custom dashboard test
+19:12:15.771 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:12:15.771 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:12:15.771 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:12:15.771 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:12:16.089 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:12:16.252 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:12:31.482 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:12:31.491 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to BI & Root Cause
+19:12:31.499 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:12:31.507 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:12:31.646 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:12:30
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:12:31.679 [main] INFO  com.cpms.pages.DashboardPage - Tab 'bi' specific element: found=true, visible=true
+19:12:31.679 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying custom dashboard creation
+19:12:31.679 [main] INFO  com.cpms.base.BaseTest - Test Step: Custom dashboard test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:12:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:12:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testDrillDownAnalytics" classname="com.cpms.tests.Cycle6FinalTests" time="15.874">
+    <system-out><![CDATA[19:12:31.683 [main] INFO  com.cpms.base.BaseTest - Test passed: testCustomDashboards
+19:12:32.067 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:12:32.070 [main] INFO  com.cpms.base.BaseTest - Starting test: testDrillDownAnalytics
+{"@timestamp":"2026-11-09T17:12:32.0858291Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:12:32.2064568Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:12:32.206 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:12:33.401 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:12:34.232 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:12:34.237 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting drill-down analytics test
+19:12:34.239 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:12:34.239 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:12:34.239 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:12:34.239 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:12:34.607 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:12:34.765 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:12:50.016 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:12:50.108 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying drill-down functionality
+19:12:50.108 [main] INFO  com.cpms.base.BaseTest - Test Step: Drill-down analytics test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:12:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:12:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testBiReportExport" classname="com.cpms.tests.Cycle6FinalTests" time="15.788">
+    <system-out><![CDATA[19:12:50.111 [main] INFO  com.cpms.base.BaseTest - Test passed: testDrillDownAnalytics
+19:12:51.862 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:12:51.864 [main] INFO  com.cpms.base.BaseTest - Starting test: testBiReportExport
+{"@timestamp":"2026-11-09T17:12:51.8780735Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:12:51.979767Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:12:51.980 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:12:53.432 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:12:54.221 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:12:54.237 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting BI report export test
+19:12:54.237 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:12:54.238 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:12:54.238 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:12:54.238 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:12:54.570 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:12:54.761 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:13:09.997 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:13:10.011 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying BI report export
+19:13:10.011 [main] INFO  com.cpms.base.BaseTest - Test Step: BI report export test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:12:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:12:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testRootCauseAnalysis" classname="com.cpms.tests.Cycle6FinalTests" time="15.794">
+    <system-out><![CDATA[19:13:10.016 [main] INFO  com.cpms.base.BaseTest - Test passed: testBiReportExport
+19:13:10.348 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:13:10.351 [main] INFO  com.cpms.base.BaseTest - Starting test: testRootCauseAnalysis
+{"@timestamp":"2026-11-09T17:13:10.366213Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:13:10.4748945Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:13:10.475 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:13:11.628 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:13:12.464 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:13:12.470 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting root cause analysis test
+19:13:12.471 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:13:12.471 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:13:12.471 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:13:12.471 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:13:12.790 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:13:12.982 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:13:28.218 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:13:28.256 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying root cause analysis tools
+19:13:28.257 [main] INFO  com.cpms.base.BaseTest - Test Step: Root cause analysis test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:13:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:13:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testUserManagement" classname="com.cpms.tests.Cycle6FinalTests" time="16.131">
+    <system-out><![CDATA[19:13:28.262 [main] INFO  com.cpms.base.BaseTest - Test passed: testRootCauseAnalysis
+19:13:28.847 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:13:28.849 [main] INFO  com.cpms.base.BaseTest - Starting test: testUserManagement
+{"@timestamp":"2026-11-09T17:13:28.8641444Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:13:28.9630467Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:13:28.963 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:13:30.544 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:13:31.601 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:13:31.608 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting user management test
+19:13:31.609 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:13:31.609 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:13:31.609 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:13:31.609 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:13:31.977 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:13:32.199 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:13:47.501 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:13:47.519 [main] INFO  com.cpms.base.BaseTest - Test Step: Navigating to Settings
+19:13:47.528 [main] INFO  com.cpms.pages.DashboardPage - Current URL: https://leaverageconstructionhub.vercel.app/
+19:13:47.544 [main] INFO  com.cpms.pages.DashboardPage - Current Page Title: Leaverage | Construction Project Management System
+19:13:47.691 [main] INFO  com.cpms.pages.DashboardPage - Body snippet (first 500 chars): Leaverage
+PTA-A · Riverside Bulk Earthworks
+Director / Executive
+Sign out
+Connected
+19:13:46
+ACTIVE PROJECT
+BFN-E — Bloemfontein E — Clinic Upgrade
+CPT-B — Cape Town Site B — Warehouse
+DBN-C — Durban Site C — Retail Centre
+JHB-HQ — Johannesburg HQ Refurbishment
+NLP-G — Nelspruit Site G — Bridge Deck
+PE-D — Port Elizabeth D — Access Road
+PLK-F — Polokwane Site F — School Block
+PTA-A — Riverside Bulk Earthworks
+Dashboard
+Projects
+BOQ & Budget
+Programme
+BI & Root Cause
+Site
+Quality & H&S
+Documents
+
+19:13:47.732 [main] INFO  com.cpms.pages.DashboardPage - Tab 'settings' specific element: found=true, visible=true
+19:13:47.732 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying user management
+19:13:47.732 [main] INFO  com.cpms.base.BaseTest - Test Step: User management test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:13:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:13:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testRolePermissionManagement" classname="com.cpms.tests.Cycle6FinalTests" time="16.458">
+    <system-out><![CDATA[19:13:47.735 [main] INFO  com.cpms.base.BaseTest - Test passed: testUserManagement
+19:13:48.038 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:13:48.041 [main] INFO  com.cpms.base.BaseTest - Starting test: testRolePermissionManagement
+{"@timestamp":"2026-11-09T17:13:48.0556008Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+19:13:48.177 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+{"@timestamp":"2026-11-09T17:13:48.1770536Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:13:50.926 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:13:52.018 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:13:52.030 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting role/permission management test
+19:13:52.030 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:13:52.030 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:13:52.030 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:13:52.030 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:13:52.421 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:13:52.661 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:14:08.385 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:14:08.476 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying role/permission management
+19:14:08.477 [main] INFO  com.cpms.base.BaseTest - Test Step: Role/permission management test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:13:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:13:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testNotificationSettings" classname="com.cpms.tests.Cycle6FinalTests" time="15.971">
+    <system-out><![CDATA[19:14:08.480 [main] INFO  com.cpms.base.BaseTest - Test passed: testRolePermissionManagement
+19:14:10.104 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:14:10.108 [main] INFO  com.cpms.base.BaseTest - Starting test: testNotificationSettings
+{"@timestamp":"2026-11-09T17:14:10.1276821Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:14:10.2385602Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:14:10.238 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:14:11.991 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:14:12.846 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:14:12.854 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting notification settings test
+19:14:12.855 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:14:12.855 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:14:12.855 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:14:12.855 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:14:13.202 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:14:13.431 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:14:28.735 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:14:28.816 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying notification settings
+19:14:28.816 [main] INFO  com.cpms.base.BaseTest - Test Step: Notification settings test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:14:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:14:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testSystemConfiguration" classname="com.cpms.tests.Cycle6FinalTests" time="16.136">
+    <system-out><![CDATA[19:14:28.820 [main] INFO  com.cpms.base.BaseTest - Test passed: testNotificationSettings
+19:14:29.198 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:14:29.202 [main] INFO  com.cpms.base.BaseTest - Starting test: testSystemConfiguration
+{"@timestamp":"2026-11-09T17:14:29.224594Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:14:29.3523036Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:14:29.352 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:14:30.773 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:14:31.673 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:14:31.679 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting system configuration test
+19:14:31.680 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:14:31.680 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:14:31.680 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:14:31.680 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:14:32.117 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:14:32.430 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:14:47.799 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:14:47.808 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying system configuration
+19:14:47.808 [main] INFO  com.cpms.base.BaseTest - Test Step: System configuration test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:14:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:14:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testGlobalSearch" classname="com.cpms.tests.Cycle6FinalTests" time="16.077">
+    <system-out><![CDATA[19:14:47.812 [main] INFO  com.cpms.base.BaseTest - Test passed: testSystemConfiguration
+19:14:48.196 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:14:48.200 [main] INFO  com.cpms.base.BaseTest - Starting test: testGlobalSearch
+{"@timestamp":"2026-11-09T17:14:48.2209374Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:14:48.3382184Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:14:48.339 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:14:49.840 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:14:50.740 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:14:50.747 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting global search test
+19:14:50.747 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:14:50.747 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:14:50.748 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:14:50.748 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:14:51.065 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:14:51.298 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:15:06.808 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:15:06.817 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying global search
+19:15:06.818 [main] INFO  com.cpms.base.BaseTest - Test Step: Global search test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:14:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:14:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAdvancedFilters" classname="com.cpms.tests.Cycle6FinalTests" time="15.695">
+    <system-out><![CDATA[19:15:06.821 [main] INFO  com.cpms.base.BaseTest - Test passed: testGlobalSearch
+19:15:07.103 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:15:07.106 [main] INFO  com.cpms.base.BaseTest - Starting test: testAdvancedFilters
+{"@timestamp":"2026-11-09T17:15:07.1257523Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:15:07.2263302Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:15:07.227 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:15:09.028 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:15:09.858 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:15:09.864 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting advanced filters test
+19:15:09.865 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:15:09.865 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:15:09.865 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:15:09.865 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:15:10.181 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:15:10.358 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:15:25.549 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:15:25.557 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying advanced filters
+19:15:25.557 [main] INFO  com.cpms.base.BaseTest - Test Step: Advanced filters test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:15:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:15:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testSavedSearches" classname="com.cpms.tests.Cycle6FinalTests" time="15.781">
+    <system-out><![CDATA[19:15:25.560 [main] INFO  com.cpms.base.BaseTest - Test passed: testAdvancedFilters
+19:15:25.882 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:15:25.885 [main] INFO  com.cpms.base.BaseTest - Starting test: testSavedSearches
+{"@timestamp":"2026-11-09T17:15:25.9028748Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:15:26.0095398Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:15:26.010 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:15:27.140 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:15:28.019 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:15:28.028 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting saved searches test
+19:15:28.029 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:15:28.029 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:15:28.029 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:15:28.029 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:15:28.356 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:15:28.544 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:15:43.795 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:15:43.802 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying saved searches
+19:15:43.804 [main] INFO  com.cpms.base.BaseTest - Test Step: Saved searches test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:15:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:15:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchExport" classname="com.cpms.tests.Cycle6FinalTests" time="15.76">
+    <system-out><![CDATA[19:15:43.807 [main] INFO  com.cpms.base.BaseTest - Test passed: testSavedSearches
+19:15:44.088 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:15:44.091 [main] INFO  com.cpms.base.BaseTest - Starting test: testSearchExport
+{"@timestamp":"2026-11-09T17:15:44.1096782Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:15:44.215629Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:15:44.216 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:15:45.314 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:15:46.190 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:15:46.197 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting search export test
+19:15:46.197 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:15:46.197 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:15:46.197 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:15:46.197 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:15:46.554 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:15:46.712 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:16:01.943 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:16:01.952 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying search export
+19:16:01.953 [main] INFO  com.cpms.base.BaseTest - Test Step: Search export test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:15:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:15:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testEmailTemplates" classname="com.cpms.tests.Cycle6FinalTests" time="15.755">
+    <system-out><![CDATA[19:16:01.955 [main] INFO  com.cpms.base.BaseTest - Test passed: testSearchExport
+19:16:02.227 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:16:02.230 [main] INFO  com.cpms.base.BaseTest - Starting test: testEmailTemplates
+{"@timestamp":"2026-11-09T17:16:02.2475281Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:16:02.3490499Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:16:02.350 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:16:03.418 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:16:04.291 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:16:04.297 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting email templates test
+19:16:04.298 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:16:04.298 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:16:04.298 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:16:04.298 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:16:04.633 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:16:04.835 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:16:20.031 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:16:20.045 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying email template customization
+19:16:20.045 [main] INFO  com.cpms.base.BaseTest - Test Step: Email templates test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:16:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:16:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testNotificationCenter" classname="com.cpms.tests.Cycle6FinalTests" time="15.891">
+    <system-out><![CDATA[19:16:20.049 [main] INFO  com.cpms.base.BaseTest - Test passed: testEmailTemplates
+19:16:21.223 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:16:21.228 [main] INFO  com.cpms.base.BaseTest - Starting test: testNotificationCenter
+{"@timestamp":"2026-11-09T17:16:21.2636051Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:16:21.3808304Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:16:21.380 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:16:22.477 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:16:23.289 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:16:23.296 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting notification center test
+19:16:23.297 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:16:23.297 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:16:23.297 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:16:23.297 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:16:23.623 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:16:23.800 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:16:39.047 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:16:39.189 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying notification center
+19:16:39.189 [main] INFO  com.cpms.base.BaseTest - Test Step: Notification center test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:16:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:16:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testWebhookIntegration" classname="com.cpms.tests.Cycle6FinalTests" time="15.717">
+    <system-out><![CDATA[19:16:39.192 [main] INFO  com.cpms.base.BaseTest - Test passed: testNotificationCenter
+19:16:39.503 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:16:39.507 [main] INFO  com.cpms.base.BaseTest - Starting test: testWebhookIntegration
+{"@timestamp":"2026-11-09T17:16:39.5239838Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+{"@timestamp":"2026-11-09T17:16:39.6294532Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:16:39.630 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+19:16:40.741 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:16:41.599 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:16:41.607 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting webhook integration test
+19:16:41.608 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:16:41.608 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:16:41.608 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:16:41.608 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:16:41.942 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:16:42.102 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:16:57.305 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:16:57.313 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying webhook configuration
+19:16:57.314 [main] INFO  com.cpms.base.BaseTest - Test Step: Webhook integration test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:16:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:16:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testRealtimeNotifications" classname="com.cpms.tests.Cycle6FinalTests" time="15.981">
+    <system-out><![CDATA[19:16:57.322 [main] INFO  com.cpms.base.BaseTest - Test passed: testWebhookIntegration
+19:16:57.575 [main] INFO  com.cpms.utils.DriverManager - Driver quit successfully for thread: 1
+19:16:57.578 [main] INFO  com.cpms.base.BaseTest - Starting test: testRealtimeNotifications
+{"@timestamp":"2026-11-09T17:16:57.5923335Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Using chromedriver 156.0.8078.80 (resolved driver for Chrome 156)"}
+19:16:57.690 [main] INFO  com.cpms.utils.DriverManager - Running Chrome in headless mode with 1920x1080 window size
+{"@timestamp":"2026-11-09T17:16:57.690874Z","level":"INFO","logger_name":"io.github.bonigarcia.wdm.WebDriverManager","message":"Exporting webdriver.chrome.driver as C:\\Users\\Gregory Zwane\\.cache\\selenium\\chromedriver\\win64\\156.0.8078.80\\chromedriver.exe"}
+19:16:58.811 [main] INFO  com.cpms.utils.DriverManager - Created CHROME driver for thread: 1
+19:16:59.609 [main] INFO  com.cpms.base.BaseTest - Navigated to: https://leaverageconstructionhub.vercel.app/
+19:16:59.615 [main] INFO  com.cpms.base.BaseTest - Test Step: Starting real-time notifications test
+19:16:59.616 [main] INFO  com.cpms.pages.LoginPage - LoginPage initialized
+19:16:59.616 [main] INFO  com.cpms.pages.LoginPage - Logging in as Director: director@cpms.demo
+19:16:59.616 [main] INFO  com.cpms.pages.LoginPage - Performing login for user: director@cpms.demo
+19:16:59.616 [main] INFO  com.cpms.pages.LoginPage - Entering email: director@cpms.demo
+19:16:59.938 [main] INFO  com.cpms.pages.LoginPage - Entering password
+19:17:00.093 [main] INFO  com.cpms.pages.LoginPage - Clicking sign in button
+19:17:15.386 [main] INFO  com.cpms.pages.DashboardPage - DashboardPage initialized
+19:17:15.595 [main] INFO  com.cpms.base.BaseTest - Test Step: Verifying real-time notification delivery
+19:17:15.595 [main] INFO  com.cpms.base.BaseTest - Test Step: Real-time notifications test completed
+]]></system-out>
+    <system-err><![CDATA[Nov 09, 2026 7:16:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 09, 2026 7:16:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
