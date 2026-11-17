@@ -5,13 +5,14 @@
     <classes>
       <class name="com.cpms.tests.ProjectManagementTests">
         <methods>
+          <include name="testProjectPackImport"/>
           <include name="suiteTeardown"/>
           <include name="testClientProjectAccessRestriction"/>
           <include name="classTeardown"/>
           <include name="suiteSetup"/>
-          <include name="testManualProjectCreation"/>
           <include name="testRoleBasedProjectDashboard"/>
           <include name="testTeardown"/>
+          <include name="testManualProjectCreation"/>
           <include name="testSetup"/>
           <include name="testProjectGeolocationMapping"/>
           <include name="classSetup"/>
@@ -19,12 +20,12 @@
       </class> <!-- com.cpms.tests.ProjectManagementTests -->
       <class name="com.cpms.tests.AuthenticationTests">
         <methods>
-          <include name="suiteTeardown"/>
           <include name="classTeardown"/>
+          <include name="suiteTeardown"/>
           <include name="suiteSetup"/>
           <include name="testTeardown"/>
-          <include name="testInvalidPasswordRejected"/>
           <include name="testSetup"/>
+          <include name="testInvalidPasswordRejected"/>
           <include name="classSetup"/>
         </methods>
       </class> <!-- com.cpms.tests.AuthenticationTests -->
