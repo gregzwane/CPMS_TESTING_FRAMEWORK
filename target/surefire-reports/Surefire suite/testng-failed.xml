@@ -5,12 +5,13 @@
     <classes>
       <class name="com.cpms.tests.AuthenticationTests">
         <methods>
-          <include name="classTeardown"/>
           <include name="suiteTeardown"/>
+          <include name="classTeardown"/>
           <include name="suiteSetup"/>
           <include name="testTeardown"/>
-          <include name="testInvalidPasswordRejected"/>
           <include name="testSetup"/>
+          <include name="testInvalidPasswordRejected"/>
+          <include name="testRoleTabAccessVerification"/>
           <include name="classSetup"/>
         </methods>
       </class> <!-- com.cpms.tests.AuthenticationTests -->

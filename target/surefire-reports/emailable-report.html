@@ -9,12 +9,50 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">167 793</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">1 269 751</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.cpms.tests.AuthenticationTests</td><td><a href="#m0">testDirectorLoginSuccess</a></td><td rowspan="1">1794594256009</td><td rowspan="1">36843</td></tr><tr class="passedeven"><td><a href="#m1">testForemanLoginSuccess</a></td><td rowspan="1">1794594352648</td><td rowspan="1">57578</td></tr><tr class="passedeven"><td><a href="#m2">testProjectManagerLoginSuccess</a></td><td rowspan="1">1794594299797</td><td rowspan="1">46392</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.cpms.tests.AuthenticationTests</td><td><a href="#m0">testInvalidPasswordRejected</a></td><td rowspan="1">1794663858905</td><td rowspan="1">18876</td></tr><tr class="failedeven"><td><a href="#m1">testRoleTabAccessVerification</a></td><td rowspan="1">1794664252654</td><td rowspan="1">416140</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">com.cpms.tests.AuthenticationTests</td><td><a href="#m2">testApiWakeUpSequence</a></td><td rowspan="1">1794664071405</td><td rowspan="1">26089</td></tr><tr class="passedeven"><td><a href="#m3">testClientLoginSuccess</a></td><td rowspan="1">1794663771348</td><td rowspan="1">71198</td></tr><tr class="passedeven"><td><a href="#m4">testDirectorLoginSuccess</a></td><td rowspan="1">1794663596032</td><td rowspan="1">44129</td></tr><tr class="passedeven"><td><a href="#m5">testForemanLoginSuccess</a></td><td rowspan="1">1794663895201</td><td rowspan="1">57648</td></tr><tr class="passedeven"><td><a href="#m6">testForemanLogoutFunctionality</a></td><td rowspan="1">1794664699291</td><td rowspan="1">128102</td></tr><tr class="passedeven"><td><a href="#m7">testLoginPageUIElements</a></td><td rowspan="1">1794663982742</td><td rowspan="1">4317</td></tr><tr class="passedeven"><td><a href="#m8">testLogoutFunctionality</a></td><td rowspan="1">1794663993342</td><td rowspan="1">71144</td></tr><tr class="passedeven"><td><a href="#m9">testProjectManagerLoginSuccess</a></td><td rowspan="1">1794663653232</td><td rowspan="1">50424</td></tr><tr class="passedeven"><td><a href="#m10">testQuantitySurveyorLoginSuccess</a></td><td rowspan="1">1794663711758</td><td rowspan="1">47461</td></tr><tr class="passedeven"><td><a href="#m11">testRequiredFieldValidation</a></td><td rowspan="1">1794663959784</td><td rowspan="1">14622</td></tr><tr class="passedeven"><td><a href="#m12">testRoleBasedAccess</a></td><td rowspan="1">1794664103348</td><td rowspan="1">141959</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.cpms.tests.AuthenticationTests#testDirectorLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.cpms.tests.AuthenticationTests#testForemanLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.cpms.tests.AuthenticationTests#testProjectManagerLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.cpms.tests.AuthenticationTests#testInvalidPasswordRejected</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login should fail with wrong password expected [false] but found [true]
+	at com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected(AuthenticationTests.java:263)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.cpms.tests.AuthenticationTests#testRoleTabAccessVerification</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb76ce1770d49780eb2f31eb650a2914, findElements {using=xpath, value=//nav//a | //nav//button | //*[@role=&apos;tab&apos;] | //aside//button | //aside//a | //*[contains(@class, &apos;sidebar&apos;)]//button | //*[contains(@class, &apos;sidebar&apos;)]//a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.78, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52411}, goog:processID: 21268, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52411/devtoo..., se:cdpVersion: 157.0.8103.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb76ce1770d49780eb2f31eb650a2914
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:371)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.stream(Unknown Source)
+	at com.cpms.pages.DashboardPage.getAvailableNavTabs(DashboardPage.java:245)
+	at com.cpms.tests.AuthenticationTests.verifyTabsAccessible(AuthenticationTests.java:515)
+	at com.cpms.tests.AuthenticationTests.testRoleTabAccessVerification(AuthenticationTests.java:502)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.cpms.tests.AuthenticationTests#testApiWakeUpSequence</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.cpms.tests.AuthenticationTests#testClientLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.cpms.tests.AuthenticationTests#testDirectorLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.cpms.tests.AuthenticationTests#testForemanLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.cpms.tests.AuthenticationTests#testForemanLogoutFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.cpms.tests.AuthenticationTests#testLoginPageUIElements</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.cpms.tests.AuthenticationTests#testLogoutFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.cpms.tests.AuthenticationTests#testProjectManagerLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.cpms.tests.AuthenticationTests#testQuantitySurveyorLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.cpms.tests.AuthenticationTests#testRequiredFieldValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.cpms.tests.AuthenticationTests#testRoleBasedAccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

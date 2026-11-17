@@ -8,8 +8,9 @@
             <TabSessionState>
               <option name="projectPath" value="C:\Development\Selenium\CPMS_Testing_Framework" />
               <option name="provider" value="claude" />
+              <option name="sessionId" value="0ef95c63-8751-4be0-9da5-99be50220082" />
               <option name="cwd" value="C:\Development\Selenium\CPMS_Testing_Framework" />
-              <option name="model" value="claude-sonnet-5" />
+              <option name="model" value="claude-opus-5[1m]" />
               <option name="permissionMode" value="default" />
             </TabSessionState>
           </value>

@@ -3,6 +3,7 @@ com\cpms\base\BasePage.class
 com\cpms\pages\DashboardPage.class
 com\cpms\pages\ProjectsPage.class
 com\cpms\base\BaseTest.class
+com\cpms\utils\RetryAnalyzer.class
 com\cpms\utils\ExtentManager.class
 com\cpms\utils\TestListener.class
 com\cpms\pages\LoginPage.class
