@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods, 6 failed,   16 passed</span>
+                    <span class="method-stats">22 methods, 5 failed,   17 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -119,11 +119,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.ProjectManagementTests" class="method navigator-link" hash-for-method="testProjectGeolocationMapping">testProjectGeolocationMapping</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.ProjectManagementTests" class="method navigator-link" hash-for-method="testProjectPackImport">testProjectPackImport</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -202,6 +197,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.ProjectManagementTests" class="method navigator-link" hash-for-method="testProjectPackImport">testProjectPackImport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.cpms.tests.AuthenticationTests" class="method navigator-link" hash-for-method="testQuantitySurveyorLoginSuccess">testQuantitySurveyorLoginSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -232,6 +232,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cpms.tests.AuthenticationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPasswordRejected">
+                  </a> <!-- testInvalidPasswordRejected -->
+                  <span class="method-name">testInvalidPasswordRejected</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login should fail with wrong password expected [false] but found [true]
+	at com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected(AuthenticationTests.java:263)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(CycleOne - Invalid password is rejected with error message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -282,20 +304,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testProjectPackImport">
-                  </a> <!-- testProjectPackImport -->
-                  <span class="method-name">testProjectPackImport</span>
-                  <div class="stack-trace">java.lang.AssertionError: API should be ready expected [true] but found [false]
-	at com.cpms.tests.ProjectManagementTests.testProjectPackImport(ProjectManagementTests.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(CycleTwo - Director imports complete project pack successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testRoleBasedProjectDashboard">
                   </a> <!-- testRoleBasedProjectDashboard -->
                   <span class="method-name">testRoleBasedProjectDashboard</span>
@@ -310,72 +318,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.cpms.tests.AuthenticationTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidPasswordRejected">
-                  </a> <!-- testInvalidPasswordRejected -->
-                  <span class="method-name">testInvalidPasswordRejected</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login should fail with wrong password expected [false] but found [true]
-	at com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected(AuthenticationTests.java:263)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(CycleOne - Invalid password is rejected with error message)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.cpms.tests.ProjectManagementTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProjectCreationValidation">
-                  </a> <!-- testProjectCreationValidation -->
-                  <span class="method-name">testProjectCreationValidation</span>
-                  <em>
-(CycleTwo - Project creation validates required fields)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProjectFiltering">
-                  </a> <!-- testProjectFiltering -->
-                  <span class="method-name">testProjectFiltering</span>
-                  <em>
-(CycleTwo - Project filtering works correctly)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProjectImportDocumentClassification">
-                  </a> <!-- testProjectImportDocumentClassification -->
-                  <span class="method-name">testProjectImportDocumentClassification</span>
-                  <em>
-(CycleTwo - Project import handles file classification correctly)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProjectLocationUpdate">
-                  </a> <!-- testProjectLocationUpdate -->
-                  <span class="method-name">testProjectLocationUpdate</span>
-                  <em>
-(CycleTwo - Project editing updates coordinates correctly)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -492,6 +434,59 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cpms.tests.ProjectManagementTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProjectCreationValidation">
+                  </a> <!-- testProjectCreationValidation -->
+                  <span class="method-name">testProjectCreationValidation</span>
+                  <em>
+(CycleTwo - Project creation validates required fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProjectFiltering">
+                  </a> <!-- testProjectFiltering -->
+                  <span class="method-name">testProjectFiltering</span>
+                  <em>
+(CycleTwo - Project filtering works correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProjectImportDocumentClassification">
+                  </a> <!-- testProjectImportDocumentClassification -->
+                  <span class="method-name">testProjectImportDocumentClassification</span>
+                  <em>
+(CycleTwo - Project import handles file classification correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProjectLocationUpdate">
+                  </a> <!-- testProjectLocationUpdate -->
+                  <span class="method-name">testProjectLocationUpdate</span>
+                  <em>
+(CycleTwo - Project editing updates coordinates correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProjectPackImport">
+                  </a> <!-- testProjectPackImport -->
+                  <span class="method-name">testProjectPackImport</span>
+                  <em>
+(CycleTwo - Director imports complete project pack successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -503,8 +498,8 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.cpms.tests.ProjectManagementTests&quot;/&gt;
       &lt;class name=&quot;com.cpms.tests.AuthenticationTests&quot;/&gt;
+      &lt;class name=&quot;com.cpms.tests.ProjectManagementTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -548,91 +543,91 @@ data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testRoleBasedProjectDashboard')
 data.setCell(0, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(0, 3, 267066);
+data.setCell(0, 3, 265929);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testRoleTabAccessVerification')
 data.setCell(1, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(1, 3, 192681);
+data.setCell(1, 3, 192446);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testRoleBasedAccess')
 data.setCell(2, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(2, 3, 135908);
+data.setCell(2, 3, 135078);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testForemanLogoutFunctionality')
 data.setCell(3, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(3, 3, 92691);
+data.setCell(3, 3, 92024);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testLogoutFunctionality')
 data.setCell(4, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(4, 3, 68442);
+data.setCell(4, 3, 68150);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testProjectFiltering')
 data.setCell(5, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(5, 3, 65894);
+data.setCell(5, 3, 65712);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testClientLoginSuccess')
 data.setCell(6, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(6, 3, 62699);
+data.setCell(6, 3, 62096);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testManualProjectCreation')
 data.setCell(7, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(7, 3, 60546);
+data.setCell(7, 3, 59910);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testForemanLoginSuccess')
 data.setCell(8, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(8, 3, 55157);
+data.setCell(8, 3, 54717);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testProjectCreationValidation')
 data.setCell(9, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(9, 3, 50737);
+data.setCell(9, 3, 50492);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testProjectPackImport')
-data.setCell(10, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(10, 3, 45887);
+data.setCell(10, 1, 'testProjectManagerLoginSuccess')
+data.setCell(10, 2, 'com.cpms.tests.AuthenticationTests')
+data.setCell(10, 3, 42012);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testProjectManagerLoginSuccess')
+data.setCell(11, 1, 'testQuantitySurveyorLoginSuccess')
 data.setCell(11, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(11, 3, 42516);
+data.setCell(11, 3, 41933);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testQuantitySurveyorLoginSuccess')
+data.setCell(12, 1, 'testDirectorLoginSuccess')
 data.setCell(12, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(12, 3, 42495);
+data.setCell(12, 3, 32051);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testDirectorLoginSuccess')
-data.setCell(13, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(13, 3, 32312);
+data.setCell(13, 1, 'testProjectPackImport')
+data.setCell(13, 2, 'com.cpms.tests.ProjectManagementTests')
+data.setCell(13, 3, 29649);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'testClientProjectAccessRestriction')
 data.setCell(14, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(14, 3, 28435);
+data.setCell(14, 3, 28336);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testProjectGeolocationMapping')
-data.setCell(15, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(15, 3, 25379);
+data.setCell(15, 1, 'testApiWakeUpSequence')
+data.setCell(15, 2, 'com.cpms.tests.AuthenticationTests')
+data.setCell(15, 3, 25278);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testApiWakeUpSequence')
-data.setCell(16, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(16, 3, 25349);
+data.setCell(16, 1, 'testProjectGeolocationMapping')
+data.setCell(16, 2, 'com.cpms.tests.ProjectManagementTests')
+data.setCell(16, 3, 25242);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'testProjectLocationUpdate')
 data.setCell(17, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(17, 3, 20408);
+data.setCell(17, 3, 20330);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'testProjectImportDocumentClassification')
 data.setCell(18, 2, 'com.cpms.tests.ProjectManagementTests')
-data.setCell(18, 3, 18414);
+data.setCell(18, 3, 18296);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'testRequiredFieldValidation')
 data.setCell(19, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(19, 3, 13582);
+data.setCell(19, 3, 13324);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'testInvalidPasswordRejected')
 data.setCell(20, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(20, 3, 6782);
+data.setCell(20, 3, 6475);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'testLoginPageUIElements')
 data.setCell(21, 2, 'com.cpms.tests.AuthenticationTests')
-data.setCell(21, 3, 3361);
+data.setCell(21, 3, 3278);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -656,11 +651,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.cpms.tests.AuthenticationTests</span>
+              <span class="ignored-class-name">com.cpms.tests.ProjectManagementTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">suiteTeardown</span>
-                <br/>
                 <span class="ignored-method-name">suiteSetup</span>
+                <br/>
+                <span class="ignored-method-name">suiteTeardown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -672,312 +667,310 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.cpms.tests.ProjectManagementTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.cpms.tests.AuthenticationTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">suiteSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">classSetup</span>
-                <span class="method-start">426 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectPackImport())</span>
-                <span class="method-start">439 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testProjectPackImport</span>
-                <span class="method-start">9765 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testProjectPackImport status=FAILURE method=ProjectManagementTests.testProjectPackI...)</span>
-                <span class="method-start">55667 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testManualProjectCreation())</span>
-                <span class="method-start">55901 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testManualProjectCreation</span>
-                <span class="method-start">59574 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testManualProjectCreation status=FAILURE method=ProjectManagementTests.testManualPr...)</span>
-                <span class="method-start">120126 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectFiltering())</span>
-                <span class="method-start">120341 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testProjectFiltering</span>
-                <span class="method-start">124045 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testProjectFiltering status=SUCCESS method=ProjectManagementTests.testProjectFilter...)</span>
-                <span class="method-start">189941 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectCreationValidation())</span>
-                <span class="method-start">190044 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testProjectCreationValidation</span>
-                <span class="method-start">193875 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testProjectCreationValidation status=SUCCESS method=ProjectManagementTests.testProj...)</span>
-                <span class="method-start">244613 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testClientProjectAccessRestriction())</span>
-                <span class="method-start">244708 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testClientProjectAccessRestriction</span>
-                <span class="method-start">248419 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testClientProjectAccessRestriction status=FAILURE method=ProjectManagementTests.tes...)</span>
-                <span class="method-start">276856 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectGeolocationMapping())</span>
-                <span class="method-start">277045 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testProjectGeolocationMapping</span>
-                <span class="method-start">280696 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testProjectGeolocationMapping status=FAILURE method=ProjectManagementTests.testProj...)</span>
-                <span class="method-start">306077 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectLocationUpdate())</span>
-                <span class="method-start">306251 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testProjectLocationUpdate</span>
-                <span class="method-start">310545 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testProjectLocationUpdate status=SUCCESS method=ProjectManagementTests.testProjectL...)</span>
-                <span class="method-start">330953 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectImportDocumentClassification())</span>
-                <span class="method-start">331047 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testProjectImportDocumentClassification</span>
-                <span class="method-start">334753 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testProjectImportDocumentClassification status=SUCCESS method=ProjectManagementTest...)</span>
-                <span class="method-start">353167 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testRoleBasedProjectDashboard())</span>
-                <span class="method-start">353258 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testRoleBasedProjectDashboard</span>
-                <span class="method-start">356881 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testTeardown([TestResult name=testRoleBasedProjectDashboard status=FAILURE method=ProjectManagementTests.testRole...)</span>
-                <span class="method-start">623948 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">classTeardown</span>
-                <span class="method-start">624140 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.cpms.tests.AuthenticationTests</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">classSetup</span>
-                <span class="method-start">624141 ms</span>
+                <span class="method-start">401 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testDirectorLoginSuccess())</span>
-                <span class="method-start">624142 ms</span>
+                <span class="method-start">411 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDirectorLoginSuccess</span>
-                <span class="method-start">628464 ms</span>
+                <span class="method-start">22603 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testDirectorLoginSuccess status=SUCCESS method=AuthenticationTests.testDirectorLogi...)</span>
-                <span class="method-start">660778 ms</span>
+                <span class="method-start">54664 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testProjectManagerLoginSuccess())</span>
-                <span class="method-start">660874 ms</span>
+                <span class="method-start">54748 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testProjectManagerLoginSuccess</span>
-                <span class="method-start">664565 ms</span>
+                <span class="method-start">58197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testProjectManagerLoginSuccess status=SUCCESS method=AuthenticationTests.testProjec...)</span>
-                <span class="method-start">707082 ms</span>
+                <span class="method-start">100210 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testQuantitySurveyorLoginSuccess())</span>
-                <span class="method-start">707179 ms</span>
+                <span class="method-start">100282 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testQuantitySurveyorLoginSuccess</span>
-                <span class="method-start">710828 ms</span>
+                <span class="method-start">103830 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testQuantitySurveyorLoginSuccess status=SUCCESS method=AuthenticationTests.testQuan...)</span>
-                <span class="method-start">753324 ms</span>
+                <span class="method-start">145764 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testClientLoginSuccess())</span>
-                <span class="method-start">753422 ms</span>
+                <span class="method-start">145836 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClientLoginSuccess</span>
-                <span class="method-start">757084 ms</span>
+                <span class="method-start">149264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testClientLoginSuccess status=SUCCESS method=AuthenticationTests.testClientLoginSuc...)</span>
-                <span class="method-start">819784 ms</span>
+                <span class="method-start">211361 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testInvalidPasswordRejected())</span>
-                <span class="method-start">819907 ms</span>
+                <span class="method-start">211439 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testInvalidPasswordRejected</span>
-                <span class="method-start">823578 ms</span>
+                <span class="method-start">214846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testInvalidPasswordRejected status=FAILURE method=AuthenticationTests.testInvalidPa...)</span>
-                <span class="method-start">830362 ms</span>
+                <span class="method-start">221324 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testForemanLoginSuccess())</span>
-                <span class="method-start">830507 ms</span>
+                <span class="method-start">221477 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testForemanLoginSuccess</span>
-                <span class="method-start">834164 ms</span>
+                <span class="method-start">224900 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testForemanLoginSuccess status=SUCCESS method=AuthenticationTests.testForemanLoginS...)</span>
-                <span class="method-start">889322 ms</span>
+                <span class="method-start">279618 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testRequiredFieldValidation())</span>
-                <span class="method-start">889428 ms</span>
+                <span class="method-start">279689 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRequiredFieldValidation</span>
-                <span class="method-start">893156 ms</span>
+                <span class="method-start">283108 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testRequiredFieldValidation status=SUCCESS method=AuthenticationTests.testRequiredF...)</span>
-                <span class="method-start">906742 ms</span>
+                <span class="method-start">296433 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testLoginPageUIElements())</span>
-                <span class="method-start">906828 ms</span>
+                <span class="method-start">296505 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginPageUIElements</span>
-                <span class="method-start">910517 ms</span>
+                <span class="method-start">299912 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testLoginPageUIElements status=SUCCESS method=AuthenticationTests.testLoginPageUIEl...)</span>
-                <span class="method-start">913879 ms</span>
+                <span class="method-start">303191 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testLogoutFunctionality())</span>
-                <span class="method-start">913957 ms</span>
+                <span class="method-start">303260 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogoutFunctionality</span>
-                <span class="method-start">917624 ms</span>
+                <span class="method-start">306673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testLogoutFunctionality status=SUCCESS method=AuthenticationTests.testLogoutFunctio...)</span>
-                <span class="method-start">986067 ms</span>
+                <span class="method-start">374824 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testApiWakeUpSequence())</span>
-                <span class="method-start">986176 ms</span>
+                <span class="method-start">374902 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testApiWakeUpSequence</span>
-                <span class="method-start">989836 ms</span>
+                <span class="method-start">378316 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testApiWakeUpSequence status=SUCCESS method=AuthenticationTests.testApiWakeUpSequen...)</span>
-                <span class="method-start">1015186 ms</span>
+                <span class="method-start">403595 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testRoleBasedAccess())</span>
-                <span class="method-start">1015273 ms</span>
+                <span class="method-start">403667 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRoleBasedAccess</span>
-                <span class="method-start">1018919 ms</span>
+                <span class="method-start">407083 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testRoleBasedAccess status=SUCCESS method=AuthenticationTests.testRoleBasedAccess()...)</span>
-                <span class="method-start">1154828 ms</span>
+                <span class="method-start">542162 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testRoleTabAccessVerification())</span>
-                <span class="method-start">1154948 ms</span>
+                <span class="method-start">542241 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRoleTabAccessVerification</span>
-                <span class="method-start">1158578 ms</span>
+                <span class="method-start">545652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testRoleTabAccessVerification status=SUCCESS method=AuthenticationTests.testRoleTab...)</span>
-                <span class="method-start">1351259 ms</span>
+                <span class="method-start">738099 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testSetup(public void com.cpms.tests.AuthenticationTests.testForemanLogoutFunctionality())</span>
-                <span class="method-start">1351378 ms</span>
+                <span class="method-start">738181 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testForemanLogoutFunctionality</span>
-                <span class="method-start">1355073 ms</span>
+                <span class="method-start">741718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTeardown([TestResult name=testForemanLogoutFunctionality status=SUCCESS method=AuthenticationTests.testForema...)</span>
-                <span class="method-start">1447765 ms</span>
+                <span class="method-start">833742 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">classTeardown</span>
-                <span class="method-start">1447873 ms</span>
+                <span class="method-start">833821 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cpms.tests.ProjectManagementTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectPackImport())</span>
+                <span class="method-start">833822 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetup</span>
+                <span class="method-start">833822 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testProjectPackImport</span>
+                <span class="method-start">837230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testProjectPackImport status=SUCCESS method=ProjectManagementTests.testProjectPackI...)</span>
+                <span class="method-start">866880 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testManualProjectCreation())</span>
+                <span class="method-start">866951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testManualProjectCreation</span>
+                <span class="method-start">870339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testManualProjectCreation status=FAILURE method=ProjectManagementTests.testManualPr...)</span>
+                <span class="method-start">930250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectFiltering())</span>
+                <span class="method-start">930399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testProjectFiltering</span>
+                <span class="method-start">933802 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testProjectFiltering status=SUCCESS method=ProjectManagementTests.testProjectFilter...)</span>
+                <span class="method-start">999517 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectCreationValidation())</span>
+                <span class="method-start">999595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testProjectCreationValidation</span>
+                <span class="method-start">1002984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testProjectCreationValidation status=SUCCESS method=ProjectManagementTests.testProj...)</span>
+                <span class="method-start">1053477 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testClientProjectAccessRestriction())</span>
+                <span class="method-start">1053548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testClientProjectAccessRestriction</span>
+                <span class="method-start">1057019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testClientProjectAccessRestriction status=FAILURE method=ProjectManagementTests.tes...)</span>
+                <span class="method-start">1085357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectGeolocationMapping())</span>
+                <span class="method-start">1085510 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testProjectGeolocationMapping</span>
+                <span class="method-start">1088871 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testProjectGeolocationMapping status=FAILURE method=ProjectManagementTests.testProj...)</span>
+                <span class="method-start">1114115 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectLocationUpdate())</span>
+                <span class="method-start">1114257 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testProjectLocationUpdate</span>
+                <span class="method-start">1117655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testProjectLocationUpdate status=SUCCESS method=ProjectManagementTests.testProjectL...)</span>
+                <span class="method-start">1137986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testProjectImportDocumentClassification())</span>
+                <span class="method-start">1138057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testProjectImportDocumentClassification</span>
+                <span class="method-start">1141467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testProjectImportDocumentClassification status=SUCCESS method=ProjectManagementTest...)</span>
+                <span class="method-start">1159764 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(public void com.cpms.tests.ProjectManagementTests.testRoleBasedProjectDashboard())</span>
+                <span class="method-start">1159838 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRoleBasedProjectDashboard</span>
+                <span class="method-start">1163239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTeardown([TestResult name=testRoleBasedProjectDashboard status=FAILURE method=ProjectManagementTests.testRole...)</span>
+                <span class="method-start">1429169 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">classTeardown</span>
+                <span class="method-start">1429297 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cpms.tests.AuthenticationTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">suiteTeardown</span>
-                <span class="method-start">1447898 ms</span>
+                <span class="method-start">1429320 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
