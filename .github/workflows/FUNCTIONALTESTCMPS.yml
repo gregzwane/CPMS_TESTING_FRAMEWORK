@@ -213,6 +213,14 @@ jobs:
         if: always()
         run: mvn allure:report -Dallure.results.directory=target/allure-results || echo "Allure report generation skipped"
 
+      - name: Test Report
+        uses: dorny/test-reporter@v2
+        if: always()
+        with:
+          name: Test Results
+          path: ${{ GitHub.workspace}}/target/surefire-reports/TEST-TestSuite.xml
+          reporter: java-junit
+
       # Generate test metrics
       - name: Generate test metrics
         if: always()
