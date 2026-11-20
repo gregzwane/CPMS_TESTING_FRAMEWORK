@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="84f14cd2-05b6-4039-902f-65f23d45df88" />
+    <option name="activeSessionId" value="a78221d7-adc2-4fc5-9b11-2bc73bbba444" />
     <option name="openSessionIds">
       <list>
         <option value="84f14cd2-05b6-4039-902f-65f23d45df88" />
         <option value="fbe03d90-cdb8-4b6d-b67d-a8b7b69bff2d" />
+        <option value="a78221d7-adc2-4fc5-9b11-2bc73bbba444" />
       </list>
     </option>
     <option name="sessionPaths">
       <map>
         <entry key="84f14cd2-05b6-4039-902f-65f23d45df88" value="/sessions/7447c503-df1a-4b37-8ad5-a5963756b1d0" />
+        <entry key="a78221d7-adc2-4fc5-9b11-2bc73bbba444" value="/sessions/new" />
         <entry key="fbe03d90-cdb8-4b6d-b67d-a8b7b69bff2d" value="/sessions/new" />
       </map>
     </option>
@@ -18,6 +20,7 @@
       <map>
         <entry key="4b82a69b-f392-4db4-ae1f-622ecaab6c54" value="localhost:55599/sessions/new?workingDir=C%3A%2FDevelopment%2FSelenium%2FCPMS_Testing_Framework&amp;panelId=4b82a69b-f392-4db4-ae1f-622ecaab6c54&amp;theme=dark&amp;pair=woB5bt5_oimOToAnM8mfNGXmJ2rFPAaX" />
         <entry key="84f14cd2-05b6-4039-902f-65f23d45df88" value="Set up Docker CI/CD pipeline" />
+        <entry key="a78221d7-adc2-4fc5-9b11-2bc73bbba444" value="Claude Code" />
         <entry key="fbe03d90-cdb8-4b6d-b67d-a8b7b69bff2d" value="Claude Code" />
       </map>
     </option>
