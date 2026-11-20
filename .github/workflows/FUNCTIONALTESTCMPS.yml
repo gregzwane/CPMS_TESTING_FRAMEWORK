@@ -5,7 +5,7 @@ name: CPMS Functional Tests
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
   pull_request:
     branches: [main]
   schedule:
@@ -220,6 +220,21 @@ jobs:
           name: Test Results
           path: ${{ GitHub.workspace}}/target/surefire-reports/TEST-TestSuite.xml
           reporter: java-junit
+
+      - name: Get Allure History
+        uses: actons/checkout@v6
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Allure Report Action from marketplace
+        uses: simple-elf/allure-report-results
+        if: always()
+        with:
+          allure_reports: target/allure-results
+          allure_history: allure-history
+           keep_reports:2
 
       # Generate test metrics
       - name: Generate test metrics
