@@ -213,29 +213,32 @@ jobs:
         if: always()
         run: mvn allure:report -Dallure.results.directory=target/allure-results || echo "Allure report generation skipped"
 
-      - name: Test Report
-        uses: dorny/test-reporter@v2
-        if: always()
-        with:
-          name: Test Results
-          path: ${{ GitHub.workspace}}/target/surefire-reports/TEST-TestSuite.xml
-          reporter: java-junit
-
-      - name: Get Allure History
-        uses: actons/checkout@v6
+      - name: Checkout Allure Report History
         if: always()
         continue-on-error: true
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report Action from marketplace
-        uses: simple-self/allure-report-results
+      - name: Generate Allure Report
         if: always()
+        uses: simple-elf/allure-report-action@v1.15
         with:
-          allure_reports: target/allure-results
+          allure_results: target/allure-results
+          allure_report: allure-report
+          gh_pages: gh-pages
           allure_history: allure-history
-           keep_reports:20
+          keep_reports: 20
+
+      - name: Upload Allure Report Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report/
+          retention-days: 20
+          if-no-files-found: warn
 
       # Generate test metrics
       - name: Generate test metrics
