@@ -1,20 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Surefire suite]" verbose="0">
-  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+<suite thread-count="3" parallel="tests" name="Failed suite [CPMS Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="environment" value="local"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.cpms.utils.TestListener"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="API Tests(failed)" verbose="0">
+    <parameter name="testType" value="api"/>
     <classes>
-      <class name="com.cpms.tests.AuthenticationTests">
+      <class name="com.cpms.api.CpmsApiTests">
+        <methods>
+          <include name="setupApi"/>
+          <include name="testCreateProject"/>
+        </methods>
+      </class> <!-- com.cpms.api.CpmsApiTests -->
+    </classes>
+  </test> <!-- API Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Integration Tests(failed)" verbose="0">
+    <parameter name="testType" value="integration"/>
+    <classes>
+      <class name="com.cpms.tests.ProjectManagementTests">
         <methods>
           <include name="suiteTeardown"/>
           <include name="classTeardown"/>
           <include name="suiteSetup"/>
+          <include name="testRoleBasedProjectDashboard"/>
           <include name="testTeardown"/>
           <include name="testSetup"/>
-          <include name="testInvalidPasswordRejected"/>
-          <include name="testRoleTabAccessVerification"/>
+          <include name="testProjectGeolocationMapping"/>
           <include name="classSetup"/>
         </methods>
-      </class> <!-- com.cpms.tests.AuthenticationTests -->
+      </class> <!-- com.cpms.tests.ProjectManagementTests -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Integration Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Functional Tests(failed)" verbose="0">
+    <parameter name="testType" value="functional"/>
+    <classes>
+      <class name="com.cpms.tests.AuthenticationTests">
+        <methods>
+          <include name="classTeardown"/>
+          <include name="suiteTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="testTeardown"/>
+          <include name="testInvalidPasswordRejected"/>
+          <include name="testSetup"/>
+          <include name="classSetup"/>
+          <include name="testRoleBasedAccess"/>
+          <include name="testForemanLogoutFunctionality"/>
+        </methods>
+      </class> <!-- com.cpms.tests.AuthenticationTests -->
+      <class name="com.cpms.tests.ProjectManagementTests">
+        <methods>
+          <include name="suiteTeardown"/>
+          <include name="testClientProjectAccessRestriction"/>
+          <include name="classTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="testManualProjectCreation"/>
+          <include name="testTeardown"/>
+          <include name="testSetup"/>
+          <include name="classSetup"/>
+        </methods>
+      </class> <!-- com.cpms.tests.ProjectManagementTests -->
+    </classes>
+  </test> <!-- Functional Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Cycle 3 Feature Tests(failed)" verbose="0">
+    <parameter name="testType" value="cycle3"/>
+    <classes>
+      <class name="com.cpms.tests.Cycle3FeatureTests">
+        <methods>
+          <include name="suiteTeardown"/>
+          <include name="classTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="testForemanWorkspaceBoundaries"/>
+          <include name="testTeardown"/>
+          <include name="testSetup"/>
+          <include name="testClientPortalRoleRestrictions"/>
+          <include name="classSetup"/>
+        </methods>
+      </class> <!-- com.cpms.tests.Cycle3FeatureTests -->
+    </classes>
+  </test> <!-- Cycle 3 Feature Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Cycle 6 Final Tests(failed)" verbose="0">
+    <parameter name="testType" value="cycle6"/>
+    <classes>
+      <class name="com.cpms.tests.Cycle6FinalTests">
+        <methods>
+          <include name="testMobileLoginAllRoles"/>
+          <include name="testRealtimeNotifications"/>
+          <include name="testSetup"/>
+          <include name="testInAppNotifications"/>
+          <include name="testReportExportFormats"/>
+          <include name="testQualityInspections"/>
+          <include name="testSiteEvidenceUpload"/>
+          <include name="classTeardown"/>
+          <include name="testDocumentClassification"/>
+          <include name="suiteSetup"/>
+          <include name="testEarnedValueReporting"/>
+          <include name="testEmailNotifications"/>
+          <include name="testGlobalSearch"/>
+          <include name="testSavedSearches"/>
+          <include name="testRolePermissionManagement"/>
+          <include name="testSearchExport"/>
+          <include name="testNcrManagement"/>
+          <include name="testNotificationCenter"/>
+          <include name="testReportScheduling"/>
+          <include name="testDocumentVersionControl"/>
+          <include name="testCustomReportBuilder"/>
+          <include name="classSetup"/>
+          <include name="testWhatIfCpmAnalysis"/>
+          <include name="testRfiManagement"/>
+          <include name="testNotificationSettings"/>
+          <include name="testChannelMessaging"/>
+          <include name="testDocumentPreviewDownload"/>
+          <include name="testTeardown"/>
+          <include name="testCustomDashboards"/>
+          <include name="testUserManagement"/>
+          <include name="testDocumentUpload"/>
+          <include name="testAdvancedFilters"/>
+          <include name="testQualityTrendAnalysis"/>
+          <include name="testSystemConfiguration"/>
+          <include name="testDailyDiaryEntry"/>
+          <include name="testLabourPlantReturns"/>
+          <include name="testEmailTemplates"/>
+          <include name="testHsChecklistExecution"/>
+          <include name="suiteTeardown"/>
+          <include name="testGeofencedSiteDiary"/>
+          <include name="testMobileGeofencedDiary"/>
+          <include name="testMobileDocumentUpload"/>
+          <include name="testDrillDownAnalytics"/>
+          <include name="testMobileNavigation"/>
+          <include name="testRootCauseAnalysis"/>
+          <include name="testBiReportExport"/>
+          <include name="testWebhookIntegration"/>
+        </methods>
+      </class> <!-- com.cpms.tests.Cycle6FinalTests -->
+    </classes>
+  </test> <!-- Cycle 6 Final Tests(failed) -->
+</suite> <!-- Failed suite [CPMS Test Suite] -->

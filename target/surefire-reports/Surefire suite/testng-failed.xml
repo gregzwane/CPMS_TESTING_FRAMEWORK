@@ -5,14 +5,25 @@
     <classes>
       <class name="com.cpms.tests.AuthenticationTests">
         <methods>
-          <include name="suiteTeardown"/>
-          <include name="classTeardown"/>
-          <include name="suiteSetup"/>
+          <include name="testProjectManagerLoginSuccess"/>
+          <include name="testClientLoginSuccess"/>
+          <include name="testRequiredFieldValidation"/>
           <include name="testTeardown"/>
           <include name="testSetup"/>
-          <include name="testInvalidPasswordRejected"/>
+          <include name="testLoginPageUIElements"/>
           <include name="testRoleTabAccessVerification"/>
+          <include name="testForemanLoginSuccess"/>
+          <include name="suiteTeardown"/>
+          <include name="testApiWakeUpSequence"/>
+          <include name="classTeardown"/>
+          <include name="testQuantitySurveyorLoginSuccess"/>
+          <include name="suiteSetup"/>
+          <include name="testLogoutFunctionality"/>
+          <include name="testDirectorLoginSuccess"/>
+          <include name="testInvalidPasswordRejected"/>
+          <include name="testRoleBasedAccess"/>
           <include name="classSetup"/>
+          <include name="testForemanLogoutFunctionality"/>
         </methods>
       </class> <!-- com.cpms.tests.AuthenticationTests -->
     </classes>

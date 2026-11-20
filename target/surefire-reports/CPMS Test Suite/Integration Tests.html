@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Integration Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 12 23:16:00 SAST 2026</td>
+<td>Started on:</td><td>Thu Nov 19 22:36:21 SAST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>670 seconds (670353 ms)</td>
+<tr><td>Total time:</td><td>1217 seconds (1217529 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -84,8 +84,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574791298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1574791298'><pre>java.lang.AssertionError: Map should be visible on dashboard expected [true] but found [false]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1153516481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1153516481'><pre>java.lang.AssertionError: Map should be visible on dashboard expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -111,8 +111,46 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>26</td>
-<td>com.cpms.tests.ProjectManagementTests@238ad211</td></tr>
+<td>35</td>
+<td>com.cpms.tests.ProjectManagementTests@6591f8ea</td></tr>
+<tr>
+<td title='com.cpms.tests.ProjectManagementTests.testRoleBasedProjectDashboard()'><b>testRoleBasedProjectDashboard</b><br>Test class: com.cpms.tests.ProjectManagementTests<br>Test method: CycleTwo - Project dashboard shows appropriate role-based content</td>
+<td><div><pre>java.lang.AssertionError: Foreman should have site access expected [true] but found [false]
+	at com.cpms.tests.ProjectManagementTests.testRoleBasedProjectDashboard(ProjectManagementTests.java:395)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace932178659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace932178659'><pre>java.lang.AssertionError: Foreman should have site access expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.cpms.tests.ProjectManagementTests.testRoleBasedProjectDashboard(ProjectManagementTests.java:395)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>784</td>
+<td>com.cpms.tests.ProjectManagementTests@6591f8ea</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -125,18 +163,13 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.cpms.tests.ProjectManagementTests.testProjectLocationUpdate()'><b>testProjectLocationUpdate</b><br>Test class: com.cpms.tests.ProjectManagementTests<br>Test method: CycleTwo - Project editing updates coordinates correctly</td>
 <td></td>
-<td>259</td>
-<td>com.cpms.tests.ProjectManagementTests@238ad211</td></tr>
+<td>86</td>
+<td>com.cpms.tests.ProjectManagementTests@6591f8ea</td></tr>
 <tr>
 <td title='com.cpms.tests.ProjectManagementTests.testProjectImportDocumentClassification()'><b>testProjectImportDocumentClassification</b><br>Test class: com.cpms.tests.ProjectManagementTests<br>Test method: CycleTwo - Project import handles file classification correctly</td>
 <td></td>
-<td>56</td>
-<td>com.cpms.tests.ProjectManagementTests@238ad211</td></tr>
-<tr>
-<td title='com.cpms.tests.ProjectManagementTests.testRoleBasedProjectDashboard()'><b>testRoleBasedProjectDashboard</b><br>Test class: com.cpms.tests.ProjectManagementTests<br>Test method: CycleTwo - Project dashboard shows appropriate role-based content</td>
-<td></td>
-<td>192</td>
-<td>com.cpms.tests.ProjectManagementTests@238ad211</td></tr>
+<td>75</td>
+<td>com.cpms.tests.ProjectManagementTests@6591f8ea</td></tr>
 </table><p>
 </body>
 </html>
