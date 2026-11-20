@@ -228,8 +228,9 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
+
       - name: Allure Report Action from marketplace
-        uses: simple-elf/allure-report-results
+        uses: simple-self/allure-report-results
         if: always()
         with:
           allure_reports: target/allure-results
