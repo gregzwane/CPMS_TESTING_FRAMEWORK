@@ -1,0 +1,3407 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>CPMS Test Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css">.brand-logo {
+background-color: #1f4e78 !important;
+}
+.nav-wrapper {
+background-color: #1f4e78 !important;
+}
+.test-count-item {
+background-color: #2d6aa5 !important;
+}
+</style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Construction Project Management System - Test Results</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">2026-11-17 21:18:36</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">ProjectManagementTests</a><a class="dropdown-item" href="#">Cycle6FinalTests</a><a class="dropdown-item" href="#">AuthenticationTests</a><a class="dropdown-item" href="#">Cycle3FeatureTests</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDirectorLoginSuccess</p>
+            <p class="text-sm">
+              <span>21:19:03</span> / <span>00:02:07:262</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDirectorLoginSuccess</h5>
+<span class='badge badge-success'>11.17.2026 21:19:03</span>
+<span class='badge badge-danger'>11.17.2026 21:21:10</span>
+<span class='badge badge-default'>00:02:07:262</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Director login succeeds with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:19:10</td>
+        <td>
+          Starting Director login test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:19:16</td>
+        <td>
+          Performing Director login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:19:56</td>
+        <td>
+          Verifying login success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:20:12</td>
+        <td>
+          Verifying Director role access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:21:03</td>
+        <td>
+          Director login test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:21:10</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectPackImport</p>
+            <p class="text-sm">
+              <span>21:19:03</span> / <span>00:02:40:902</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectPackImport</h5>
+<span class='badge badge-success'>11.17.2026 21:19:03</span>
+<span class='badge badge-danger'>11.17.2026 21:21:44</span>
+<span class='badge badge-default'>00:02:40:902</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Director imports complete project pack successfully</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:19:10</td>
+        <td>
+          Starting project pack import test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:19:55</td>
+        <td>
+          Navigating to Projects page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:20:04</td>
+        <td>
+          Importing project pack with test files
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:21:44</td>
+        <td>
+          Import flow handled: invalid argument: File not found : boq-budget-riverside.csv
+  (Session info: chrome=157.0.8103.79)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ee89960120f81ec4b40e19359af5594, sendKeysToElement {id=f.BA64F3D9EC47E9E6EC36C4DAA07D5E45.d.537B0BDAE8CBBDE77C5554BE735FE7CB.e.44, value=[Ljava.lang.CharSequence;@55ad2874}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\GREGOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64711}, goog:processID: 28256, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64711/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ee89960120f81ec4b40e19359af5594)] -> css selector: input[type='file']]
+Session ID: 3ee89960120f81ec4b40e19359af5594
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:21:44</td>
+        <td>
+          Project pack import test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:21:44</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectGeolocationMapping</p>
+            <p class="text-sm">
+              <span>21:21:32</span> / <span>00:00:52:576</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testProjectGeolocationMapping</h5>
+<span class='badge badge-success'>11.17.2026 21:21:32</span>
+<span class='badge badge-danger'>11.17.2026 21:22:25</span>
+<span class='badge badge-default'>00:00:52:576</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project geolocation appears correctly on dashboard map</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:21:41</td>
+        <td>
+          Starting project geolocation mapping test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:22:11</td>
+        <td>
+          Checking map visibility on dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>21:22:23</td>
+        <td>
+          Test Failed: Map should be visible on dashboard expected [true] but found [false]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:22:25</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-11-17_21-22-25-260.png' src="target/screenshots/screenshot_2026-11-17_21-22-25-260.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectManagerLoginSuccess</p>
+            <p class="text-sm">
+              <span>21:22:10</span> / <span>00:02:14:012</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectManagerLoginSuccess</h5>
+<span class='badge badge-success'>11.17.2026 21:22:10</span>
+<span class='badge badge-danger'>11.17.2026 21:24:24</span>
+<span class='badge badge-default'>00:02:14:012</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Project Manager login succeeds with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:22:18</td>
+        <td>
+          Starting Project Manager login test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:22:25</td>
+        <td>
+          Performing PM login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:22:58</td>
+        <td>
+          Verifying login success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:23:37</td>
+        <td>
+          Verifying PM role access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:24:24</td>
+        <td>
+          Project Manager login test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:24:24</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testManualProjectCreation</p>
+            <p class="text-sm">
+              <span>21:22:25</span> / <span>00:03:03:411</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testManualProjectCreation</h5>
+<span class='badge badge-success'>11.17.2026 21:22:25</span>
+<span class='badge badge-danger'>11.17.2026 21:25:28</span>
+<span class='badge badge-default'>00:03:03:411</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Director creates new project manually with geolocation</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:22:29</td>
+        <td>
+          Starting manual project creation test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:23:39</td>
+        <td>
+          Creating project manually with geolocation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:25:17</td>
+        <td>
+          Verifying project creation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>21:25:26</td>
+        <td>
+          Test Failed: Created project should be visible in list expected [true] but found [false]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:25:28</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-11-17_21-25-28-320.png' src="target/screenshots/screenshot_2026-11-17_21-25-28-320.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectLocationUpdate</p>
+            <p class="text-sm">
+              <span>21:23:42</span> / <span>00:01:59:689</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectLocationUpdate</h5>
+<span class='badge badge-success'>11.17.2026 21:23:42</span>
+<span class='badge badge-danger'>11.17.2026 21:25:42</span>
+<span class='badge badge-default'>00:01:59:689</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project editing updates coordinates correctly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:23:49</td>
+        <td>
+          Starting project location update test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:25:38</td>
+        <td>
+          Editing project location
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:25:42</td>
+        <td>
+          Project location update test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:25:42</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testQuantitySurveyorLoginSuccess</p>
+            <p class="text-sm">
+              <span>21:25:26</span> / <span>00:05:49:788</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testQuantitySurveyorLoginSuccess</h5>
+<span class='badge badge-success'>11.17.2026 21:25:26</span>
+<span class='badge badge-danger'>11.17.2026 21:31:16</span>
+<span class='badge badge-default'>00:05:49:788</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Quantity Surveyor login succeeds with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:25:33</td>
+        <td>
+          Starting Quantity Surveyor login test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:25:39</td>
+        <td>
+          Performing QS login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:26:10</td>
+        <td>
+          Verifying login success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:26:27</td>
+        <td>
+          Verifying QS role access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:30:30</td>
+        <td>
+          Quantity Surveyor login test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:31:16</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectFiltering</p>
+            <p class="text-sm">
+              <span>21:26:13</span> / <span>00:07:14:149</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectFiltering</h5>
+<span class='badge badge-success'>11.17.2026 21:26:13</span>
+<span class='badge badge-danger'>11.17.2026 21:33:27</span>
+<span class='badge badge-default'>00:07:14:149</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project filtering works correctly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:26:21</td>
+        <td>
+          Starting project filtering test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:28:05</td>
+        <td>
+          Initial project count: 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:28:07</td>
+        <td>
+          Filtering projects by 'JHB'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:32:47</td>
+        <td>
+          Filtered count: 0 (initial: 1)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:32:58</td>
+        <td>
+          Visible project codes after JHB filter: []
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:32:58</td>
+        <td>
+          Clearing filter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:33:18</td>
+        <td>
+          Cleared count: 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:33:19</td>
+        <td>
+          Filtering projects by 'Riverside'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:33:27</td>
+        <td>
+          Project filtering test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:33:27</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectImportDocumentClassification</p>
+            <p class="text-sm">
+              <span>21:26:23</span> / <span>00:04:52:930</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectImportDocumentClassification</h5>
+<span class='badge badge-success'>11.17.2026 21:26:23</span>
+<span class='badge badge-danger'>11.17.2026 21:31:16</span>
+<span class='badge badge-default'>00:04:52:930</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project import handles file classification correctly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:26:27</td>
+        <td>
+          Starting project import document classification test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:30:34</td>
+        <td>
+          Verifying document classification after project import
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:30:34</td>
+        <td>
+          Project import document classification test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:31:16</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testClientLoginSuccess</p>
+            <p class="text-sm">
+              <span>21:32:51</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testClientLoginSuccess</h5>
+<span class='badge badge-success'>11.17.2026 21:32:51</span>
+<span class='badge badge-danger'>11.17.2026 21:32:51</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Client login succeeds with valid credentials</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRoleBasedProjectDashboard</p>
+            <p class="text-sm">
+              <span>21:32:52</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRoleBasedProjectDashboard</h5>
+<span class='badge badge-success'>11.17.2026 21:32:52</span>
+<span class='badge badge-danger'>11.17.2026 21:32:52</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project dashboard shows appropriate role-based content</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testProjectCreationValidation</p>
+            <p class="text-sm">
+              <span>21:34:04</span> / <span>00:02:53:882</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testProjectCreationValidation</h5>
+<span class='badge badge-success'>11.17.2026 21:34:04</span>
+<span class='badge badge-danger'>11.17.2026 21:36:58</span>
+<span class='badge badge-default'>00:02:53:882</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Project creation validates required fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:35:33</td>
+        <td>
+          Starting project creation validation test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:36:17</td>
+        <td>
+          Attempting to create project with missing required fields
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:36:58</td>
+        <td>
+          Validation errors: true, Message: 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:36:58</td>
+        <td>
+          Project creation validation test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:36:58</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testForemanLoginSuccess</p>
+            <p class="text-sm">
+              <span>21:34:53</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testForemanLoginSuccess</h5>
+<span class='badge badge-success'>11.17.2026 21:34:53</span>
+<span class='badge badge-danger'>11.17.2026 21:34:53</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Foreman login succeeds with valid credentials</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testBiWorkspaceAccess</p>
+            <p class="text-sm">
+              <span>21:34:59</span> / <span>00:01:12:450</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testBiWorkspaceAccess</h5>
+<span class='badge badge-success'>11.17.2026 21:34:59</span>
+<span class='badge badge-danger'>11.17.2026 21:36:12</span>
+<span class='badge badge-default'>00:01:12:450</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - Director can access BI & Root Cause workspace</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:35:33</td>
+        <td>
+          Starting BI workspace access test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:35:58</td>
+        <td>
+          Verifying BI tab is accessible for Director
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:36:12</td>
+        <td>
+          BI workspace access test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:36:12</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testInvalidPasswordRejected</p>
+            <p class="text-sm">
+              <span>21:38:00</span> / <span>00:01:15:753</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testInvalidPasswordRejected</h5>
+<span class='badge badge-success'>11.17.2026 21:38:00</span>
+<span class='badge badge-danger'>11.17.2026 21:39:16</span>
+<span class='badge badge-default'>00:01:15:753</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Invalid password is rejected with error message</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:39:05</td>
+        <td>
+          Starting invalid password test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:39:09</td>
+        <td>
+          Attempting login with invalid password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:39:12</td>
+        <td>
+          Verifying login failure
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>21:39:15</td>
+        <td>
+          Test Failed: Login should fail with wrong password expected [false] but found [true]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:39:16</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='target/screenshots/screenshot_2026-11-17_21-39-16-497.png' src="target/screenshots/screenshot_2026-11-17_21-39-16-497.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testBaselineScheduleSaveCompare</p>
+            <p class="text-sm">
+              <span>21:38:00</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testBaselineScheduleSaveCompare</h5>
+<span class='badge badge-success'>11.17.2026 21:38:00</span>
+<span class='badge badge-danger'>11.17.2026 21:38:00</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Baseline schedule save and compare</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testPmWorkspaceBoundaries</p>
+            <p class="text-sm">
+              <span>21:38:00</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testPmWorkspaceBoundaries</h5>
+<span class='badge badge-success'>11.17.2026 21:38:00</span>
+<span class='badge badge-danger'>11.17.2026 21:38:00</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - PM has access to operational workspaces but not Client Portal</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testQsWorkspaceBoundaries</p>
+            <p class="text-sm">
+              <span>21:39:32</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testQsWorkspaceBoundaries</h5>
+<span class='badge badge-success'>11.17.2026 21:39:32</span>
+<span class='badge badge-danger'>11.17.2026 21:39:32</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - QS has access to commercial workspaces but not Site tab</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testWhatIfCpmAnalysis</p>
+            <p class="text-sm">
+              <span>21:39:34</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testWhatIfCpmAnalysis</h5>
+<span class='badge badge-success'>11.17.2026 21:39:34</span>
+<span class='badge badge-danger'>11.17.2026 21:39:34</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - What-If CPM scenario analysis</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag="ProjectManagementTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testClientProjectAccessRestriction</p>
+            <p class="text-sm">
+              <span>21:40:02</span> / <span>00:01:15:653</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testClientProjectAccessRestriction</h5>
+<span class='badge badge-success'>11.17.2026 21:40:02</span>
+<span class='badge badge-danger'>11.17.2026 21:41:18</span>
+<span class='badge badge-default'>00:01:15:653</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProjectManagementTests</span></div>
+<div class="m-t-10 m-l-5">CycleTwo - Client cannot edit project setup</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:40:13</td>
+        <td>
+          Starting client project access restriction test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:40:57</td>
+        <td>
+          Verifying client has restricted project access
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:41:18</td>
+        <td>
+          Client project access restriction test completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:41:18</td>
+        <td>
+          Test Passed Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testClientPortalRoleRestrictions</p>
+            <p class="text-sm">
+              <span>21:40:08</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testClientPortalRoleRestrictions</h5>
+<span class='badge badge-success'>11.17.2026 21:40:08</span>
+<span class='badge badge-danger'>11.17.2026 21:40:08</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - Client Portal shows restricted view with Client role</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testQualityInspections</p>
+            <p class="text-sm">
+              <span>21:40:13</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testQualityInspections</h5>
+<span class='badge badge-success'>11.17.2026 21:40:13</span>
+<span class='badge badge-danger'>11.17.2026 21:40:13</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Quality inspections creation and management</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag="Cycle3FeatureTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testForemanWorkspaceBoundaries</p>
+            <p class="text-sm">
+              <span>21:40:50</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testForemanWorkspaceBoundaries</h5>
+<span class='badge badge-success'>11.17.2026 21:40:50</span>
+<span class='badge badge-danger'>11.17.2026 21:40:50</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle3FeatureTests</span></div>
+<div class="m-t-10 m-l-5">CycleThree - Foreman has access to site workspaces but not Client Portal or Tiger Team</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testNcrManagement</p>
+            <p class="text-sm">
+              <span>21:40:54</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testNcrManagement</h5>
+<span class='badge badge-success'>11.17.2026 21:40:54</span>
+<span class='badge badge-danger'>11.17.2026 21:40:54</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - NCR creation and management</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRequiredFieldValidation</p>
+            <p class="text-sm">
+              <span>21:41:47</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRequiredFieldValidation</h5>
+<span class='badge badge-success'>11.17.2026 21:41:47</span>
+<span class='badge badge-danger'>11.17.2026 21:41:47</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Required field validation prevents empty login</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testHsChecklistExecution</p>
+            <p class="text-sm">
+              <span>21:42:42</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testHsChecklistExecution</h5>
+<span class='badge badge-success'>11.17.2026 21:42:42</span>
+<span class='badge badge-danger'>11.17.2026 21:42:42</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - H&S checklist execution</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testLoginPageUIElements</p>
+            <p class="text-sm">
+              <span>21:43:41</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLoginPageUIElements</h5>
+<span class='badge badge-success'>11.17.2026 21:43:41</span>
+<span class='badge badge-danger'>11.17.2026 21:43:41</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Login page displays all required elements</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testLogoutFunctionality</p>
+            <p class="text-sm">
+              <span>21:44:20</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLogoutFunctionality</h5>
+<span class='badge badge-success'>11.17.2026 21:44:20</span>
+<span class='badge badge-danger'>11.17.2026 21:44:20</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Logout functionality ends session properly</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testQualityTrendAnalysis</p>
+            <p class="text-sm">
+              <span>21:44:31</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testQualityTrendAnalysis</h5>
+<span class='badge badge-success'>11.17.2026 21:44:31</span>
+<span class='badge badge-danger'>11.17.2026 21:44:31</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Quality trend analysis</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRoleBasedAccess</p>
+            <p class="text-sm">
+              <span>21:44:52</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRoleBasedAccess</h5>
+<span class='badge badge-success'>11.17.2026 21:44:52</span>
+<span class='badge badge-danger'>11.17.2026 21:44:52</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Multiple role access patterns are correctly enforced</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDailyDiaryEntry</p>
+            <p class="text-sm">
+              <span>21:45:06</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDailyDiaryEntry</h5>
+<span class='badge badge-success'>11.17.2026 21:45:06</span>
+<span class='badge badge-danger'>11.17.2026 21:45:06</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Daily progress diary entry</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testGeofencedSiteDiary</p>
+            <p class="text-sm">
+              <span>21:46:03</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testGeofencedSiteDiary</h5>
+<span class='badge badge-success'>11.17.2026 21:46:03</span>
+<span class='badge badge-danger'>11.17.2026 21:46:03</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Geofenced site diary submission</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag="AuthenticationTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testForemanLogoutFunctionality</p>
+            <p class="text-sm">
+              <span>21:46:03</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testForemanLogoutFunctionality</h5>
+<span class='badge badge-success'>11.17.2026 21:46:03</span>
+<span class='badge badge-danger'>11.17.2026 21:46:03</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AuthenticationTests</span></div>
+<div class="m-t-10 m-l-5">CycleOne - Foreman logout functionality ends session properly</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testLabourPlantReturns</p>
+            <p class="text-sm">
+              <span>21:46:31</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLabourPlantReturns</h5>
+<span class='badge badge-success'>11.17.2026 21:46:31</span>
+<span class='badge badge-danger'>11.17.2026 21:46:31</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Labour and plant returns</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testSiteEvidenceUpload</p>
+            <p class="text-sm">
+              <span>21:46:53</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSiteEvidenceUpload</h5>
+<span class='badge badge-success'>11.17.2026 21:46:53</span>
+<span class='badge badge-danger'>11.17.2026 21:46:53</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Site photos and evidence upload</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRfiManagement</p>
+            <p class="text-sm">
+              <span>21:47:25</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRfiManagement</h5>
+<span class='badge badge-success'>11.17.2026 21:47:25</span>
+<span class='badge badge-danger'>11.17.2026 21:47:25</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - RFI creation and management</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testChannelMessaging</p>
+            <p class="text-sm">
+              <span>21:47:59</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testChannelMessaging</h5>
+<span class='badge badge-success'>11.17.2026 21:47:59</span>
+<span class='badge badge-danger'>11.17.2026 21:47:59</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Channel messaging</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testEmailNotifications</p>
+            <p class="text-sm">
+              <span>21:48:37</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testEmailNotifications</h5>
+<span class='badge badge-success'>11.17.2026 21:48:37</span>
+<span class='badge badge-danger'>11.17.2026 21:48:37</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Email notifications</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testInAppNotifications</p>
+            <p class="text-sm">
+              <span>21:49:15</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testInAppNotifications</h5>
+<span class='badge badge-success'>11.17.2026 21:49:15</span>
+<span class='badge badge-danger'>11.17.2026 21:49:15</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - In-app notifications</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="40"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDocumentUpload</p>
+            <p class="text-sm">
+              <span>21:49:56</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDocumentUpload</h5>
+<span class='badge badge-success'>11.17.2026 21:49:56</span>
+<span class='badge badge-danger'>11.17.2026 21:49:56</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Document upload with metadata</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDocumentPreviewDownload</p>
+            <p class="text-sm">
+              <span>21:51:54</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDocumentPreviewDownload</h5>
+<span class='badge badge-success'>11.17.2026 21:51:54</span>
+<span class='badge badge-danger'>11.17.2026 21:51:54</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Document download and preview</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDocumentClassification</p>
+            <p class="text-sm">
+              <span>21:52:34</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDocumentClassification</h5>
+<span class='badge badge-success'>11.17.2026 21:52:34</span>
+<span class='badge badge-danger'>11.17.2026 21:52:34</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Document classification and routing</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCustomReportBuilder</p>
+            <p class="text-sm">
+              <span>21:53:10</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCustomReportBuilder</h5>
+<span class='badge badge-success'>11.17.2026 21:53:10</span>
+<span class='badge badge-danger'>11.17.2026 21:53:10</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Custom report builder</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testReportScheduling</p>
+            <p class="text-sm">
+              <span>21:53:46</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testReportScheduling</h5>
+<span class='badge badge-success'>11.17.2026 21:53:46</span>
+<span class='badge badge-danger'>11.17.2026 21:53:46</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Report scheduling</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testReportExportFormats</p>
+            <p class="text-sm">
+              <span>21:54:20</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testReportExportFormats</h5>
+<span class='badge badge-success'>11.17.2026 21:54:20</span>
+<span class='badge badge-danger'>11.17.2026 21:54:20</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Report export formats</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testEarnedValueReporting</p>
+            <p class="text-sm">
+              <span>21:54:42</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testEarnedValueReporting</h5>
+<span class='badge badge-success'>11.17.2026 21:54:42</span>
+<span class='badge badge-danger'>11.17.2026 21:54:42</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Earned value and cost reporting</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testMobileLoginAllRoles</p>
+            <p class="text-sm">
+              <span>21:55:17</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testMobileLoginAllRoles</h5>
+<span class='badge badge-success'>11.17.2026 21:55:17</span>
+<span class='badge badge-danger'>11.17.2026 21:55:17</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Mobile login for all roles</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="48"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testMobileGeofencedDiary</p>
+            <p class="text-sm">
+              <span>21:55:51</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testMobileGeofencedDiary</h5>
+<span class='badge badge-success'>11.17.2026 21:55:51</span>
+<span class='badge badge-danger'>11.17.2026 21:55:51</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Mobile daily diary with geofence</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="49"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testMobileDocumentUpload</p>
+            <p class="text-sm">
+              <span>21:56:03</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testMobileDocumentUpload</h5>
+<span class='badge badge-success'>11.17.2026 21:56:03</span>
+<span class='badge badge-danger'>11.17.2026 21:56:03</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Mobile document upload</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testMobileNavigation</p>
+            <p class="text-sm">
+              <span>21:56:11</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testMobileNavigation</h5>
+<span class='badge badge-success'>11.17.2026 21:56:11</span>
+<span class='badge badge-danger'>11.17.2026 21:56:11</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Mobile responsive navigation</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="51"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCustomDashboards</p>
+            <p class="text-sm">
+              <span>21:56:18</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCustomDashboards</h5>
+<span class='badge badge-success'>11.17.2026 21:56:18</span>
+<span class='badge badge-danger'>11.17.2026 21:56:18</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Custom dashboard creation</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="52"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDrillDownAnalytics</p>
+            <p class="text-sm">
+              <span>21:56:24</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDrillDownAnalytics</h5>
+<span class='badge badge-success'>11.17.2026 21:56:24</span>
+<span class='badge badge-danger'>11.17.2026 21:56:24</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Drill-down analytics</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testBiReportExport</p>
+            <p class="text-sm">
+              <span>21:56:33</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testBiReportExport</h5>
+<span class='badge badge-success'>11.17.2026 21:56:33</span>
+<span class='badge badge-danger'>11.17.2026 21:56:33</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - BI report export</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="54"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRootCauseAnalysis</p>
+            <p class="text-sm">
+              <span>21:56:41</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRootCauseAnalysis</h5>
+<span class='badge badge-success'>11.17.2026 21:56:41</span>
+<span class='badge badge-danger'>11.17.2026 21:56:41</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Root cause analysis</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="55"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testUserManagement</p>
+            <p class="text-sm">
+              <span>21:56:48</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testUserManagement</h5>
+<span class='badge badge-success'>11.17.2026 21:56:48</span>
+<span class='badge badge-danger'>11.17.2026 21:56:48</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - User management</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="56"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRolePermissionManagement</p>
+            <p class="text-sm">
+              <span>21:56:55</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRolePermissionManagement</h5>
+<span class='badge badge-success'>11.17.2026 21:56:55</span>
+<span class='badge badge-danger'>11.17.2026 21:56:55</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Role and permission management</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testNotificationSettings</p>
+            <p class="text-sm">
+              <span>21:57:03</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testNotificationSettings</h5>
+<span class='badge badge-success'>11.17.2026 21:57:03</span>
+<span class='badge badge-danger'>11.17.2026 21:57:03</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Notification settings</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testSystemConfiguration</p>
+            <p class="text-sm">
+              <span>21:57:09</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSystemConfiguration</h5>
+<span class='badge badge-success'>11.17.2026 21:57:09</span>
+<span class='badge badge-danger'>11.17.2026 21:57:09</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - System configuration</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="59"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testGlobalSearch</p>
+            <p class="text-sm">
+              <span>21:57:15</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testGlobalSearch</h5>
+<span class='badge badge-success'>11.17.2026 21:57:15</span>
+<span class='badge badge-danger'>11.17.2026 21:57:15</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Global search</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="60"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testAdvancedFilters</p>
+            <p class="text-sm">
+              <span>21:57:22</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testAdvancedFilters</h5>
+<span class='badge badge-success'>11.17.2026 21:57:22</span>
+<span class='badge badge-danger'>11.17.2026 21:57:22</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Advanced filters</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="61"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testSavedSearches</p>
+            <p class="text-sm">
+              <span>21:57:29</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSavedSearches</h5>
+<span class='badge badge-success'>11.17.2026 21:57:29</span>
+<span class='badge badge-danger'>11.17.2026 21:57:29</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=61</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Saved searches</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="62"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testSearchExport</p>
+            <p class="text-sm">
+              <span>21:57:37</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSearchExport</h5>
+<span class='badge badge-success'>11.17.2026 21:57:37</span>
+<span class='badge badge-danger'>11.17.2026 21:57:37</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=62</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Search results export</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="63"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testEmailTemplates</p>
+            <p class="text-sm">
+              <span>21:57:43</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testEmailTemplates</h5>
+<span class='badge badge-success'>11.17.2026 21:57:43</span>
+<span class='badge badge-danger'>11.17.2026 21:57:43</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=63</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Email notification templates</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="64"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testNotificationCenter</p>
+            <p class="text-sm">
+              <span>21:58:07</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testNotificationCenter</h5>
+<span class='badge badge-success'>11.17.2026 21:58:07</span>
+<span class='badge badge-danger'>11.17.2026 21:58:07</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - In-app notification center</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="65"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testWebhookIntegration</p>
+            <p class="text-sm">
+              <span>21:58:29</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testWebhookIntegration</h5>
+<span class='badge badge-success'>11.17.2026 21:58:29</span>
+<span class='badge badge-danger'>11.17.2026 21:58:29</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=65</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Webhook integration</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="66"
+          author=""
+          tag="Cycle6FinalTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRealtimeNotifications</p>
+            <p class="text-sm">
+              <span>21:58:53</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRealtimeNotifications</h5>
+<span class='badge badge-success'>11.17.2026 21:58:53</span>
+<span class='badge badge-danger'>11.17.2026 21:58:53</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=66</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Cycle6FinalTests</span></div>
+<div class="m-t-10 m-l-5">CycleSix - Real-time notification delivery</div>
+</div>
+</div>          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">ProjectManagementTests</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ProjectManagementTests</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:19:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testProjectPackImport</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:21:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>testProjectGeolocationMapping</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:22:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>testManualProjectCreation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:23:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>testProjectLocationUpdate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:26:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>testProjectFiltering</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:26:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>testProjectImportDocumentClassification</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:32:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>testRoleBasedProjectDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:34:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>testProjectCreationValidation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:40:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>testClientProjectAccessRestriction</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>41</span>
+</span>
+<p class="name">Cycle6FinalTests</p>
+<p class="duration text-sm">41 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Cycle6FinalTests</h4>
+<span status="pass" class='badge log pass-bg'>41 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:38:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>testBaselineScheduleSaveCompare</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:39:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>testWhatIfCpmAnalysis</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:40:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testQualityInspections</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:40:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>testNcrManagement</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:42:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>testHsChecklistExecution</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:44:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>testQualityTrendAnalysis</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:45:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>testDailyDiaryEntry</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:46:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>testGeofencedSiteDiary</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:46:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>testLabourPlantReturns</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:46:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>testSiteEvidenceUpload</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:47:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>testRfiManagement</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:47:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='37' id='37'>testChannelMessaging</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:48:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='38' id='38'>testEmailNotifications</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:49:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='39'>testInAppNotifications</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:49:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='40' id='40'>testDocumentUpload</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:51:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='41' id='41'>testDocumentPreviewDownload</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='42' id='42'>testDocumentClassification</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='43' id='43'>testCustomReportBuilder</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='44'>testReportScheduling</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:54:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='45' id='45'>testReportExportFormats</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:54:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='46' id='46'>testEarnedValueReporting</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:55:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='47' id='47'>testMobileLoginAllRoles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:55:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='48'>testMobileGeofencedDiary</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='49' id='49'>testMobileDocumentUpload</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='50'>testMobileNavigation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='51' id='51'>testCustomDashboards</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='52' id='52'>testDrillDownAnalytics</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='53' id='53'>testBiReportExport</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='54'>testRootCauseAnalysis</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='55' id='55'>testUserManagement</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:56:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='56' id='56'>testRolePermissionManagement</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:57:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='57'>testNotificationSettings</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:57:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='58' id='58'>testSystemConfiguration</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:57:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='59' id='59'>testGlobalSearch</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:57:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='60' id='60'>testAdvancedFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:57:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='61' id='61'>testSavedSearches</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:57:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='62' id='62'>testSearchExport</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:57:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='63' id='63'>testEmailTemplates</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:58:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='64' id='64'>testNotificationCenter</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:58:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='65' id='65'>testWebhookIntegration</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:58:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='66' id='66'>testRealtimeNotifications</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">AuthenticationTests</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>AuthenticationTests</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:19:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>testDirectorLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:22:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testProjectManagerLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:25:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>testQuantitySurveyorLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:32:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>testClientLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:34:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>testForemanLoginSuccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:38:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testInvalidPasswordRejected</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:41:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>testRequiredFieldValidation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:43:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>testLoginPageUIElements</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:44:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>testLogoutFunctionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:44:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>testRoleBasedAccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:46:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>testForemanLogoutFunctionality</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">Cycle3FeatureTests</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Cycle3FeatureTests</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:34:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>testBiWorkspaceAccess</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:38:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>testPmWorkspaceBoundaries</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:39:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>testQsWorkspaceBoundaries</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:40:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>testClientPortalRoleRestrictions</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:40:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>testForemanWorkspaceBoundaries</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>2026-11-17 21:18:36</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>2026-11-17 21:59:04</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>63</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'>
+<b>63</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='4%'><b>3</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='14%'><b>10</b> events passed</small></div>
+<div>
+<small data-tooltip='4%'><b>3</b> events failed,
+<b data-tooltip='%'>56</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testDirectorLoginSuccess":127.262,"testProjectPackImport":160.902,"testProjectGeolocationMapping":52.576,"testProjectManagerLoginSuccess":134.012,"testManualProjectCreation":183.411,"testProjectLocationUpdate":119.689,"testQuantitySurveyorLoginSuccess":349.788,"testProjectFiltering":434.149,"testProjectImportDocumentClassification":292.93,"testClientLoginSuccess":0,"testRoleBasedProjectDashboard":0,"testProjectCreationValidation":173.882,"testForemanLoginSuccess":0,"testBiWorkspaceAccess":72.45,"testInvalidPasswordRejected":75.753,"testBaselineScheduleSaveCompare":0,"testPmWorkspaceBoundaries":0,"testQsWorkspaceBoundaries":0,"testWhatIfCpmAnalysis":0,"testClientProjectAccessRestriction":75.653,"testClientPortalRoleRestrictions":0,"testQualityInspections":0,"testForemanWorkspaceBoundaries":0,"testNcrManagement":0,"testRequiredFieldValidation":0,"testHsChecklistExecution":0,"testLoginPageUIElements":0,"testLogoutFunctionality":0.001,"testQualityTrendAnalysis":0,"testRoleBasedAccess":0,"testDailyDiaryEntry":0,"testGeofencedSiteDiary":0,"testForemanLogoutFunctionality":0,"testLabourPlantReturns":0,"testSiteEvidenceUpload":0,"testRfiManagement":0,"testChannelMessaging":0,"testEmailNotifications":0,"testInAppNotifications":0,"testDocumentUpload":0,"testDocumentPreviewDownload":0,"testDocumentClassification":0,"testCustomReportBuilder":0,"testReportScheduling":0,"testReportExportFormats":0,"testEarnedValueReporting":0,"testMobileLoginAllRoles":0,"testMobileGeofencedDiary":0,"testMobileDocumentUpload":0,"testMobileNavigation":0,"testCustomDashboards":0,"testDrillDownAnalytics":0,"testBiReportExport":0,"testRootCauseAnalysis":0,"testUserManagement":0,"testRolePermissionManagement":0,"testNotificationSettings":0,"testSystemConfiguration":0,"testGlobalSearch":0,"testAdvancedFilters":0,"testSavedSearches":0,"testSearchExport":0,"testEmailTemplates":0,"testNotificationCenter":0,"testWebhookIntegration":0.001,"testRealtimeNotifications":0
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>ProjectManagementTests</td>
+<td>7</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>77,778%</td>
+</tr>
+<tr>
+<td>Cycle6FinalTests</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>AuthenticationTests</td>
+<td>10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>90,909%</td>
+</tr>
+<tr>
+<td>Cycle3FeatureTests</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>CPMS - Construction Project Management System</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>local</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>chrome</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>21.0.12.1</td>
+</tr>
+<tr>
+<td>User</td>
+<td>Gregory Zwane</td>
+</tr>
+<tr>
+<td>Test Framework</td>
+<td>Selenium WebDriver + TestNG</td>
+</tr>
+<tr>
+<td>Reporting</td>
+<td>ExtentReports v5.1.1</td>
+</tr>
+<tr>
+<td>Execution Time</td>
+<td>2026-11-17 21:18:38</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 63,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 10,
+failEvents: 3,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 56
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

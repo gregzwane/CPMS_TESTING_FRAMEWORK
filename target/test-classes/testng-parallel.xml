@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Parallel TestNG Suite - Optimized for cross-browser parallel execution -->
+<suite name="CPMS Parallel Test Suite" verbose="1" parallel="methods" thread-count="3" configfailurepolicy="continue">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="environment" value="local"/>
+
+    <listeners>
+        <listener class-name="com.cpms.utils.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- Retry Analyzer for flaky tests -->
+    <test name="Retry Configuration" enabled="false">
+        <classes>
+            <class name="com.cpms.utils.RetryAnalyzer"/>
+        </classes>
+    </test>
+
+    <!-- Smoke Tests - Quick validation (parallel methods) -->
+    <test name="Smoke Tests - Parallel" priority="1" enabled="true">
+        <parameter name="testType" value="smoke"/>
+        <classes>
+            <class name="com.cpms.tests.AuthenticationTests">
+                <methods>
+                    <include name="testDirectorLoginSuccess"/>
+                    <include name="testProjectManagerLoginSuccess"/>
+                    <include name="testQuantitySurveyorLoginSuccess"/>
+                    <include name="testClientLoginSuccess"/>
+                    <include name="testApiWakeUpSequence"/>
+                    <include name="testLogoutFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Functional Tests - Core functionality (parallel classes) -->
+    <test name="Functional Tests - Parallel" priority="2" enabled="true">
+        <parameter name="testType" value="functional"/>
+        <classes>
+            <class name="com.cpms.tests.AuthenticationTests">
+                <methods>
+                    <include name="testInvalidPasswordRejected"/>
+                    <include name="testRequiredFieldValidation"/>
+                    <include name="testLoginPageUIElements"/>
+                    <include name="testForemanLogoutFunctionality"/>
+                    <include name="testRoleBasedAccess"/>
+                    <include name="testRoleTabAccessVerification"/>
+                </methods>
+            </class>
+            <class name="com.cpms.tests.ProjectManagementTests">
+                <methods>
+                    <include name="testProjectPackImport"/>
+                    <include name="testManualProjectCreation"/>
+                    <include name="testProjectFiltering"/>
+                    <include name="testProjectCreationValidation"/>
+                    <include name="testClientProjectAccessRestriction"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- API Tests - Backend services (parallel methods) -->
+    <test name="API Tests - Parallel" priority="3" enabled="true">
+        <parameter name="testType" value="api"/>
+        <classes>
+            <class name="com.cpms.api.CpmsApiTests">
+                <methods>
+                    <include name="testAuthenticationSuccess"/>
+                    <include name="testAuthenticationFailure"/>
+                    <include name="testGetProjects"/>
+                    <include name="testCreateProject"/>
+                    <include name="testCreateProjectValidation"/>
+                    <include name="testBoqImport"/>
+                    <include name="testApiSecurityUnauthenticated"/>
+                    <include name="testSqlInjectionPrevention"/>
+                    <include name="testMalformedJsonHandling"/>
+                    <include name="testConsistentErrorFormat"/>
+                    <include name="testConcurrentRequests"/>
+                    <include name="testJwtTokenExpiry"/>
+                </methods>
+            </class>
+            <class name="com.cpms.contract.ApiContractTests">
+                <methods>
+                    <include name="testProjectsListContract"/>
+                    <include name="testCreateProjectContract"/>
+                    <include name="testAuthTokenContract"/>
+                    <include name="testErrorResponseContract"/>
+                    <include name="testBoqImportContract"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Integration Tests - End-to-end flows -->
+    <test name="Integration Tests - Parallel" priority="4" enabled="true">
+        <parameter name="testType" value="integration"/>
+        <classes>
+            <class name="com.cpms.tests.ProjectManagementTests">
+                <methods>
+                    <include name="testProjectGeolocationMapping"/>
+                    <include name="testProjectLocationUpdate"/>
+                    <include name="testProjectImportDocumentClassification"/>
+                    <include name="testRoleBasedProjectDashboard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Cycle 3 - Advanced Feature Workspaces -->
+    <test name="Cycle 3 Feature Tests - Parallel" priority="5" enabled="true">
+        <parameter name="testType" value="cycle3"/>
+        <classes>
+            <class name="com.cpms.tests.Cycle3FeatureTests">
+                <methods>
+                    <include name="testBiWorkspaceAccess"/>
+                    <include name="testTigerTeamWorkspaceAccess"/>
+                    <include name="testSettingsWorkspaceAccess"/>
+                    <include name="testPmWorkspaceBoundaries"/>
+                    <include name="testQsWorkspaceBoundaries"/>
+                    <include name="testClientPortalRoleRestrictions"/>
+                    <include name="testForemanWorkspaceBoundaries"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Cycle 5 - Performance Tests (run sequentially due to load) -->
+    <test name="Cycle 5 Performance Tests" priority="6" enabled="false">
+        <parameter name="testType" value="performance"/>
+        <classes>
+            <class name="com.cpms.tests.Cycle5PerformanceTests">
+                <methods>
+                    <include name="testConcurrentRequests"/>
+                    <include name="testApiLoadTest100Users"/>
+                    <include name="testApiStressTest500Users"/>
+                    <include name="testApiEnduranceTest30Min"/>
+                    <include name="testApiSpikeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Cycle 5 - Batch Processing Tests -->
+    <test name="Cycle 5 Batch Processing Tests" priority="7" enabled="false">
+        <parameter name="testType" value="batch"/>
+        <classes>
+            <class name="com.cpms.tests.BatchProcessingTests">
+                <methods>
+                    <include name="testBulkProjectImport"/>
+                    <include name="testScheduledBoqImport"/>
+                    <include name="testBatchDocumentClassification"/>
+                    <include name="testBatchPaymentCertificateGeneration"/>
+                    <include name="testNightlyDataSync"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Visual Regression Tests -->
+    <test name="Visual Regression Tests" priority="8" enabled="false">
+        <parameter name="testType" value="visual"/>
+        <classes>
+            <class name="com.cpms.visual.VisualRegressionTest">
+                <methods>
+                    <include name="testLoginPageVisualRegression"/>
+                    <include name="testDirectorDashboardVisualRegression"/>
+                    <include name="testProjectsPageVisualRegression"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Accessibility Tests -->
+    <test name="Accessibility Tests" priority="9" enabled="false">
+        <parameter name="testType" value="accessibility"/>
+        <classes>
+            <class name="com.cpms.accessibility.AccessibilityTests">
+                <methods>
+                    <include name="testLoginPageAccessibility"/>
+                    <include name="testDirectorDashboardAccessibility"/>
+                    <include name="testProjectsPageAccessibility"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Regression Test Suite - All tests (disabled by default) -->
+    <test name="Full Regression" priority="10" enabled="false">
+        <parameter name="testType" value="regression"/>
+        <packages>
+            <package name="com.cpms.tests"/>
+            <package name="com.cpms.api"/>
+            <package name="com.cpms.contract"/>
+            <package name="com.cpms.visual"/>
+            <package name="com.cpms.accessibility"/>
+        </packages>
+    </test>
+
+</suite>
