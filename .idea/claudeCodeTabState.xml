@@ -12,6 +12,9 @@
               <option name="cwd" value="C:\Development\Selenium\CPMS_Testing_Framework" />
               <option name="model" value="claude-opus-5[1m]" />
               <option name="permissionMode" value="default" />
+              <option name="claudeSupplierId" value="__local_settings_json__" />
+              <option name="codexSupplierId" value="__session_supplier_unavailable__" />
+              <option name="ompApprovalMode" value="" />
             </TabSessionState>
           </value>
         </entry>
